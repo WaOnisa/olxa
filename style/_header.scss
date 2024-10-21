@@ -65,6 +65,9 @@ header {
         --bs-dropdown-link-active-color: none;
         --bs-dropdown-link-active-bg: none;
     }
+    .dropdown:hover > .dropdown-menu {
+        display: block; 
+    } 
     .headerNav{
         display: flex;
         flex-direction: row;

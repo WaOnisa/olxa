@@ -5,8 +5,6 @@ button{
         size: 1rem;
         weight: 800;
     }
-    color: $main;
-    background-color: white;
     border: 1px solid $main;
     border-radius: 10px;
     padding: 12px 32px;
@@ -15,14 +13,8 @@ button{
 .mainButtonDark{
     color: $white;
     background-color: $main;
-    border: 1px solid $main;
-    border-radius: 10px;
-    padding: 12px 32px;
 }
 .mainButtonLight{
     color: $main;
     background-color: $white;
-    border: 1px solid $main;
-    border-radius: 10px;
-    padding: 12px 32px;
 }
