@@ -1,0 +1,84 @@
+header {
+    padding: 20px 0px;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 26px;
+        border-radius: 18px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06),
+            0 0 4px 0 rgba(0, 0, 0, 0.04);
+    }
+    a{
+        text-decoration: none;
+        color: $black;
+        font: {
+            family: 'Manrope';
+            size: 1rem;
+            weight: 500;
+        }
+    }
+    .logo{
+            font: {
+                family: 'Manrope';
+                size: 2.5rem;
+                weight: 800;
+            }
+        }
+    .btn-secondary{
+        font: {
+            family: 'Manrope';
+            size: 1rem;
+            weight: 500;
+        }
+        --bs-btn-color: none;
+        --bs-btn-bg: none;
+        --bs-btn-border-color: none;
+        --bs-btn-hover-color: none;
+        --bs-btn-hover-bg: none;
+        --bs-btn-hover-border-color:none;
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-active-color: none;
+        --bs-btn-active-bg: none;
+        --bs-btn-active-border-color: none;
+        --bs-btn-active-shadow: none;
+        --bs-btn-disabled-color: none;
+        --bs-btn-disabled-bg: none;
+        --bs-btn-disabled-border-color: none;
+        --bs-btn-padding-x: 0;
+        --bs-btn-padding-y: 0;
+    }
+    .dropdown-menu{
+        font: {
+            family: 'Manrope';
+            size: 0.875rem;
+            weight: 500;
+        }
+        border: 0;
+        --bs-dropdown-min-width: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06),
+            0 0 4px 0 rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        padding: 20px 10px;
+        --bs-dropdown-link-hover-bg: none;
+        --bs-dropdown-link-active-color: none;
+        --bs-dropdown-link-active-bg: none;
+    }
+    .headerNav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 22px;
+        }
+        .buttonHeader{
+            display: flex;
+            gap:14px;
+        }
+    }
+}
