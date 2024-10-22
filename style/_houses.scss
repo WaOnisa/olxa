@@ -7,32 +7,92 @@
             weight:800;
             size: 2.875rem;
         }
+        color: $black;
     }
     .housesBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .housesCardsBlock{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        position: relative;
         h2{
             margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 1.625rem;
+            }
+        color: $black;
+        }
+        span{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 1.875rem;
+            }
+        color: $black;
         }
         p{
             margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 1rem;
+            }
+        color: $secondary;
         }
         .houseCard{
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08),
              0 0 4px 0 rgba(0, 0, 0, 0.04);
-             border-radius: 20px;
+            border-radius: 20px;
+            .housesStats{
+                position: absolute;
+                padding: 16px;
+                display: flex;
+                gap: 8px;
+
+            }
+            .houseCardPeople{
+                display: flex;
+                flex-direction: row;
+                padding: 11px 22px;
+                border-radius: 10px;
+                gap: 10px;
+                background-color: $darkGrey;
+            }
             .houseCardBanner{
-                width: 420px;
-                height: 100%;
-                object-fit: cover;
                 border-radius: 20px;
+                img{
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
             }
             .houseCardInfo{
                 padding: 20px 30px 30px 30px;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                align-items: stretch;
+                .houseCardInfoTop{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: flex-start;
+                }
+                .houseCardInfoBottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 12px;
+                }
             }
         }
     

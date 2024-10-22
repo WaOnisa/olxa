@@ -243,34 +243,86 @@ header .headerNav .buttonHeader {
   font-family: "Manrope";
   font-weight: 800;
   font-size: 2.875rem;
+  color: rgb(64, 64, 64);
 }
 .houses .housesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.houses .housesCardsBlock {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  position: relative;
 }
-.houses .housesBlock h2 {
+.houses .housesCardsBlock h2 {
   margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.625rem;
+  color: rgb(64, 64, 64);
 }
-.houses .housesBlock p {
+.houses .housesCardsBlock span {
   margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: rgb(64, 64, 64);
 }
-.houses .housesBlock .houseCard {
+.houses .housesCardsBlock p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3D5E38;
+}
+.houses .housesCardsBlock .houseCard {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04);
   border-radius: 20px;
 }
-.houses .housesBlock .houseCard .houseCardBanner {
-  width: 420px;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.houses .housesCardsBlock .houseCard .housesStats {
+  position: absolute;
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+}
+.houses .housesCardsBlock .houseCard .houseCardPeople {
+  display: flex;
+  flex-direction: row;
+  padding: 11px 22px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: rgb(242, 242, 242);
+}
+.houses .housesCardsBlock .houseCard .houseCardBanner {
   border-radius: 20px;
 }
-.houses .housesBlock .houseCard .houseCardInfo {
+.houses .housesCardsBlock .houseCard .houseCardBanner img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.houses .housesCardsBlock .houseCard .houseCardInfo {
   padding: 20px 30px 30px 30px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: stretch;
+}
+.houses .housesCardsBlock .houseCard .houseCardInfo .houseCardInfoTop {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.houses .housesCardsBlock .houseCard .houseCardInfo .houseCardInfoBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
 }
 
 footer {
