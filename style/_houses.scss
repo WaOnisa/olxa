@@ -1,0 +1,28 @@
+.houses{
+    padding: 45px 0;
+    h1{
+        margin: 0;
+        font: {
+            family:'Manrope';
+            weight:800;
+            size: 2.875rem;
+        }
+    }
+    .housesBlock{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .houseCard{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08),
+             0 0 4px 0 rgba(0, 0, 0, 0.04);
+             border-radius: 20px;
+            .houseCardBanner{
+                width: 420px;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+    
+    }
+}
