@@ -1,0 +1,46 @@
+.events{
+    padding: 75px 0;
+    .eventsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .eventsTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h1{
+                margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:800;
+                    size: 2.875rem;
+                }
+                color: $black;
+                span{
+                    color: $main;
+                }
+            }
+            button{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+        .eventsCards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .eventCard{
+                border-radius: 20px;
+                img{
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
+            }
+    }
+}
