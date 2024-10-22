@@ -14,8 +14,10 @@ const swiper1 = new Swiper('.swiper1', {
 })
 
 const swiper2 = new Swiper('.swiper2', {
-
 	direction: 'horizontal',
+	slidesPerView: 2,
+	centeredSlides: true,
+	spaceBetween: 20,
 	loop: true,
 
 	pagination: {
