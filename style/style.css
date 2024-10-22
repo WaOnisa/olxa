@@ -249,6 +249,12 @@ header .headerNav .buttonHeader {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+.houses .housesBlock h2 {
+  margin: 0;
+}
+.houses .housesBlock p {
+  margin: 0;
+}
 .houses .housesBlock .houseCard {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04);
   border-radius: 20px;
@@ -259,6 +265,135 @@ header .headerNav .buttonHeader {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+}
+.houses .housesBlock .houseCard .houseCardInfo {
+  padding: 20px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footerBlock {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  border-top: 2px solid #748A5B;
+  padding-top: 60px;
+}
+footer .footerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerTop h2 {
+  font-family: "Manrope";
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerTop .footerTopInf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 201.5px;
+}
+footer .footerTop .footerTopInf .footerTopContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .footerTop .footerTopInf .footerTopContacts a {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerTop .footerTopInf .footerTopContacts div {
+  display: flex;
+  flex-direction: row;
+}
+footer .footerTop .footerTopInf .footerTopContacts div p {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerTop .footerTopInf .footerTopContacts .contactsButton {
+  display: flex;
+  gap: 16px;
+}
+footer .footerTop .footerTopInf .footerTopInfBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+footer .footerTop .footerTopInf h3 {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerTop .footerTopInf ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 0;
+  margin: 0;
+}
+footer .footerTop .footerTopInf ul li {
+  list-style: none;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerTop .footerTopInf ul li a {
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+footer .footerPolicy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerPolicy p {
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerPolicy p a {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+  margin: 0;
+  text-decoration: none;
+}
+footer .footerPolicy p span {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+  margin: 0;
+}
+footer .footerPolicy a {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+  margin: 0;
 }
 
 * {

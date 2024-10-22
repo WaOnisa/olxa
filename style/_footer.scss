@@ -1,0 +1,143 @@
+footer{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    
+    .footerBlock{
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        border-top: 2px solid $main;
+        padding-top: 60px;
+    }
+    .footerTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h2{
+            font: {
+                    family: 'Manrope';
+                    size: 2.5rem;
+                    weight: 800;
+                }
+                color: $black;
+                margin: 0;
+        }
+        .footerTopInf{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 201.5px;
+            
+            .footerTopContacts{
+               display: flex;
+               flex-direction: column; 
+               gap: 14px;
+               a{
+                font: {
+                        family: 'Manrope';
+                        size: 1rem;
+                        weight: 500;
+                    }
+                    color: $black;
+                    margin: 0;
+               }
+               div{
+                display: flex;
+                flex-direction: row;
+                p{
+                    font: {
+                    family: 'Manrope';
+                    size: 1rem;
+                    weight: 400;
+                }
+                color: $black;
+                margin: 0;
+                }
+                
+               }
+               .contactsButton{
+                    display: flex;
+                    gap: 16px;
+               }
+            }
+            .footerTopInfBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+            h3{
+                font: {
+                    family: 'Manrope';
+                    size: 1.125rem;
+                    weight: 700;
+                }
+                color: $black;
+                margin: 0;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                padding-left: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    font: {
+                        family: 'Manrope';
+                        size: 1rem;
+                        weight: 500;
+                    }
+                    color: $black;
+                    margin: 0;
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                    }
+            }
+        }
+        }
+    }
+    .footerPolicy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            font: {
+                        family: 'Manrope';
+                        size: 0.875rem;
+                        weight: 600;
+                    }
+                    color: $black;
+                    margin: 0;
+                a{
+                    font: {
+                        family: 'Manrope';
+                        size: 1rem;
+                        weight: 600;
+                        }
+                        color: $black;
+                        margin: 0;
+                        text-decoration: none;
+                }   
+                span{
+                    font: {
+                        family: 'Manrope';
+                        size: 1rem;
+                        weight: 600;
+                        }
+                        color: $black;
+                        margin: 0;
+                } 
+        }
+        a{
+            font: {
+                        family: 'Manrope';
+                        size: 1rem;
+                        weight: 600;
+                    }
+                    color: $black;
+                    margin: 0;
+        }
+    }
+}

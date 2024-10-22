@@ -12,6 +12,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        h2{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
         .houseCard{
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08),
              0 0 4px 0 rgba(0, 0, 0, 0.04);
@@ -21,6 +27,12 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 20px;
+            }
+            .houseCardInfo{
+                padding: 20px 30px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
             }
         }
     
