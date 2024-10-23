@@ -1,0 +1,77 @@
+.contacts{
+    h1{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 2.875rem;
+            }
+            color: $black;
+    }
+    h2{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:600;
+                size: 1.875rem;
+            }
+            color: $black;
+    }
+    p{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:400;
+                size: 1.125rem;
+            }
+            color: $black;
+    }
+    a{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:400;
+                size: 1.125rem;
+            }
+        color: $black;
+    }
+    .contactsBlocks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contactsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        .contactsText{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .contactsTextTop{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .contactsTextTopMaps{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                }
+            }
+            .contactsTextBottom{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .contactsTextBottomBtn{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}
+iframe {
+    border-radius: 24px;
+    overflow: hidden;
+}

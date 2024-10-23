@@ -57,3 +57,19 @@ const swiper3 = new Swiper('.swiper3', {
 		prevEl: '.swiper-button-prev3',
 	},
 })
+
+const swiper4 = new Swiper('.swiper4', {
+	direction: 'horizontal',
+	slidesPerView: 3,
+	spaceBetween: 20,
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination4',
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next4',
+		prevEl: '.swiper-button-prev4',
+	},
+})

@@ -223,6 +223,7 @@ header .headerNav .buttonHeader {
   border: none;
   display: block;
   color: rgb(64, 64, 64);
+  width: 280px;
   font-family: "Manrope";
   font-weight: 400;
   font-size: 1rem;
@@ -623,8 +624,209 @@ header .headerNav .buttonHeader {
   height: 100%;
 }
 
+.reviews {
+  padding: 75px 0;
+}
+.reviews .blockReviews {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 76px;
+}
+.reviews .reviewsBack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.reviews .reviewsBack img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reviews .swiper {
+  padding: 40px 0;
+}
+.reviews .swiper-slide {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.reviews .swiper-slide picture img {
+  width: 100%;
+  height: 100%;
+  max-height: 243px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+.reviews .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.reviews .swiper-pagination-bullet {
+  width: 45px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #FFFFC0;
+  opacity: 1;
+}
+.reviews .swiper-pagination-bullet-active {
+  background-color: #3D5E38;
+}
+.reviews .reviewTopText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews .reviewTopUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 14px;
+}
+.reviews .reviewTopUser p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(40, 40, 40);
+}
+.reviews .reviewText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.reviews .reviewBottomText p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(64, 64, 64);
+}
+.reviews .reviewsTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews .reviewsTitle h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 2.875rem;
+  color: #FFFFFF;
+}
+.reviews .reviewsTitle h1 span {
+  color: #FFFFC0;
+}
+.reviews .reviewsTitle .reviewsSwiperBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: space-between;
+}
+.reviews .reviewsTitle .reviewsSwiperBtns .reviewsSwiperBtn {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.reviews .reviewsTitle .reviewsSwiperBtns .swiper-button-prev::after, .reviews .reviewsTitle .reviewsSwiperBtns .swiper-button-next::after {
+  content: none;
+}
+
+.contacts h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 2.875rem;
+  color: rgb(64, 64, 64);
+}
+.contacts h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: rgb(64, 64, 64);
+}
+.contacts p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: rgb(64, 64, 64);
+}
+.contacts a {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: rgb(64, 64, 64);
+}
+.contacts .contactsBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts .contactsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.contacts .contactsBlock .contactsText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contacts .contactsBlock .contactsText .contactsTextTop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts .contactsBlock .contactsText .contactsTextTop .contactsTextTopMaps {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.contacts .contactsBlock .contactsText .contactsTextBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts .contactsBlock .contactsText .contactsTextBottom .contactsTextBottomBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+iframe {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
 footer {
-  padding-top: 45px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
 }
@@ -677,7 +879,7 @@ footer .footerTop .footerTopInf .footerTopContacts div p {
   color: rgb(64, 64, 64);
   margin: 0;
 }
-footer .footerTop .footerTopInf .footerTopContacts .contactsButton {
+footer .footerTop .footerTopInf .footerTopContacts .footerContactsButton {
   display: flex;
   gap: 16px;
 }
