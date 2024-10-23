@@ -1,7 +1,21 @@
 .advantages{
     padding: 75px 0;
+    .advantagesBack{ 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
     .blockAdvantages{
         padding: 90px 0;
+        position: relative;
     }
     h1{
         margin: 0;
@@ -31,6 +45,7 @@
             width: auto;
             height: 100%;
             border-radius: 100px;
+            border: 2px solid rgba(255, 255, 255, 1);
             p{
                 margin: 0;
                 z-index: 1;
@@ -41,6 +56,18 @@
                 }
                 color: $main;
             }
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $main;
+            svg{
+                path{
+                    stroke: $white;
+                }
+            }
+            p{
+                color: rgba(255, 255, 255, 1);
+            }
+        
         }
     } 
     .swiper-slide{
@@ -77,10 +104,10 @@
         .advantagesSliderText{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             gap: 20px;
-            padding: 58px 65px;
+            padding: 58px 65px 0 58px ;
             border-radius: 24px;
+            background-color: $white;
         }
         .advantagesSliderTitle{
             display: flex;

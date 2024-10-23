@@ -442,8 +442,23 @@ header .headerNav .buttonHeader {
 .advantages {
   padding: 75px 0;
 }
+.advantages .advantagesBack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.advantages .advantagesBack img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .advantages .blockAdvantages {
   padding: 90px 0;
+  position: relative;
 }
 .advantages h1 {
   margin: 0;
@@ -472,6 +487,7 @@ header .headerNav .buttonHeader {
   width: auto;
   height: 100%;
   border-radius: 100px;
+  border: 2px solid rgb(255, 255, 255);
 }
 .advantages .swiper-pagination .swiper-pagination-bullet p {
   margin: 0;
@@ -480,6 +496,15 @@ header .headerNav .buttonHeader {
   font-weight: 700;
   font-size: 1.125rem;
   color: #748A5B;
+}
+.advantages .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #748A5B;
+}
+.advantages .swiper-pagination .swiper-pagination-bullet-active svg path {
+  stroke: #FFFFFF;
+}
+.advantages .swiper-pagination .swiper-pagination-bullet-active p {
+  color: rgb(255, 255, 255);
 }
 .advantages .swiper-slide {
   height: 320px;
@@ -513,10 +538,10 @@ header .headerNav .buttonHeader {
 .advantages .blockSlide .advantagesSliderText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  padding: 58px 65px;
+  padding: 58px 65px 0 58px;
   border-radius: 24px;
+  background-color: #FFFFFF;
 }
 .advantages .blockSlide .advantagesSliderTitle {
   display: flex;
