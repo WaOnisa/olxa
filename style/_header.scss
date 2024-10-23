@@ -85,3 +85,91 @@ header {
         }
     }
 }
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 40px 40px 40px;
+    gap: 20px;
+    .titleModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    h1{
+        margin: 0;
+        font: {
+            family: 'Manrope';
+            size: 2.5rem;
+            weight: 800;
+        }
+    }
+    p{
+        margin: 0;
+        font: {
+            family: 'Manrope';
+            size: 1.125rem;
+            weight: 400;
+        }
+    }
+    .policyModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 0.875rem;
+                weight: 400;
+            }
+        a{
+        margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 0.875rem;
+                weight: 400;
+            }
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 12px;
+        }
+        label{
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 1rem;
+                weight: 500;
+            }
+        }
+        input{
+            background-color: rgba(238, 238, 238, 1);
+            border: 0;
+            padding: 14px;
+            border-radius: 8px;
+        }
+        input::placeholder{
+            color: rgba(129, 126, 126, 1);
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 1rem;
+                weight: 500;
+            }
+        }
+    }
+}

@@ -42,7 +42,36 @@
                     </nav>
                     <div class="buttonHeader">
                         <button class="mainButtonDark">Забронировать</button>
-                        <button class="mainButtonLight">Заказать звонок</button>
+                        <button type="button" class="mainButtonLight" data-bs-toggle="modal" data-bs-target="#modal">Заказать звонок</button>
+                        <div class="modal" tabindex="-1" id="modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content" style="border-radius: 20px;">
+                                <div class="modal-header" style="border: 0;">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                        <div class="titleModal">
+                                            <h1>LOGO</h1>
+                                            <div>
+                                                <p>Оставьте свои данные и мы поможем</p> <p>Вам подобрать дом</p>
+                                            </div>
+                                        </div>
+                                        <form>
+                                            <div>
+                                                <label>Ваше имя*</label>
+                                                <input type="text" placeholder="Имя">
+                                            </div>
+                                            <div>
+                                                <label>Телефон*</label>
+                                                <input type="tel" placeholder="Номер телефона">
+                                            </div>
+                                            <button class="mainButtonDark">Отправить</button>
+                                        </form>
+                                        <p class="policyModal">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

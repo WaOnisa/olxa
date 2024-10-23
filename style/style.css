@@ -99,6 +99,89 @@ header .headerNav .buttonHeader {
   gap: 14px;
 }
 
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 40px 40px 40px;
+  gap: 20px;
+}
+.modal-body .titleModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.modal-body .titleModal div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-body h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.modal-body p {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.modal-body .policyModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.modal-body .policyModal a {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+.modal-body form div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-body form label {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 500;
+}
+.modal-body form input {
+  background-color: rgb(238, 238, 238);
+  border: 0;
+  padding: 14px;
+  border-radius: 8px;
+}
+.modal-body form input::-moz-placeholder {
+  color: rgb(129, 126, 126);
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 500;
+}
+.modal-body form input::placeholder {
+  color: rgb(129, 126, 126);
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .mainSlider {
   padding-bottom: 45px;
 }
@@ -756,6 +839,9 @@ header .headerNav .buttonHeader {
   content: none;
 }
 
+.contacts {
+  padding: 75px 0;
+}
 .contacts h1 {
   margin: 0;
   font-family: "Manrope";
