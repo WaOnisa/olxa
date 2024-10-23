@@ -794,6 +794,7 @@ header .headerNav .buttonHeader {
   flex-direction: column;
   gap: 20px;
   padding: 30px;
+  padding-bottom: 70px;
 }
 .reviews .reviewBottomText p {
   margin: 0;
