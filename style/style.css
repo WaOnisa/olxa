@@ -1036,6 +1036,71 @@ footer .footerPolicy a {
   margin: 0;
 }
 
+.news h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 2.875rem;
+  color: rgb(64, 64, 64);
+}
+.news .newsPathLink a, .news .newsPathLink span {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(129, 126, 126);
+}
+.news .newsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+.news .allNewsCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+  padding-top: 40px;
+}
+.news .allNewsCards .newsCard {
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.news .allNewsCards .newsCard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 210px;
+}
+.news .allNewsCards .newsCard .newsCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+.news .allNewsCards .newsCard .newsCardText h3 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: rgb(64, 64, 64);
+}
+.news .allNewsCards .newsCard .newsCardText p {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(144, 142, 142);
+}
+
 * {
   margin: 0;
   padding: 0;

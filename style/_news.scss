@@ -1,0 +1,76 @@
+.news{
+    h1{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 2.875rem;
+            }
+        color: $black;
+    }
+    .newsPathLink{
+        a, span{
+            margin: 0;
+            text-decoration: none;
+                font: {
+                    family:'Manrope';
+                    weight:400;
+                    size: 1rem;
+                }
+            color: rgba(129, 126, 126, 1);
+        }
+    }
+    .newsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
+
+    .allNewsCards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+        padding-top: 40px;
+        .newsCard{
+            text-decoration: none;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 210px;
+            }
+            .newsCardText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                gap: 20px;
+                h3{
+                    margin: 0;
+                        font: {
+                            family:'Manrope';
+                            weight:600;
+                            size: 1.125rem;
+                        }
+                    color: $black;
+                }
+                p{
+                    margin: 0;
+                    text-decoration: none;
+                        font: {
+                            family:'Manrope';
+                            weight:500;
+                            size: 1rem;
+                        }
+                    color: rgba(144, 142, 142, 1);
+                }
+            }
+        }
+    }
+
+}
