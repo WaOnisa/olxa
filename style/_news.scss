@@ -25,7 +25,7 @@
         flex-direction: column;
         gap: 20px;
         padding-top: 40px;
-        padding-bottom: 90px;
+        padding-bottom: 75px;
     }
 
     .allNewsCards{
@@ -43,6 +43,7 @@
                 width: 100%;
                 object-fit: cover;
                 height: 210px;
+                border-radius: 20px;
             }
             .newsCardText{
                 display: flex;

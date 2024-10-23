@@ -879,6 +879,7 @@ header .headerNav .buttonHeader {
 .contacts .contactsBlock {
   display: flex;
   flex-direction: column;
+  flex-grow: 1 !important;
   gap: 44px;
 }
 .contacts .contactsBlock .contactsText {
@@ -910,6 +911,11 @@ header .headerNav .buttonHeader {
 iframe {
   border-radius: 24px;
   overflow: hidden;
+  max-width: 790px;
+}
+
+.contactsMap {
+  flex-grow: 2 !important;
 }
 
 footer {
@@ -1056,7 +1062,7 @@ footer .footerPolicy a {
   flex-direction: column;
   gap: 20px;
   padding-top: 40px;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
 }
 .news .allNewsCards {
   display: grid;
@@ -1077,6 +1083,7 @@ footer .footerPolicy a {
   -o-object-fit: cover;
      object-fit: cover;
   height: 210px;
+  border-radius: 20px;
 }
 .news .allNewsCards .newsCard .newsCardText {
   display: flex;
@@ -1099,6 +1106,49 @@ footer .footerPolicy a {
   font-weight: 500;
   font-size: 1rem;
   color: rgb(144, 142, 142);
+}
+
+.singleNews .singleNewsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+.singleNews .singleNewsBlock h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 2.875rem;
+  color: rgb(64, 64, 64);
+}
+.singleNews .singleNewsBlock .singleNewsPathLink a, .singleNews .singleNewsBlock .singleNewsPathLink span {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(129, 126, 126);
+}
+.singleNews .singleNewsBlock .allSingleNews {
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 22px;
+}
+.singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: rgb(64, 64, 64);
 }
 
 * {
