@@ -40,6 +40,9 @@ header a {
   font-size: 16px;
   font-weight: 500;
 }
+header a:hover {
+  color: #748A5B;
+}
 header .logo {
   font-family: "Manrope";
   font-size: 40px;
@@ -66,6 +69,9 @@ header .btn-secondary {
   --bs-btn-padding-x: 0;
   --bs-btn-padding-y: 0;
 }
+header .btn-secondary:hover {
+  color: #748A5B;
+}
 header .dropdown-menu {
   font-family: "Manrope";
   font-size: 14px;
@@ -81,6 +87,9 @@ header .dropdown-menu {
 }
 header .dropdown:hover > .dropdown-menu {
   display: block;
+}
+header .dropdown-item:hover {
+  color: #748A5B;
 }
 header .headerNav {
   display: flex;
@@ -634,7 +643,7 @@ header .headerNav .buttonHeader {
 }
 
 .gallery {
-  padding: 90px 0;
+  padding: 75px 0;
 }
 .gallery .galleryTitle {
   display: flex;
@@ -936,6 +945,7 @@ footer .footerTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 150px;
 }
 footer .footerTop h2 {
   font-family: "Manrope";

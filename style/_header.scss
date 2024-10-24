@@ -19,6 +19,9 @@ header {
             weight: 500;
         }
     }
+    a:hover{
+        color: $main;
+    }
     .logo{
             font: {
                 family: 'Manrope';
@@ -49,6 +52,9 @@ header {
         --bs-btn-padding-x: 0;
         --bs-btn-padding-y: 0;
     }
+    .btn-secondary:hover{
+        color: $main;
+    }
     .dropdown-menu{
         font: {
             family: 'Manrope';
@@ -68,6 +74,9 @@ header {
     .dropdown:hover > .dropdown-menu {
         display: block; 
     } 
+    .dropdown-item:hover{
+        color: $main;
+    }
     .headerNav{
         display: flex;
         flex-direction: row;
