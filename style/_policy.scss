@@ -1,0 +1,55 @@
+.policy{
+    .policyBlocks{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 75px;
+        .policyPathLink{
+            a, span{
+                margin: 0;
+                text-decoration: none;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                color: rgba(129, 126, 126, 1);
+            }
+        }
+        .allPolicy{
+            max-width: 840px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .policyBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                h2{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:600;
+                        size: 32px;
+                    }
+                color: $black;
+                }
+                .policyBlockText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    p{
+                        margin: 0;
+                            font: {
+                                family:'Manrope';
+                                weight:500;
+                                size: 18px;
+                            }
+                        color: $black;
+                        }
+                }
+            }
+        }
+    }
+}

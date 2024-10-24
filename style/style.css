@@ -931,6 +931,7 @@ iframe {
 
 footer {
   padding-top: 75px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -1241,6 +1242,52 @@ footer .footerPolicy a {
   color: rgb(64, 64, 64);
 }
 .rules .rulesBlocks .allrules .rulesBlock p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(64, 64, 64);
+}
+
+.policy .policyBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+.policy .policyBlocks .policyPathLink a, .policy .policyBlocks .policyPathLink span {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(129, 126, 126);
+}
+.policy .policyBlocks .allPolicy {
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.policy .policyBlocks .allPolicy .policyBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.policy .policyBlocks .allPolicy .policyBlock h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 32px;
+  color: rgb(64, 64, 64);
+}
+.policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.policy .policyBlocks .allPolicy .policyBlock .policyBlockText p {
   margin: 0;
   font-family: "Manrope";
   font-weight: 500;
