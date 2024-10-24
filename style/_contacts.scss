@@ -5,7 +5,7 @@
             font: {
                 family:'Manrope';
                 weight:800;
-                size: 2.875rem;
+                size: 46px;
             }
             color: $black;
     }
@@ -14,7 +14,7 @@
             font: {
                 family:'Manrope';
                 weight:600;
-                size: 1.875rem;
+                size: 30px;
             }
             color: $black;
     }
@@ -23,7 +23,7 @@
             font: {
                 family:'Manrope';
                 weight:400;
-                size: 1.125rem;
+                size: 18px;
             }
             color: $black;
     }
@@ -32,7 +32,7 @@
             font: {
                 family:'Manrope';
                 weight:400;
-                size: 1.125rem;
+                size: 18px;
             }
         color: $black;
     }
@@ -40,6 +40,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
     }
     .contactsBlock{
         display: flex;

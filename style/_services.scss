@@ -9,7 +9,7 @@
             font: {
                 family:'Manrope';
                 weight:800;
-                size: 2.875rem;
+                size: 46px;
             }
             color: $black;
             span{
@@ -18,9 +18,10 @@
         }
         .servicesCards{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(418px, auto));
             grid-gap: 20px;
             grid-auto-flow: row;
+            justify-content: center;
             .serviceCard{
                 position: relative;
                 text-decoration: none;
@@ -51,7 +52,7 @@
                     font: {
                         family:'Manrope';
                         weight:700;
-                        size: 1.125rem;
+                        size: 18px;
                     }
                     color: $secondary;
                     background-color: $white;
