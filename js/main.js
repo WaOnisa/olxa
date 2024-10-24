@@ -1,3 +1,5 @@
+// slider
+
 const swiper1 = new Swiper('.swiper1', {
 
 	direction: 'horizontal',
@@ -73,3 +75,5 @@ const swiper4 = new Swiper('.swiper4', {
 		prevEl: '.swiper-button-prev4',
 	},
 })
+
+// ahchor
