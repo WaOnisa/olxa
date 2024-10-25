@@ -16,17 +16,67 @@
             }
         }
     .pageHouseBlockSlideText{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
         gap: 80px;
+        padding-top: 30px;
+        
+
+        .allHouseSlider{
+            
+            
+            .houseBlock{ 
+                position: absolute;
+                
+                picture{
+                    
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1; 
+                }
+                img{
+                    object-fit: cover;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+        }
+
+        .allHouseText{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
 
         .houseText{
             display: flex;
             flex-direction: column;
             align-items: stretch;
-
-            
+            gap: 24px;
+            h1{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:800;
+                        size: 46px;
+                    }
+                color: $black;
+            }
+            p{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                color: $black;
+            }
         }
         .housePrices{
             display: flex;
@@ -37,7 +87,35 @@
                 display: flex;
                 flex-direction: row;
                 background-color: $darkGrey;
-                    
+                border-radius: 10px;
+                align-items: flex-start;
+                padding: 16px 22px;
+                gap: 10px;
+                flex-grow: 1;
+
+                .housePriceText{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        margin: 0;
+                            font: {
+                                family:'Manrope';
+                                weight:600;
+                                size: 18px;
+                            }
+                        color: $secondary;
+                    }
+                    span{
+                        margin: 0;
+                            font: {
+                                family:'Manrope';
+                                weight:700;
+                                size: 22px;
+                            }
+                        color: $black;
+                    }
+
+                }
             }
         }
     }

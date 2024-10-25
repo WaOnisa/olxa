@@ -76,4 +76,15 @@ const swiper4 = new Swiper('.swiper4', {
 	},
 })
 
+const swiper5 = new Swiper('.swiper5', {
+	direction: 'horizontal',
+	loop: true,
+
+
+	navigation: {
+		nextEl: '.swiper-button-next5',
+		prevEl: '.swiper-button-prev5',
+	},
+})
+
 // ahchor
