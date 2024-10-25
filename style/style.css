@@ -621,12 +621,17 @@ header .headerNav .buttonHeader {
   font-size: 18px;
   color: #748A5B;
 }
+.advantages .blockSlide picture {
+  position: relative;
+  height: 320px;
+}
 .advantages .blockSlide img {
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
   border-radius: 24px;
   width: 100%;
-  height: 320px;
+  height: 100%;
 }
 .advantages .blockSlide .advantagesSliderText {
   display: flex;
