@@ -8,6 +8,26 @@
             }
         color: $black;
     }
+
+    @media (max-width: 1000px) {
+        h1{
+        font: {
+                family:'Manrope';
+                weight:700;
+                size: 30px;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        h1{
+        font: {
+                family:'Manrope';
+                weight:700;
+                size: 26px;
+            }
+        }
+    }
+
     .newsPathLink{
         a, span{
             margin: 0;
@@ -70,6 +90,22 @@
                     color: rgba(144, 142, 142, 1);
                 }
             }
+        }
+    }
+    @media (max-width: 1000px) {
+        .allNewsCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    
+        }
+    }
+    @media (max-width: 576px) {
+        .allNewsCards{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    
         }
     }
 
