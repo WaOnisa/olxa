@@ -16,6 +16,11 @@
     .blockAdvantages{
         padding: 90px 0;
         position: relative;
+        .blockAdvantage{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
     }
     h1{
         margin: 0;
@@ -24,7 +29,8 @@
             weight:800;
             size: 46px;
         }
-        color: $black;
+        color: $white;
+        line-height: 55.2px;
         span{
             color: $yellow;
         }
@@ -34,7 +40,7 @@
         justify-content: flex-start;
         position: relative;
         gap: 16px;
-        padding: 40px 0;
+        top: 0;
         .swiper-pagination-bullet{
             opacity: 1;
             display: flex;
@@ -55,6 +61,7 @@
                     size: 18px;
                 }
                 color: $main;
+                line-height: 24.3px;
             }
         }
         .swiper-pagination-bullet-active {
@@ -85,6 +92,7 @@
                 size: 36px;
             }
             color: $main;
+            line-height: 48.6px;
         }
         p{
             margin: 0;
@@ -94,6 +102,7 @@
                 size: 18px;
             }
             color: $main;
+            line-height: 27px;
         }
         picture{
             position: relative;

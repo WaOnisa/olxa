@@ -1,12 +1,12 @@
 // slider
 
 const swiper1 = new Swiper('.swiper1', {
-
 	direction: 'horizontal',
 	loop: true,
 
 	pagination: {
 		el: '.swiper-pagination1',
+		clickable: true,
 	},
 
 	navigation: {
@@ -52,6 +52,7 @@ const swiper3 = new Swiper('.swiper3', {
 
 	pagination: {
 		el: '.swiper-pagination3',
+		clickable: true,
 	},
 
 	navigation: {
@@ -68,6 +69,7 @@ const swiper4 = new Swiper('.swiper4', {
 
 	pagination: {
 		el: '.swiper-pagination4',
+		clickable: true,
 	},
 
 	navigation: {
