@@ -5,8 +5,9 @@ footer{
     flex-direction: column;
     .footerBlock{
         display: flex;
-        gap: 60px;
+        
         flex-direction: column;
+        justify-content: space-between;
         border-top: 2px solid $main;
         padding-top: 60px;
     }
@@ -14,7 +15,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 150px;
+        
         h2{
             font: {
                     family: 'Manrope';
@@ -28,7 +29,7 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            gap: 201.5px;
+            gap: 69px;
             
             .footerTopContacts{
                display: flex;
@@ -62,6 +63,11 @@ footer{
                     display: flex;
                     gap: 16px;
                }
+            }
+            .footerContactsButtons{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
             }
             .footerTopInfBlock{
                 display: flex;
@@ -112,34 +118,28 @@ footer{
                     }
                     color: $black;
                     margin: 0;
-                a{
-                    font: {
-                        family: 'Manrope';
-                        size: 16px;
-                        weight: 600;
-                        }
-                        color: $black;
-                        margin: 0;
-                        text-decoration: none;
-                }   
-                span{
-                    font: {
-                        family: 'Manrope';
-                        size: 16px;
-                        weight: 600;
-                        }
-                        color: $black;
-                        margin: 0;
-                } 
         }
         a{
             font: {
-                        family: 'Manrope';
-                        size: 16px;
-                        weight: 600;
-                    }
-                    color: $black;
-                    margin: 0;
+                family: 'Manrope';
+                size: 16px;
+                weight: 600;
+                }
+            color: $black;
+            margin: 0;
         }
+        span{
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 600;
+                }
+            color: $black;
+            margin: 0;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+            }               
+        } 
     }
 }
