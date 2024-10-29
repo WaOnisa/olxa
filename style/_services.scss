@@ -84,5 +84,17 @@
                 }
             }
         }
+        @media (max-width: 1000px) {
+            .servicesCards{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 236px);
+            }
+        }
+        @media (max-width: 576px) {
+            .servicesCards{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 236px);
+            }
+        }
     }
 }

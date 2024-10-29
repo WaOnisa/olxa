@@ -14,6 +14,30 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        .housesTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .housesBtn{
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            .housesBtn{
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+            }
+            .housesTitle{
+                button{
+                    display: none;
+                }
+            }
+        }
     }
     .housesCardsBlock{
         display: grid;
@@ -100,5 +124,17 @@
             }
         }
     
+    }
+    @media (max-width: 1000px) {
+        .housesCardsBlock{
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+    }
+    @media (max-width: 576px) {
+        .housesCardsBlock{
+            grid-template-columns: 1fr;
+            
+        }
     }
 }
