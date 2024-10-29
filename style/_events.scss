@@ -37,13 +37,7 @@
         }
 
         .eventBtn{
-            display: flex;
-            align-items: stretch;
-            flex-direction: column;
-            button{
-                display: none;
-            }
-            
+            display: none;
         }
 
         @media (max-width: 1000px) {
@@ -62,12 +56,10 @@
                     display: none;
                 }
             }
-            .eventBtn{
-            
-            button{
-                
-                display: block;
-            }
+            .eventBtn{ 
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
             }
         }
 
