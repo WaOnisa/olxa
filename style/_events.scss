@@ -8,6 +8,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             h1{
                 margin: 0;
                 font: {
@@ -33,99 +34,49 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
+
+        .eventBtn{
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            button{
+                display: none;
+            }
+            
+        }
+
+        @media (max-width: 1000px) {
+            .eventsCards{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .eventsTitle{
+                button{
+                    display: none;
+                }
+            }
+            .eventBtn{
+            
+            button{
+                
+                display: block;
+            }
+            }
+        }
+
         .eventCard{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: relative;
-            overflow: hidden;
-                border-radius: 20px;
-                background-color: $main;
-
-                .eventCardText{
-                    padding-top: 40.53px;
-                    padding-left: 20.46px;
-                    padding-bottom: 172.47px;
-                    z-index: 2;
-                    h2{
-                        background-color: $white;
-                        margin: 0;
-                        padding: 10px 24px;
-                        border-radius: 14px;
-                        font: {
-                            family:'Manrope';
-                            weight:700;
-                            size: 20px;
-                        }
-                        color: $secondary;
-                        line-height: 27px;
-                    }
-                }
-
-                .eventCardPictures{
-                    .eventCardPictureDrink{
-                        position: absolute;
-                        top: 58px;
-                        right: 52.62px;
-                        object-fit: cover;
-                    }
-                    .eventCardPictureVector1{
-                        position: absolute;
-                        right: 0;
-                        object-fit: cover;
-                    }
-                    .eventCardPictureVector2{
-                        position: absolute;
-                        left: 0;
-                        object-fit: cover;
-                    }
-                    .eventCardPictureAcorn1{
-                        position: absolute;
-                        top: 180.22px;
-                        left: 41.63px;
-                        object-fit: cover;
-                    }
-                    .eventCardPictureAcorn2{
-                        position: absolute;
-                        top: 190px;
-                        left: 0;
-                        object-fit: cover;
-                    }
-                    .eventCardPictureVector3{
-                        position: absolute;
-                        bottom: 0;
-                        left: 126px;
-                        object-fit: cover;
-                    }
+            border-radius: 20px;
+        img{
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
                 }
         }
-        .eventCard2{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: relative;
-                border-radius: 20px;
-                background-color: $yellow;
-
-                .eventCardText{
-                    padding: 40px 20px;
-                    h2{
-                        background-color: $main;
-                        margin: 0;
-                        padding: 10px 24px;
-                        border-radius: 14px;
-                        font: {
-                            family:'Manrope';
-                            weight:700;
-                            size: 20px;
-                        }
-                        color: $white;
-                    }
-                }
-
-                .eventCardPictures{
-                    
-                }
-        }
+        
     }
 }

@@ -5,7 +5,7 @@ footer{
     flex-direction: column;
     .footerBlock{
         display: flex;
-        
+        gap: 60px;
         flex-direction: column;
         justify-content: space-between;
         border-top: 2px solid $main;
@@ -15,16 +15,8 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
         
-        h2{
-            font: {
-                    family: 'Manrope';
-                    size: 40px;
-                    weight: 800;
-                }
-                color: $black;
-                margin: 0;
-        }
         .footerTopInf{
             display: flex;
             flex-direction: row;
