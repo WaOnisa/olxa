@@ -478,6 +478,9 @@ header .headerNav .buttonHeader {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .events .eventsBlock .eventsTitle {
+    gap: 20px;
+  }
 }
 @media (max-width: 576px) {
   .events .eventsBlock .eventsTitle button {

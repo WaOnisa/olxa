@@ -9,6 +9,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            
             h1{
                 margin: 0;
                 font: {
@@ -49,6 +50,9 @@
             .eventsCards{
                 display: grid;
                 grid-template-columns: 1fr;
+            }
+            .eventsTitle{
+                gap: 20px;
             }
         }
 
