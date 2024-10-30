@@ -1674,27 +1674,20 @@ footer .footerTop {
   align-items: flex-start;
 }
 footer .footerTop .footerTopInf {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 69px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 52px;
 }
 footer .footerTop .footerTopInf .footerTopContacts {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-footer .footerTop .footerTopInf .footerTopContacts a {
-  font-family: "Manrope";
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(64, 64, 64);
-  margin: 0;
-}
 footer .footerTop .footerTopInf .footerTopContacts div {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  align-items: flex-start;
 }
 footer .footerTop .footerTopInf .footerTopContacts div p {
   font-family: "Manrope";
@@ -1702,6 +1695,7 @@ footer .footerTop .footerTopInf .footerTopContacts div p {
   font-weight: 400;
   color: rgb(64, 64, 64);
   margin: 0;
+  line-height: 21.6px;
 }
 footer .footerTop .footerTopInf .footerTopContacts .footerContactsButton {
   display: flex;
@@ -1723,6 +1717,7 @@ footer .footerTop .footerTopInf h3 {
   font-weight: 700;
   color: rgb(64, 64, 64);
   margin: 0;
+  line-height: 24.59px;
 }
 footer .footerTop .footerTopInf ul {
   display: flex;
@@ -1738,6 +1733,7 @@ footer .footerTop .footerTopInf ul li {
   font-weight: 500;
   color: rgb(64, 64, 64);
   margin: 0;
+  line-height: 21.86px;
 }
 footer .footerTop .footerTopInf ul li a {
   text-decoration: none;
@@ -1754,6 +1750,7 @@ footer .footerPolicy p {
   font-weight: 600;
   color: rgb(64, 64, 64);
   margin: 0;
+  line-height: 21px;
 }
 footer .footerPolicy a {
   font-family: "Manrope";
@@ -1761,6 +1758,7 @@ footer .footerPolicy a {
   font-weight: 600;
   color: rgb(64, 64, 64);
   margin: 0;
+  line-height: 24.8px;
 }
 footer .footerPolicy span {
   font-family: "Manrope";
@@ -1774,6 +1772,147 @@ footer .footerPolicy span a {
   text-decoration: none;
 }
 
+@media (max-width: 1400px) {
+  footer {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  footer .footerBlock .footerTop {
+    gap: 60px;
+  }
+  footer .footerBlock .footerTop .footerTopContacts div p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+  footer .footerBlock .footerTopInf {
+    gap: 40px;
+  }
+  footer .footerBlock .footerTopInf h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.59px;
+  }
+  footer .footerBlock .footerTopInf ul {
+    gap: 10px;
+  }
+  footer .footerBlock .footerTopInf ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+  }
+  footer .footerBlock .footerPolicy p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  footer .footerBlock .footerPolicy a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.7px;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  footer .footerBlock {
+    padding-top: 30px;
+  }
+  footer .footerBlock .footerTop {
+    gap: 30px;
+    flex-direction: column;
+  }
+  footer .footerBlock .footerTop .footerTopInfBlock {
+    gap: 12px;
+  }
+  footer .footerBlock .footerTop .footerTopContacts p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+  }
+  footer .footerBlock .footerTopInf {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+  }
+  footer .footerBlock .footerTopInf h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.86px;
+  }
+  footer .footerBlock .footerTopInf ul {
+    gap: 10px;
+  }
+  footer .footerBlock .footerTopInf ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.86px;
+  }
+  footer .footerBlock .footerPolicy div p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  footer .footerBlock .footerPolicy div a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.7px;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  footer .footerBlock {
+    padding-top: 30px;
+  }
+  footer .footerBlock .footerTop {
+    gap: 30px;
+    flex-direction: column;
+  }
+  footer .footerBlock .footerTop .footerTopContacts p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+  footer .footerBlock .footerTopInf {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  footer .footerBlock .footerTopInf .footerTopInfBlock {
+    gap: 12px;
+  }
+  footer .footerBlock .footerTopInf .footerContactsButtons {
+    display: flex;
+    max-width: 196px;
+  }
+  footer .footerBlock .footerTopInf h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.86px;
+  }
+  footer .footerBlock .footerTopInf ul {
+    gap: 10px;
+  }
+  footer .footerBlock .footerTopInf ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+  }
+  footer .footerBlock .footerPolicy div p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  footer .footerBlock .footerPolicy div a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.7px;
+  }
+}
 .news h1 {
   margin: 0;
   font-family: "Manrope";

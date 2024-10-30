@@ -18,36 +18,30 @@ footer{
         align-items: flex-start;
         
         .footerTopInf{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 69px;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 52px;
             
             .footerTopContacts{
-               display: flex;
-               flex-direction: column; 
-               gap: 14px;
-               a{
-                font: {
+                display: flex;
+                flex-direction: column; 
+                gap: 14px;
+                
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    align-items: flex-start;
+                p{
+                    font: {
                         family: 'Manrope';
                         size: 16px;
-                        weight: 500;
+                        weight: 400;
                     }
                     color: $black;
                     margin: 0;
-               }
-               div{
-                display: flex;
-                flex-direction: row;
-                gap: 8px;
-                p{
-                    font: {
-                    family: 'Manrope';
-                    size: 16px;
-                    weight: 400;
-                }
-                color: $black;
-                margin: 0;
+                    line-height: 21.6px;
                 }
                 
                }
@@ -74,6 +68,7 @@ footer{
                 }
                 color: $black;
                 margin: 0;
+                line-height: 24.59px;
             }
             ul{
                 display: flex;
@@ -90,6 +85,7 @@ footer{
                     }
                     color: $black;
                     margin: 0;
+                    line-height: 21.86px;
                     a{
                         text-decoration: none;
                         color: $black;
@@ -104,12 +100,13 @@ footer{
         justify-content: space-between;
         p{
             font: {
-                        family: 'Manrope';
-                        size: 14px;
-                        weight: 600;
-                    }
-                    color: $black;
-                    margin: 0;
+                family: 'Manrope';
+                size: 14px;
+                weight: 600;
+                }
+            color: $black;
+            margin: 0;
+            line-height: 21px;
         }
         a{
             font: {
@@ -119,6 +116,7 @@ footer{
                 }
             color: $black;
             margin: 0;
+            line-height: 24.8px;
         }
         span{
             font: {
@@ -133,5 +131,198 @@ footer{
                 text-decoration: none;
             }               
         } 
+    }
+}
+
+@media (max-width: 1400px) {
+    footer{
+        padding-top: 65px;
+        padding-bottom: 60px;
+        .footerBlock{
+            .footerTop{
+                gap: 60px;
+                .footerTopContacts{
+                    div{
+                        p{
+                            font: {
+                                size: 16px;
+                                weight: 400;
+                            }
+                            line-height: 21.6px;
+                        }
+                    }
+                }
+            }
+            .footerTopInf{
+                gap: 40px;
+                h3{
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    }
+                    line-height: 24.59px;
+                }
+                ul{
+                    gap: 10px;
+                    li{
+                        font: {
+                            size: 16px;
+                            weight: 500;
+                        }
+                        line-height: 21.86px;
+                    }
+                }
+            }
+            .footerPolicy{
+                p{
+                    font: {
+                        size: 14px;
+                        weight: 600;
+                        }
+                    line-height: 21px;
+                }
+                a{
+                    font: {
+                        size: 16px;
+                        weight: 600;
+                        }
+                    line-height: 21.7px;
+                } 
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    footer{
+        padding-top: 45px;
+        padding-bottom: 60px;
+        .footerBlock{
+            padding-top: 30px;
+            .footerTop{
+                gap: 30px;
+                flex-direction: column;
+                .footerTopInfBlock{
+                    gap: 12px;
+                }
+                .footerTopContacts{
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 19.12px;
+                    }
+                }
+            }
+            .footerTopInf{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                row-gap: 30px;
+                h3{
+                    font: {
+                        size: 16px;
+                        weight: 700;
+                    }
+                    line-height: 21.86px;
+                }
+                ul{
+                    gap: 10px;
+                    li{ 
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 21.86px;
+                    }
+                }
+            }
+            .footerPolicy{
+                div{
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 21px;
+                    }
+                    a{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 21.7px;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer{
+        padding-top: 30px;
+        padding-bottom: 60px;
+        .footerBlock{
+            padding-top: 30px;
+            .footerTop{
+                gap: 30px;
+                flex-direction: column;
+                .footerTopContacts{
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 400;
+                        }
+                        line-height: 19.6px;
+                    }
+                }
+            }
+            .footerTopInf{
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+                .footerTopInfBlock{
+                    gap: 12px;
+                }
+                .footerContactsButtons{
+                    display: flex;    
+                    max-width: 196px;
+                }
+                h3{
+                    font: {
+                        size: 14px;
+                        weight: 700;
+                    }
+                    line-height: 21.86px;
+                }
+                ul{
+                    gap: 10px;
+                    li{ 
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 19.12px;
+                    }
+                }
+            }
+            .footerPolicy{
+                div{
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 21px;
+                    }
+                    a{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 21.7px;
+                    }
+                } 
+            }
+        }
     }
 }
