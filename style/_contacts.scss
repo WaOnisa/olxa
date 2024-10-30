@@ -45,7 +45,7 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 20px;
     }
     .contactsBlock{
         display: flex;
@@ -63,7 +63,7 @@
                 .contactsTextTopMaps{
                     display: flex;
                     flex-direction: row;
-                    gap: 16px;
+                    gap: 26px;
                 }
             }
             .contactsTextBottom{
@@ -82,8 +82,131 @@
 iframe {
     border-radius: 24px;
     overflow: hidden;
-    max-width: 790px;
+    max-width: 1000px;
 }
 .contactsMap{
     flex-grow: 2 !important;
+}
+
+@media (max-width: 1400px) {
+    .contacts{
+        padding: 65px 0;
+        h2{
+            font: {
+                weight:600;
+                size: 30px;
+            }
+            line-height: 40.5px;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 22px;
+            }
+            line-height: 29.7px;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 22px;
+            }
+            line-height: 29.7px;
+        }
+        .contactsBlock{
+            gap: 30px;
+        }
+        .contactsText{
+           gap: 30px; 
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .contacts{
+        padding: 65px 0;
+        h1{
+            font: {
+                weight:700;
+                size: 30px;
+            }
+            line-height: 40.5px;
+        }
+        h2{
+            font: {
+                weight:600;
+                size: 24px;
+            }
+            line-height: 32.4px;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 21.6px;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 21.6px;
+        }
+        .contactsBlocks{
+            flex-direction: column;
+        }
+        .contactsBlock{
+            gap: 20px;
+        }
+        .contactsText{
+           gap: 20px; 
+           .contactsTextTop, .contactsTextBottom{
+                gap: 14px;
+           }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contacts{
+        padding: 65px 0;
+        h1{
+            font: {
+                weight:700;
+                size: 26px;
+            }
+            line-height: 35.1px;
+        }
+        h2{
+            font: {
+                weight:500;
+                size: 18px;
+            }
+            line-height: 24.3px;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 21.6px;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 21.6px;
+        }
+        .contactsBlocks{
+            flex-direction: column;
+        }
+        .contactsBlock{
+            gap: 20px;
+        }
+        .contactsText{
+           gap: 20px; 
+           .contactsTextTop, .contactsTextBottom{
+                gap: 10px;
+           }
+        }
+    }
 }

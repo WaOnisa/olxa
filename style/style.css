@@ -1284,7 +1284,7 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .reviews .blockReviews {
   position: relative;
   padding-top: 90px;
-  padding-bottom: 76px;
+  padding-bottom: 90px;
 }
 .reviews .reviewsBack {
   position: absolute;
@@ -1351,6 +1351,7 @@ header .headerNav .buttonHeader .btnMenu1000 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 14px;
 }
 .reviews .reviewTopUser p {
@@ -1433,6 +1434,9 @@ header .headerNav .buttonHeader .btnMenu1000 {
   .reviews {
     padding: 45px 0;
   }
+  .reviews .blockReviews {
+    padding: 60px 0;
+  }
   .reviews .reviewsTitle h1 {
     font-weight: 700;
     font-size: 30px;
@@ -1446,6 +1450,10 @@ header .headerNav .buttonHeader .btnMenu1000 {
     font-size: 14px;
     line-height: 19.04px;
   }
+  .reviews .reviewTopUser img {
+    width: 30px;
+    height: 30px;
+  }
   .reviews .reviewTopUser .reviewStar img {
     width: 20px;
     height: 20px;
@@ -1454,6 +1462,11 @@ header .headerNav .buttonHeader .btnMenu1000 {
     font-weight: 400;
     font-size: 14px;
     line-height: 21.7px;
+  }
+}
+@media (max-width: 576px) {
+  .blockReviews {
+    padding: 40px 0;
   }
 }
 .contacts {
@@ -1496,7 +1509,7 @@ header .headerNav .buttonHeader .btnMenu1000 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 .contacts .contactsBlock {
   display: flex;
@@ -1517,7 +1530,7 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .contacts .contactsBlock .contactsText .contactsTextTop .contactsTextTopMaps {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 26px;
 }
 .contacts .contactsBlock .contactsText .contactsTextBottom {
   display: flex;
@@ -1533,13 +1546,113 @@ header .headerNav .buttonHeader .btnMenu1000 {
 iframe {
   border-radius: 24px;
   overflow: hidden;
-  max-width: 790px;
+  max-width: 1000px;
 }
 
 .contactsMap {
   flex-grow: 2 !important;
 }
 
+@media (max-width: 1400px) {
+  .contacts {
+    padding: 65px 0;
+  }
+  .contacts h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+  .contacts p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29.7px;
+  }
+  .contacts a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29.7px;
+  }
+  .contacts .contactsBlock {
+    gap: 30px;
+  }
+  .contacts .contactsText {
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .contacts {
+    padding: 65px 0;
+  }
+  .contacts h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+  .contacts h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+  .contacts p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+  .contacts a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+  .contacts .contactsBlocks {
+    flex-direction: column;
+  }
+  .contacts .contactsBlock {
+    gap: 20px;
+  }
+  .contacts .contactsText {
+    gap: 20px;
+  }
+  .contacts .contactsText .contactsTextTop, .contacts .contactsText .contactsTextBottom {
+    gap: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts {
+    padding: 65px 0;
+  }
+  .contacts h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.1px;
+  }
+  .contacts h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+  .contacts p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+  .contacts a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+  .contacts .contactsBlocks {
+    flex-direction: column;
+  }
+  .contacts .contactsBlock {
+    gap: 20px;
+  }
+  .contacts .contactsText {
+    gap: 20px;
+  }
+  .contacts .contactsText .contactsTextTop, .contacts .contactsText .contactsTextBottom {
+    gap: 10px;
+  }
+}
 footer {
   padding-top: 75px;
   padding-bottom: 40px;
