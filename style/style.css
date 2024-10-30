@@ -28,7 +28,22 @@ button:hover {
   background-color: #3D5E38;
   border: 1px solid #3D5E38;
 }
+button:hover svg path {
+  stroke: #FFFFFF;
+}
 
+@media (max-width: 1400px) {
+  button {
+    font-weight: 700;
+  }
+}
+@media (max-width: 576px) {
+  button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+}
 header {
   padding: 20px 0px;
   position: sticky;
@@ -403,6 +418,13 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .houses .housesBlock .housesBtn {
   display: none;
 }
+@media (max-width: 1000px) {
+  .houses .housesBlock .housesTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+}
 @media (max-width: 576px) {
   .houses .housesBlock .housesBtn {
     display: flex;
@@ -456,6 +478,7 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .houses .housesCardsBlock .houseCard .houseCardPeople {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 10px 22px;
   border-radius: 10px;
   gap: 10px;
@@ -490,17 +513,112 @@ header .headerNav .buttonHeader .btnMenu1000 {
   align-items: stretch;
   gap: 12px;
 }
+@media (max-width: 1400px) {
+  .houses .housesCardsBlock h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35.1px;
+  }
+  .houses .housesCardsBlock p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+  .houses .housesCardsBlock span {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.52px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardInfo {
+    padding: 20px 24px 30px 24px;
+    gap: 20px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardPeople {
+    padding: 8px 16px;
+  }
+}
 @media (max-width: 1000px) {
   .houses .housesCardsBlock {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .houses .housesCardsBlock h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .houses .housesCardsBlock p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16.39px;
+  }
+  .houses .housesCardsBlock span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
+  .houses .housesCardsBlock .housesStats svg {
+    width: 36px;
+    height: 36px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardInfo {
+    padding: 20px 18px 20px 18px;
+    gap: 14px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardInfo .houseCardInfoTop {
+    gap: 10px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardInfo .houseCardInfoBottom {
+    gap: 10px;
+  }
+  .houses .housesCardsBlock .houseCard .houseCardPeople {
+    padding: 6px 10px;
   }
 }
 @media (max-width: 576px) {
   .houses .housesCardsBlock {
     grid-template-columns: 1fr;
   }
+  .houses .housesCardsBlock h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .houses .housesCardsBlock p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16.39px;
+  }
+  .houses .housesCardsBlock span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
+  .houses .housesCardsBlock .houseCardPeople {
+    padding: 6px 10px;
+  }
 }
 
+@media (max-width: 1400px) {
+  .houses {
+    padding: 65px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .houses {
+    padding: 45px 0;
+  }
+  .houses .housesBlock {
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .houses {
+    padding: 30px 0;
+  }
+  .houses .housesBlock {
+    gap: 25px;
+  }
+}
 .events {
   padding: 75px 0;
 }
@@ -590,6 +708,24 @@ header .headerNav .buttonHeader .btnMenu1000 {
   border-radius: 20px;
 }
 
+@media (max-width: 1400px) {
+  .events {
+    padding: 65px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .events {
+    padding: 45px 0;
+  }
+  .events .eventsBlock {
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .events {
+    padding: 30px 0;
+  }
+}
 .services {
   padding: 75px 0;
 }

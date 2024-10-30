@@ -26,6 +26,18 @@
             display: none;
         }
 
+        @media (max-width: 1000px) {
+            .housesTitle{
+                h1{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 40.5px;
+                }
+            }
+        }
+
         @media (max-width: 576px) {
             .housesBtn{
                 display: flex;
@@ -88,6 +100,7 @@
             .houseCardPeople{
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 padding: 10px 22px;
                 border-radius: 10px;
                 gap: 10px;
@@ -125,16 +138,162 @@
         }
     
     }
+    @media (max-width: 1400px) {
+        .housesCardsBlock{
+            h2{
+                font: {
+                    weight:700;
+                    size: 24px;
+                }
+                line-height: 35.1px;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 14px;
+                }
+                line-height: 19.12px;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 35.52px;
+            }
+            
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 24px 30px 24px;
+                    gap: 20px;
+                }
+                .houseCardPeople{
+                    padding: 8px 16px;
+                }
+            }
+            
+
+            
+
+        }
+        
+    }
+
+    
+
     @media (max-width: 1000px) {
         .housesCardsBlock{
             grid-template-columns: repeat(2, 1fr);
             
+            h2{
+                font: {
+                    weight:700;
+                    size: 20px;
+                }
+                line-height: 27px;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 12px;
+                }
+                line-height: 16.39px;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 22px;
+                }
+                line-height: 30.05px;
+            }
+            
+            .housesStats{
+                svg{
+                    width: 36px;
+                    height: 36px;
+                }
+
+            }
+
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 18px 20px 18px;
+                    gap: 14px;
+                
+                    .houseCardInfoTop{
+                        gap: 10px;
+                    }
+                    .houseCardInfoBottom{
+                        gap: 10px;
+                    }
+                }
+
+                .houseCardPeople{
+                    padding: 6px 10px;
+                }
+            }
+
         }
     }
+
     @media (max-width: 576px) {
         .housesCardsBlock{
             grid-template-columns: 1fr;
             
+            h2{
+                font: {
+                    weight:700;
+                    size: 20px;
+                }
+                line-height: 27px;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 12px;
+                }
+                line-height: 16.39px;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 22px;
+                }
+                line-height: 30.05px;
+            }
+            
+            .houseCardPeople{
+                padding: 6px 10px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .houses{
+        padding: 65px 0;
+    }
+}
+@media (max-width: 1000px) {
+    .houses{
+        padding: 45px 0;
+        .housesBlock{
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .houses{
+        padding: 30px 0;
+        .housesBlock{
+            gap: 25px;
         }
     }
 }
