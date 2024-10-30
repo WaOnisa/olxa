@@ -1,12 +1,12 @@
 .mainSlider{
     padding-bottom: 45px;
 
-    .swiper {
-  display: flex;
-  width: 100%;
-  height: 550px;
-  margin: 0;
-  border-radius: 24px;
+.swiper {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    border-radius: 24px;
 }
 .swiper-slide{
     display: flex;
@@ -83,13 +83,12 @@
         height: 100%;
         background: linear-gradient(to left, #00000000, #000000CC);
     }
-    div{
+    .mainSliderText{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         max-width: 673px;
-        
 
         h1{
             font: {
@@ -118,15 +117,99 @@
 @media (max-width: 1400px) {
     .mainSlider{
         padding-bottom: 35px;
+        .swiper {
+            height: 480px;
+        }
+        .swiper-button-next{
+            right:12px;
+        }
+        .swiper-button-prev{
+            right:12px;
+        }
+        .swiper-pagination{
+            padding-bottom: 40px;
+            padding-left: 88px;
+        }
+        .swiper-slide{
+            padding: 80px 88px;
+        }
     }
 }
 @media (max-width: 1000px) {
     .mainSlider{
         padding-bottom: 35px;
+        .swiper {
+            height: 440px;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+        .swiper-button-prev{
+            display: none;
+        }
+        .swiper-pagination{
+            padding-bottom: 34px;
+            padding-left: 30px;
+        }
+        .swiper-pagination-bullet{
+            width: 40px;
+        }
+        .swiper-slide{
+            padding: 78px 30px;
+            .mainSliderText{
+                gap: 20px;
+                max-width: 392px;
+                h1{
+                    font: {
+                        size:32px;
+                        weight: 700;
+                    }
+                    line-height: 41.6px;
+                }
+                p{
+                    font: {
+                        size: 16px;
+                        weight: 400;
+                    }
+                    line-height: 21.6px;
+                }
+            }
+        }
     }
 }
 @media (max-width: 576px) {
     .mainSlider{
         padding-bottom: 30px; 
+        .swiper {
+            height: 330px;
+        }
+        .swiper-pagination{
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+        .swiper-pagination-bullet{
+            width: 25px;
+        }
+        .swiper-slide{
+            padding: 64px 30px;
+            .mainSliderText{
+                gap: 14px;
+                max-width: 240px;
+                h1{
+                    font: {
+                        size:22px;
+                        weight: 700;
+                    }
+                    line-height: 28.6px;
+                }
+                p{
+                    font: {
+                        size: 12px;
+                        weight: 400;
+                    }
+                    line-height: 16.2px;
+                }
+            }
+        }
     }
 }
