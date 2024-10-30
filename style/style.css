@@ -125,16 +125,6 @@ header .headerNav nav {
   align-items: flex-end;
   gap: 22px;
 }
-@media (max-width: 1400px) {
-  header .headerNav nav .nav1400 {
-    display: none;
-  }
-}
-@media (max-width: 1000px) {
-  header .headerNav nav .nav1000 {
-    display: none;
-  }
-}
 header .headerNav .buttonHeader {
   display: flex;
   gap: 14px;
@@ -145,22 +135,6 @@ header .headerNav .buttonHeader .btn1000 {
 }
 header .headerNav .buttonHeader .btnMenu1000 {
   display: none;
-}
-@media (max-width: 1400px) {
-  header .headerNav .buttonHeader .btn1000 {
-    display: block;
-  }
-  header .headerNav .buttonHeader .btnMenu1000 {
-    display: block;
-  }
-  header .headerNav .buttonHeader .btn1400 {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  header .headerNav .buttonHeader .btnMenu576 {
-    display: none;
-  }
 }
 
 .mainSlider {

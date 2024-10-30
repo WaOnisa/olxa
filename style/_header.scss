@@ -85,17 +85,6 @@ header {
             flex-direction: row;
             align-items: flex-end;
             gap: 22px;
-
-            @media (max-width: 1400px) {
-                .nav1400{
-                    display: none;
-                }
-            }
-            @media (max-width: 1000px) {
-                .nav1000{
-                    display: none;
-                }
-            }
         }
         .buttonHeader{
             display: flex;
@@ -108,25 +97,19 @@ header {
             .btnMenu1000{
                 display: none;
             }
-
-            @media (max-width: 1400px) {
-                .btn1000{
-                display: block;
-                }
-                .btnMenu1000{
-                display: block;
-                }
-                .btn1400{
-                display: none;
-                }
-            }
-
-            @media (max-width: 576px) {
-                .btnMenu576{
-                display: none;
-                }
-            }
-
         }
     }
+}
+
+
+@media (max-width: 1400px) {
+    header{
+        
+    }
+}
+@media (max-width: 1000px) {
+    
+}
+@media (max-width: 576px) {
+    
 }
