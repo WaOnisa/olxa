@@ -18,6 +18,7 @@ const swiper1 = new Swiper('.swiper1', {
 const swiper2 = new Swiper('.swiper2', {
 	direction: 'horizontal',
 	loop: true,
+	spaceBetween: 20,
 
 	pagination: {
 		el: '.swiper-pagination2',
@@ -45,10 +46,27 @@ const swiper2 = new Swiper('.swiper2', {
 
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
-	slidesPerView: 2,
+	
 	centeredSlides: true,
 	spaceBetween: 20,
 	loop: true,
+
+	breakpoints: {
+		320: {
+		slidesPerView: 1,
+		},
+		
+		576: {
+		slidesPerView: 1.2,
+		},
+		
+		1000: {
+		slidesPerView: 1.5,
+		},
+		1400: {
+		slidesPerView: 2,
+		}
+	},
 
 	pagination: {
 		el: '.swiper-pagination3',
@@ -63,9 +81,25 @@ const swiper3 = new Swiper('.swiper3', {
 
 const swiper4 = new Swiper('.swiper4', {
 	direction: 'horizontal',
-	slidesPerView: 3,
 	spaceBetween: 20,
 	loop: true,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		576: {
+			slidesPerView: 2,
+		},
+
+		1000: {
+			slidesPerView: 2,
+		},
+		1400: {
+			slidesPerView: 3,
+		},
+	},
 
 	pagination: {
 		el: '.swiper-pagination4',

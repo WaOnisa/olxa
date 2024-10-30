@@ -1,0 +1,85 @@
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 40px 40px 40px;
+    gap: 20px;
+    .titleModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    p{
+        margin: 0;
+        font: {
+            family: 'Manrope';
+            size: 18px;
+            weight: 400;
+        }
+        line-height: 27px;
+    }
+    .policyModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 14px;
+                weight: 400;
+            }
+        a{
+        margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 14px;
+                weight: 400;
+            }
+            color: black;
+            line-height: 18.9px;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 12px;
+        }
+        label{
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 500;
+            }
+            line-height: 21.6px;
+        }
+        input{
+            background-color: rgba(238, 238, 238, 1);
+            border: 0;
+            padding: 14px;
+            border-radius: 8px;
+        }
+        input::placeholder{
+            color: rgba(129, 126, 126, 1);
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 500;
+            }
+            line-height: 21.6px;
+        }
+    }
+}

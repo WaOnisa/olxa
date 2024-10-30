@@ -163,83 +163,6 @@ header .headerNav .buttonHeader .btnMenu1000 {
   }
 }
 
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 0 40px 40px 40px;
-  gap: 20px;
-}
-.modal-body .titleModal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.modal-body .titleModal div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.modal-body p {
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 18px;
-  font-weight: 400;
-}
-.modal-body .policyModal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 14px;
-  font-weight: 400;
-}
-.modal-body .policyModal a {
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 14px;
-  font-weight: 400;
-}
-.modal-body form {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 20px;
-}
-.modal-body form div {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.modal-body form label {
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 16px;
-  font-weight: 500;
-}
-.modal-body form input {
-  background-color: rgb(238, 238, 238);
-  border: 0;
-  padding: 14px;
-  border-radius: 8px;
-}
-.modal-body form input::-moz-placeholder {
-  color: rgb(129, 126, 126);
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 16px;
-  font-weight: 500;
-}
-.modal-body form input::placeholder {
-  color: rgb(129, 126, 126);
-  margin: 0;
-  font-family: "Manrope";
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .mainSlider {
   padding-bottom: 45px;
 }
@@ -1234,6 +1157,11 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .gallery {
   padding: 75px 0;
 }
+.gallery .galleryBlock {
+  display: flex;
+  row-gap: 40px;
+  flex-direction: column;
+}
 .gallery .galleryTitle {
   display: flex;
   flex-direction: row;
@@ -1295,8 +1223,11 @@ header .headerNav .buttonHeader .btnMenu1000 {
 .gallery .swiper-pagination-bullet-active {
   background-color: #3D5E38;
 }
-.gallery .swiper {
-  padding: 40px 0;
+.gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
+  display: none;
+}
+.gallery .swiper .gallerySwiperBtnsSlide .swiper-button-prev::after, .gallery .swiper .gallerySwiperBtnsSlide .swiper-button-next::after {
+  content: none;
 }
 .gallery .swiper-slide img {
   -o-object-fit: cover;
@@ -1306,6 +1237,41 @@ header .headerNav .buttonHeader .btnMenu1000 {
   height: 100%;
 }
 
+@media (max-width: 1400px) {
+  .gallery {
+    padding: 65px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery {
+    padding: 65px 0;
+  }
+  .gallery .galleryTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+}
+@media (max-width: 576px) {
+  .gallery {
+    padding: 30px 0;
+  }
+  .gallery .galleryTitle h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.1px;
+  }
+  .gallery .gallerySwiperBtns .gallerySwiperBtn {
+    display: none;
+  }
+  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
+    display: flex;
+  }
+  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .reviews {
   padding: 75px 0;
 }
@@ -2061,6 +2027,89 @@ footer .footerPolicy span a {
   font-weight: 700;
   font-size: 22px;
   color: rgb(64, 64, 64);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 40px 40px 40px;
+  gap: 20px;
+}
+.modal-body .titleModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.modal-body .titleModal div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-body p {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.modal-body .policyModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 400;
+}
+.modal-body .policyModal a {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  line-height: 18.9px;
+}
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+.modal-body form div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-body form label {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+.modal-body form input {
+  background-color: rgb(238, 238, 238);
+  border: 0;
+  padding: 14px;
+  border-radius: 8px;
+}
+.modal-body form input::-moz-placeholder {
+  color: rgb(129, 126, 126);
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+.modal-body form input::placeholder {
+  color: rgb(129, 126, 126);
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
 }
 
 * {

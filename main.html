@@ -48,13 +48,13 @@
                                 <path d="M22.0001 16.92V19.92C22.0012 20.1985 21.9441 20.4742 21.8326 20.7294C21.721 20.9845 21.5574 21.2136 21.3521 21.4019C21.1469 21.5901 20.9046 21.7335 20.6408 21.8227C20.377 21.9119 20.0974 21.9451 19.8201 21.92C16.7429 21.5856 13.7871 20.5342 11.1901 18.85C8.77388 17.3147 6.72539 15.2662 5.19006 12.85C3.50003 10.2412 2.4483 7.271 2.12006 4.18001C2.09507 3.90347 2.12793 3.62477 2.21656 3.36163C2.30518 3.09849 2.44763 2.85669 2.63482 2.65163C2.82202 2.44656 3.04986 2.28271 3.30385 2.17053C3.55783 2.05834 3.8324 2.00027 4.11006 2.00001H7.11006C7.59536 1.99523 8.06585 2.16708 8.43382 2.48354C8.80179 2.79999 9.04213 3.23945 9.11005 3.72001C9.23668 4.68007 9.47151 5.62273 9.81006 6.53001C9.9446 6.88793 9.97372 7.27692 9.89396 7.65089C9.81421 8.02485 9.62892 8.36812 9.36005 8.64001L8.09006 9.91001C9.51361 12.4136 11.5865 14.4865 14.0901 15.91L15.3601 14.64C15.6319 14.3711 15.9752 14.1859 16.3492 14.1061C16.7231 14.0263 17.1121 14.0555 17.4701 14.19C18.3773 14.5286 19.32 14.7634 20.2801 14.89C20.7658 14.9585 21.2095 15.2032 21.5266 15.5775C21.8437 15.9518 22.0122 16.4296 22.0001 16.92Z" stroke="#748A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <button class="navbar-toggler btnMenu1000" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <a class="navbar-toggler btnMenu1000" style="display: flex; align-items: center;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 2H50" stroke="#748A5B" stroke-width="3"/>
                             <path d="M0 12H50" stroke="#748A5B" stroke-width="3"/>
                             <path d="M0 22H50" stroke="#748A5B" stroke-width="3"/>
                             </svg>
-                        </button>
+                        </a>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
@@ -97,35 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal" tabindex="-1" id="modal">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content" style="border-radius: 20px;">
-                                <div class="modal-header" style="border: 0;">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                </div>
-                                <div class="modal-body">
-                                        <div class="titleModal">
-                                            <img class="logo" src="./img/logo/logo.svg">
-                                            <div>
-                                                <p>Оставьте свои данные и мы поможем</p> <p>Вам подобрать дом</p>
-                                            </div>
-                                        </div>
-                                        <form>
-                                            <div>
-                                                <label>Ваше имя*</label>
-                                                <input type="text" placeholder="Имя">
-                                            </div>
-                                            <div>
-                                                <label>Телефон*</label>
-                                                <input type="tel" placeholder="Номер телефона">
-                                            </div>
-                                            <button class="mainButtonDark">Отправить</button>
-                                        </form>
-                                        <p class="policyModal">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -761,10 +733,11 @@
                         <h1>Насладитесь <span>лесными</span> окрестностями</h1>
                         <div class="gallerySwiperBtns">
                             <div class="swiper-button-prev swiper-button-prev3 gallerySwiperBtn"><img src="./img/btndark.svg"></div>
-                            <div class="swiper-button-next swiper-button-next3 gallerySwiperBtn"><img src="./img/btndark (1).svg"></div>
+                            <div class="swiper-button-next swiper-button-next3 gallerySwiperBtn"><img src="./img/btndark1.svg"></div>
                         </div>
                     </div>
                 </div>
+                <div>
                     <div class="swiper swiper3">
                         <div class="swiper-wrapper">   
                             <div class="swiper-slide">
@@ -793,6 +766,11 @@
                                 </picture>
                             </div>
                         </div>
+                        <div class="gallerySwiperBtnsSlide">
+                            <div class="swiper-button-prev swiper-button-prev3 gallerySwiperBtn"><img src="./img/btndark.svg"></div>
+                            <div class="swiper-button-next swiper-button-next3 gallerySwiperBtn"><img src="./img/btndark1.svg"></div>
+                        </div>
+                    </div>
                     </div>
                     <div class="container">
                         <div class="swiper-pagination swiper-pagination3">
@@ -815,7 +793,7 @@
                             <h1><span>Отзывы</span> наших гостей</h1>
                             <div class="reviewsSwiperBtns">
                                 <div class="swiper-button-prev swiper-button-prev4 reviewsSwiperBtn"><img src="./img/btnlight.png"></div>
-                                <div class="swiper-button-next swiper-button-next4 reviewsSwiperBtn"><img src="./img/btnlight (1).png"></div>
+                                <div class="swiper-button-next swiper-button-next4 reviewsSwiperBtn"><img src="./img/btnlight1.png"></div>
                             </div>
                         </div>
                     <div class="swiper swiper4">
@@ -1114,6 +1092,35 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
             </div>
         </div>
     </footer>
+    <div class="modal" tabindex="-1" id="modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content" style="border-radius: 20px;">
+                                <div class="modal-header" style="border: 0;">
+                                    <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
+                                </div>
+                                <div class="modal-body">
+                                        <div class="titleModal">
+                                            <img class="logo" src="./img/logo/logo.svg">
+                                            <div>
+                                                <p>Оставьте свои данные и мы поможем</p> <p>Вам подобрать дом</p>
+                                            </div>
+                                        </div>
+                                        <form>
+                                            <div>
+                                                <label>Ваше имя*</label>
+                                                <input type="text" placeholder="Имя">
+                                            </div>
+                                            <div>
+                                                <label>Телефон*</label>
+                                                <input type="tel" placeholder="Номер телефона">
+                                            </div>
+                                            <button class="mainButtonDark">Отправить</button>
+                                        </form>
+                                        <p class="policyModal">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                                </div>
+                                </div>
+                            </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
