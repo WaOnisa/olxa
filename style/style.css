@@ -454,36 +454,46 @@ header .headerNav .buttonHeader .btnMenu1000 {
   color: rgb(64, 64, 64);
   line-height: 55.2px;
 }
-.order .orderBlock form {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
-.order .orderBlock form .fullInput {
-  display: inline-block;
-  padding: 6px 14px;
-  border: 1px solid rgb(129, 126, 126);
-  border-radius: 10px;
-}
-.order .orderBlock form input, .order .orderBlock form select {
-  outline: none;
-  border: none;
-  display: block;
-  color: rgb(64, 64, 64);
-  width: 280px;
-  font-family: "Manrope";
-  font-weight: 400;
-  font-size: 16px;
-}
-.order .orderBlock form label {
-  display: block;
-  font-size: 12px;
-  color: rgb(129, 126, 126);
-  font-family: "Manrope";
-  font-weight: 400;
-  font-size: 14px;
-}
 
+@media (max-width: 1400px) {
+  .order {
+    padding: 65px 0;
+  }
+  .order .orderBlock {
+    gap: 40px;
+  }
+  .order .orderBlock h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 55.2px;
+  }
+}
+@media (max-width: 1000px) {
+  .order {
+    padding: 45px 0;
+  }
+  .order .orderBlock {
+    gap: 30px;
+  }
+  .order .orderBlock h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+}
+@media (max-width: 576px) {
+  .order {
+    padding: 30px 0;
+  }
+  .order .orderBlock {
+    gap: 25px;
+  }
+  .order .orderBlock h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.1px;
+  }
+}
 .houses {
   padding: 75px 0;
 }
@@ -524,6 +534,11 @@ header .headerNav .buttonHeader .btnMenu1000 {
   }
   .houses .housesBlock .housesTitle button {
     display: none;
+  }
+  .houses .housesBlock .housesTitle h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.1px;
   }
 }
 .houses .housesCardsBlock {

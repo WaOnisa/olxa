@@ -15,41 +15,51 @@
             color: $black;
             line-height: 55.2px;
         }
-    form{
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        
-        .fullInput {
-            display: inline-block;
-            padding: 6px 14px;
-            border: 1px solid rgba(129, 126, 126, 1);
-            border-radius: 10px;
-            }
-        input,select {
-            outline: none;
-            border: none;
-            display:block;
-            color: $black;
-            width: 280px;
-            
-            font: {
-                family:'Manrope';
-                weight:400;
-                size: 16px;
-            }
-            }
-        label {
-            display: block;
-            font-size: 12px;
-            color: rgba(129, 126, 126, 1);
-            font: {
-                family:'Manrope';
-                weight:400;
-                size: 14px;
-            }
-            }
-
     }
+}
+
+@media (max-width: 1400px) {
+    .order{
+        padding: 65px 0;
+        .orderBlock{
+            gap: 40px;
+            h1{
+                font: {
+                    weight:800;
+                    size: 46px;
+                }
+                line-height: 55.2px;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .order{
+        padding: 45px 0;
+        .orderBlock{
+            gap: 30px;
+            h1{
+                font: {
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 40.5px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .order{
+        padding: 30px 0;
+        .orderBlock{
+            gap: 25px;
+            h1{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 35.1px;
+            }
+        }
     }
 }
