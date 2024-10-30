@@ -1267,6 +1267,12 @@ header .headerNav .buttonHeader .btnMenu1000 {
   .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
     display: flex;
   }
+  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn .swiper-button-prev {
+    right: 0;
+  }
+  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn .swiper-button-next {
+    left: 0;
+  }
   .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn img {
     width: 40px;
     height: 40px;
@@ -1355,6 +1361,10 @@ header .headerNav .buttonHeader .btnMenu1000 {
   line-height: 21.76px;
   color: rgb(40, 40, 40);
 }
+.reviews .reviewStar {
+  display: flex;
+  flex-wrap: nowrap;
+}
 .reviews .reviewText {
   display: flex;
   flex-direction: column;
@@ -1408,6 +1418,44 @@ header .headerNav .buttonHeader .btnMenu1000 {
   content: none;
 }
 
+@media (max-width: 1400px) {
+  .reviews {
+    padding: 65px 0;
+  }
+  .reviews .reviewText {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .reviews {
+    padding: 45px 0;
+  }
+  .reviews .reviewsTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+  .reviews .reviewText {
+    padding: 30px 20px;
+  }
+  .reviews .reviewTopUser p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.04px;
+  }
+  .reviews .reviewTopUser .reviewStar img {
+    width: 20px;
+    height: 20px;
+  }
+  .reviews .reviewBottomText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+}
 .contacts {
   padding: 75px 0;
 }

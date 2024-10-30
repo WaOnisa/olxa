@@ -142,6 +142,12 @@
             .gallerySwiperBtnsSlide{
                 .gallerySwiperBtn{
                     display: flex; 
+                    .swiper-button-prev{
+                        right: 0;
+                    }
+                    .swiper-button-next{
+                        left: 0;
+                    }
                     img{
                         width: 40px;
                         height: 40px;
