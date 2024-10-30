@@ -24,13 +24,16 @@
             grid-gap: 20px;
             grid-auto-flow: row;
             justify-content: center;
+            
             .serviceCard{
                 position: relative;
                 text-decoration: none;
                 display: flex;
+                border-radius: 20px;
 
                 .servicesGradient{
                     z-index: -1;
+                    border-radius: 20px;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -39,7 +42,7 @@
                     object-fit:cover;
                     width: 100%;
                     height: 100%;
-                    background: linear-gradient(to bottom, #000000CC, #00000000);
+                    background: linear-gradient(to top, #000000CC, #00000000);
                 }
 
                 picture{
@@ -54,7 +57,7 @@
                         width: 100%;
                         height: 100%;
                         border-radius: 20px;
-                        z-index: -1;
+                        z-index: -2;
                     }
                 }
                 div{
@@ -63,17 +66,17 @@
                     display: flex;
                     align-items: flex-end;
                     p{
-                    margin: 0;
-                    line-height: 24.59px;
-                    font: {
-                        family:'Manrope';
-                        weight:700;
-                        size: 18px;
-                    }
-                    color: $secondary;
-                    background-color: $white;
-                    border-radius: 10px;
-                    padding: 14px 28px;
+                        margin: 0;
+                        line-height: 24.59px;
+                        font: {
+                            family:'Manrope';
+                            weight:700;
+                            size: 18px;
+                        }
+                        color: $secondary;
+                        background-color: $white;
+                        border-radius: 10px;
+                        padding: 14px 28px;
                     }
                 }
                 .serviceCardArrow{
@@ -84,16 +87,94 @@
                 }
             }
         }
-        @media (max-width: 1000px) {
+    }
+}
+
+@media (max-width: 1400px) {
+    .services{
+        padding: 65px 0;
+        .servicesBlock{
+            gap: 40px;
+            .servicesCards{
+                .serviceCard{
+                    div{
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 16px;
+                            }
+                            line-height: 21.86px;
+                            padding: 12px 28px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .services{
+        padding: 45px 0;
+        .servicesBlock{
+            gap: 30px;
+            h1{
+                font: { 
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 40.5px;
+            }
             .servicesCards{
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 236px);
+                .serviceCard{
+                    svg{
+                        width: 42px;
+                        height: 42px;
+                    }
+                    div{
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 14px;
+                            }
+                            line-height: 19.12px;
+                            padding: 12px 20px;
+                        }
+                    }
+                }
             }
         }
-        @media (max-width: 576px) {
+    }
+}
+@media (max-width: 576px) {
+    .services{
+        padding: 30px 0;
+        .servicesBlock{
+            gap: 25px;
+            h1{
+                font: { 
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 35.1px;
+            }
             .servicesCards{
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(6, 236px);
+                .serviceCard{
+                    div{
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 14px;
+                            }
+                            line-height: 19.12px;
+                            padding: 12px 20px;
+                        }
+                    }
+                }
             }
         }
     }
