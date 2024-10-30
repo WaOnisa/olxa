@@ -30,6 +30,32 @@
                 gap: 8px;
             }
         }
+
+        @media (max-width: 1000px) {
+            .eventsTitle{
+                h1{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 40.5px;
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            .eventsTitle{
+                h1{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 35.1px;
+                }   
+            }
+            
+        }
+        
         .eventsCards{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -60,6 +86,15 @@
                 display: flex;
                 align-items: stretch;
                 flex-direction: column;
+
+                button{
+                    padding: 10px 0;
+                    font: {
+                        weight:700;
+                        size: 12px;
+                    }
+                    line-height: 16.39px;
+                }
             }
         }
 

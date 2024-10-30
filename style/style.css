@@ -4,7 +4,7 @@
 }
 button {
   font-family: "Manrope";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 800;
   border: 1px solid #748A5B;
   border-radius: 10px;
@@ -23,8 +23,17 @@ button {
   background-color: #FFFFFF;
 }
 
+button:hover {
+  color: #FFFFFF;
+  background-color: #3D5E38;
+  border: 1px solid #3D5E38;
+}
+
 header {
   padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 header .header {
   display: flex;
@@ -33,6 +42,7 @@ header .header {
   align-items: center;
   padding: 16px 26px;
   border-radius: 18px;
+  background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.04);
 }
 header a {
@@ -522,6 +532,20 @@ header .headerNav .buttonHeader .btnMenu1000 {
   align-items: center;
   gap: 8px;
 }
+@media (max-width: 1000px) {
+  .events .eventsBlock .eventsTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40.5px;
+  }
+}
+@media (max-width: 576px) {
+  .events .eventsBlock .eventsTitle h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35.1px;
+  }
+}
 .events .eventsBlock .eventsCards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -547,6 +571,12 @@ header .headerNav .buttonHeader .btnMenu1000 {
     display: flex;
     align-items: stretch;
     flex-direction: column;
+  }
+  .events .eventsBlock .eventBtn button {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16.39px;
   }
 }
 .events .eventsBlock .eventCard {

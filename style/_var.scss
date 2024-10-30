@@ -2,7 +2,7 @@
 button{
     font: {
         family: 'Manrope';
-        size: 1rem;
+        size: 16px;
         weight: 800;
     }
     border: 1px solid $main;
@@ -19,4 +19,10 @@ button{
 .mainButtonLight{
     color: $main;
     background-color: $white;
+}
+
+button:hover{
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
 }
