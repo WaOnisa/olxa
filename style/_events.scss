@@ -130,6 +130,8 @@
 @media (max-width: 576px) {
     .events{
         padding: 30px 0;
-        
+        .eventsBlock{
+            gap: 25px;
+        }
     }
 }
