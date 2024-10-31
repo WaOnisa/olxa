@@ -1131,7 +1131,13 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                 </div>
                                 <div class="modal-body">
                                         <div class="titleModal">
-                                            <img class="logo" src="/img/logo/logo.svg">
+                                            <picture>
+                                                <source srcset="/img/logo/logo-320.svg" media="(max-width: 576px)">
+                                                <source srcset="/img/logo/logo-576.svg" media="(max-width: 1000px) and (min-width: 576px)">
+                                                <source srcset="/img/logo/logo-1000.svg" media="(max-width: 1400px) and (min-width: 1000px)">
+                                                <source srcset="/img/logo/logo-1400.svg" media="(min-width: 1400px)">
+                                                <img src="/img/logo/logo-1400.svg">
+                                            </picture>
                                             <div>
                                                 <p>Оставьте свои данные и мы поможем</p> <p>Вам подобрать дом</p>
                                             </div>
