@@ -1978,6 +1978,7 @@ footer .footerPolicy span a {
   }
   footer .footerBlock {
     padding-top: 30px;
+    gap: 30px;
   }
   footer .footerBlock .footerTop {
     gap: 30px;
@@ -2011,6 +2012,9 @@ footer .footerPolicy span a {
     font-size: 14px;
     font-weight: 500;
     line-height: 19.12px;
+  }
+  footer .footerBlock .footerPolicy {
+    flex-direction: column;
   }
   footer .footerBlock .footerPolicy div p {
     font-size: 14px;

@@ -264,6 +264,7 @@ footer{
         padding-bottom: 60px;
         .footerBlock{
             padding-top: 30px;
+            gap: 30px;
             .footerTop{
                 gap: 30px;
                 flex-direction: column;
@@ -306,6 +307,7 @@ footer{
                 }
             }
             .footerPolicy{
+                flex-direction: column;
                 div{
                     p{
                         font: {
