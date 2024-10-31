@@ -63,6 +63,7 @@ header .header {
 header a {
   text-decoration: none;
   color: rgb(64, 64, 64);
+  line-height: 21.86px;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
@@ -71,6 +72,8 @@ header a:hover {
   color: #748A5B;
 }
 header .btn-secondary {
+  color: rgb(64, 64, 64);
+  line-height: 21.86px;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
@@ -95,6 +98,8 @@ header .btn-secondary:hover {
   color: #748A5B;
 }
 header .dropdown-menu {
+  color: rgb(64, 64, 64);
+  line-height: 19.12px;
   font-family: "Manrope";
   font-size: 14px;
   font-weight: 500;
@@ -129,14 +134,145 @@ header .headerNav .buttonHeader {
   display: flex;
   gap: 14px;
 }
-header .headerNav .buttonHeader .btn1000 {
+header .headerNav .btn1000 {
   display: none;
   padding: 10px 20px;
 }
-header .headerNav .buttonHeader .btnMenu1000 {
+header .headerNav .btnMenu1000 {
   display: none;
 }
+header .offcanvas.offcanvas-end {
+  width: auto;
+}
+header .offcanvas .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 0;
+}
+header .offcanvas .offcanvas-body .ulList {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .offcanvas .offcanvas-body a {
+  line-height: 35.1px;
+  font-size: 26px;
+  font-weight: 700;
+}
+header .offcanvas .offcanvas-body ul {
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+header .offcanvas .offcanvas-body ul li {
+  list-style: none;
+}
+header .offcanvas .offcanvas-body ul li a {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+header .offcanvas .offcanvas-body p {
+  white-space: nowrap;
+  margin: 0;
+  line-height: 24.3px;
+  font-size: 18px;
+  font-weight: 400;
+}
+header .offcanvas .offcanvas-body .headerContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+header .offcanvas .offcanvas-body .headerContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .offcanvas .offcanvas-body .topContactsButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 200px;
+  gap: 14px;
+}
 
+@media (max-width: 1400px) {
+  header .header {
+    padding: 16px 20px;
+  }
+  header a, header .dropdown-menu, header .btn-secondary {
+    line-height: 19.12px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header .nav1400 {
+    display: none;
+  }
+  header .headerNav .btn1400 {
+    display: none;
+  }
+  header .headerNav .btn1000 {
+    display: block;
+  }
+  header .headerNav .btnMenu1000 {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  header .nav1000 {
+    display: none;
+  }
+  header .headerNav nav {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  header .headerNav .btnMenu576 {
+    display: none;
+  }
+  header .headerNav .btn1000 {
+    display: none;
+  }
+  header .offcanvas .offcanvas-body {
+    gap: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 0;
+  }
+  header .offcanvas .offcanvas-body .ulList {
+    gap: 20px;
+  }
+  header .offcanvas .offcanvas-body a {
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  header .offcanvas .offcanvas-body ul {
+    margin: 0;
+    padding: 0;
+    gap: 6px;
+  }
+  header .offcanvas .offcanvas-body ul li a {
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header .offcanvas .offcanvas-body p {
+    line-height: 18.9px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  header .offcanvas .offcanvas-body .topContactsButtons {
+    max-width: auto;
+    gap: 8px;
+  }
+}
 .mainSlider {
   padding-bottom: 45px;
 }

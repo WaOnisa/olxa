@@ -17,6 +17,7 @@ header {
     a{
         text-decoration: none;
         color: $black;
+        line-height: 21.86px;
         font: {
             family: 'Manrope';
             size: 16px;
@@ -28,6 +29,8 @@ header {
     }
     
     .btn-secondary{
+        color: $black;
+        line-height: 21.86px;
         font: {
             family: 'Manrope';
             size: 16px;
@@ -54,6 +57,8 @@ header {
         color: $main;
     }
     .dropdown-menu{
+        color: $black;
+        line-height: 19.12px;
         font: {
             family: 'Manrope';
             size: 14px;
@@ -88,14 +93,81 @@ header {
         }
         .buttonHeader{
             display: flex;
-            gap:14px;
-            .btn1000{
+            gap:14px; 
+        }
+        .btn1000{
                 display: none;
                 padding: 10px 20px;
             }
-
-            .btnMenu1000{
+        .btnMenu1000{
                 display: none;
+            }
+    }
+
+    .offcanvas.offcanvas-end{
+        width: auto;
+    }
+    .offcanvas{
+        .offcanvas-body{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 0;
+            .ulList{
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            a{
+                line-height: 35.1px;
+                font: {
+                    size: 26px;
+                    weight: 700;
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                gap: 6px;
+                li{
+                    list-style: none;
+                    a{
+                        line-height: 30px;
+                        font: {
+                            size: 20px;
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+            p{  
+                white-space: nowrap;
+                margin: 0;
+                line-height: 24.3px;
+                font: {
+                    size: 18px;
+                    weight: 400;
+                }
+            }
+            .headerContacts{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+            .headerContact{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .topContactsButtons{
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 200px;
+                gap: 14px;
             }
         }
     }
@@ -104,12 +176,102 @@ header {
 
 @media (max-width: 1400px) {
     header{
-        
+        .header{
+            padding: 16px 20px;
+        }
+
+        a, .dropdown-menu, .btn-secondary{
+            line-height: 19.12px;
+            font: {
+                size: 14px;
+                weight: 500;
+            }
+        }
+        .nav1400{
+            display: none;
+        }
+        .headerNav{
+            
+            .btn1400{
+                display: none;
+            }
+            .btn1000{
+                display: block;
+            }
+            .btnMenu1000{
+                display: flex; 
+                align-items: center;
+            }
+        }
     }
 }
 @media (max-width: 1000px) {
-    
+    header{
+        .nav1000{
+            display: none;
+        }
+        .headerNav{
+            nav{
+                display: none;
+            }
+        }
+        
+    }
 }
 @media (max-width: 576px) {
+    header{
+
+        .headerNav{
+            .btnMenu576{
+                display: none;
+            }
+            .btn1000{
+                display: none;
+            }
+        }
     
+    .offcanvas{
+        .offcanvas-body{
+            gap: 20px;
+            padding-left: 26px;
+            padding-right: 26px;
+            padding-top: 0;
+            .ulList{
+                gap: 20px;
+            }
+            a{
+                line-height: 27px;
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                gap: 6px;
+                li{
+                    a{
+                        line-height: 21px;
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+            p{
+                line-height: 18.9px;
+                font: {
+                    size: 14px;
+                    weight: 400;
+                }
+            }
+            .topContactsButtons{
+                max-width: auto;
+                gap: 8px;
+            }
+        }
+    }
+}
 }
