@@ -123,4 +123,14 @@ const swiper5 = new Swiper('.swiper5', {
 	},
 })
 
+const swiper6 = new Swiper('.swiper6', {
+	direction: 'horizontal',
+	loop: true,
+
+	navigation: {
+		nextEl: '.swiper-button-next6',
+		prevEl: '.swiper-button-prev6',
+	},
+})
+
 // ahchor
