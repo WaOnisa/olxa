@@ -1129,7 +1129,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 .advantages .blockSlide picture {
   position: relative;
 }
-.advantages .blockSlide img {
+.advantages .blockSlide picture img {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
