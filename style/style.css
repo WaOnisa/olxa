@@ -1320,9 +1320,6 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 .gallery .swiper-pagination-bullet-active {
   background-color: #3D5E38;
 }
-.gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
-  display: none;
-}
 .gallery .swiper .gallerySwiperBtnsSlide .swiper-button-prev::after, .gallery .swiper .gallerySwiperBtnsSlide .swiper-button-next::after {
   content: none;
 }
@@ -1357,9 +1354,6 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     font-weight: 700;
     font-size: 26px;
     line-height: 35.1px;
-  }
-  .gallery .gallerySwiperBtns .gallerySwiperBtn {
-    display: none;
   }
   .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
     display: flex;

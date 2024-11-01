@@ -46,26 +46,26 @@ const swiper2 = new Swiper('.swiper2', {
 
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
-	
+
 	centeredSlides: true,
 	spaceBetween: 20,
 	loop: true,
 
 	breakpoints: {
 		320: {
-		slidesPerView: 1,
+			slidesPerView: 1,
 		},
-		
+
 		576: {
-		slidesPerView: 1.2,
+			slidesPerView: 1.2,
 		},
-		
+
 		1000: {
-		slidesPerView: 1.5,
+			slidesPerView: 1.5,
 		},
 		1400: {
-		slidesPerView: 2,
-		}
+			slidesPerView: 2,
+		},
 	},
 
 	pagination: {
@@ -132,5 +132,14 @@ const swiper6 = new Swiper('.swiper6', {
 		prevEl: '.swiper-button-prev6',
 	},
 })
+const swiper7 = new Swiper('.swiper7', {
+	direction: 'horizontal',
+	loop: true,
 
-// ahchor
+	navigation: {
+		nextEl: '.swiper-button-next7',
+		prevEl: '.swiper-button-prev7',
+	},
+})
+
+// anchor

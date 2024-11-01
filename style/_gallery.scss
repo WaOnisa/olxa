@@ -76,9 +76,7 @@
     
     .swiper{
         .gallerySwiperBtnsSlide{
-            .gallerySwiperBtn{
-                display: none;   
-            }
+            
             .swiper-button-prev::after, .swiper-button-next::after{
                 content: none;
             }
@@ -130,11 +128,7 @@
                 line-height: 35.1px;
             }
         }
-        .gallerySwiperBtns{
-            .gallerySwiperBtn{
-                display: none;
-            }
-        }
+        
 
         .swiper{
             .gallerySwiperBtnsSlide{
