@@ -61,6 +61,7 @@
             gap: 24px;
             h1{
                 margin: 0;
+                line-height: 120%;
                     font: {
                         family:'Manrope';
                         weight:800;
@@ -70,6 +71,7 @@
             }
             p{
                 margin: 0;
+                line-height: 150%;
                     font: {
                         family:'Manrope';
                         weight:400;
@@ -98,6 +100,7 @@
                     flex-direction: column;
                     p{
                         margin: 0;
+                        line-height: 150%;
                             font: {
                                 family:'Manrope';
                                 weight:600;
@@ -107,6 +110,7 @@
                     }
                     span{
                         margin: 0;
+                        line-height: 150%;
                             font: {
                                 family:'Manrope';
                                 weight:700;

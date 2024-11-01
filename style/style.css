@@ -342,6 +342,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 24px;
 }
 .mainSlider .swiper-slide .mainSliderText {
   display: flex;
@@ -766,7 +767,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .events .eventsBlock .eventsTitle h1 span {
   color: #748A5B;
@@ -781,14 +782,14 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .events .eventsBlock .eventsTitle h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
   .events .eventsBlock .eventsTitle h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
 }
 .events .eventsBlock .eventsCards {
@@ -1039,7 +1040,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: #FFFFFF;
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .advantages h1 span {
   color: #FFFFC0;
@@ -1072,7 +1073,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   font-size: 18px;
   color: #748A5B;
-  line-height: 24.3px;
+  line-height: 135%;
 }
 .advantages .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #748A5B;
@@ -1098,7 +1099,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   font-size: 36px;
   color: #748A5B;
-  line-height: 48.6px;
+  line-height: 135%;
 }
 .advantages .blockSlide p {
   margin: 0;
@@ -1106,7 +1107,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 500;
   font-size: 18px;
   color: #748A5B;
-  line-height: 27px;
+  line-height: 150%;
 }
 .advantages .blockSlide picture {
   position: relative;
@@ -1151,12 +1152,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .blockSlide h2 {
     font-weight: 600;
     font-size: 32px;
-    line-height: 43.2px;
+    line-height: 135%;
   }
   .advantages .blockSlide p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 150%;
   }
   .advantages .blockSlide .advantagesSliderText {
     gap: 20px;
@@ -1176,12 +1177,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .blockAdvantages .blockAdvantage h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
   .advantages .swiper-pagination .swiper-pagination-bullet p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 18.9px;
+    line-height: 135%;
   }
   .advantages .blockSlide {
     grid-template-columns: 1fr;
@@ -1191,12 +1192,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .blockSlide h2 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
   .advantages .blockSlide p {
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 150%;
   }
   .advantages .blockSlide .advantagesSliderText {
     gap: 16.5px;
@@ -1217,7 +1218,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .blockAdvantages .blockAdvantage h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
   .advantages .swiper-pagination {
     flex-wrap: nowrap;
@@ -1226,7 +1227,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .swiper-pagination .swiper-pagination-bullet p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 18.9px;
+    line-height: 135%;
   }
   .advantages .swiper-pagination::-webkit-scrollbar {
     display: none;
@@ -1239,12 +1240,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .blockSlide h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 135%;
   }
   .advantages .blockSlide p {
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 135%;
   }
   .advantages .blockSlide .advantagesSliderText {
     gap: 16px;
@@ -1570,7 +1571,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .contacts h2 {
   margin: 0;
@@ -1578,7 +1579,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 600;
   font-size: 30px;
   color: rgb(64, 64, 64);
-  line-height: 40.5px;
+  line-height: 135%;
 }
 .contacts p {
   margin: 0;
@@ -1586,7 +1587,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 400;
   font-size: 18px;
   color: rgb(64, 64, 64);
-  line-height: 24.3px;
+  line-height: 135%;
 }
 .contacts a {
   margin: 0;
@@ -1594,7 +1595,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 400;
   font-size: 18px;
   color: rgb(64, 64, 64);
-  line-height: 24.3px;
+  line-height: 135%;
 }
 .contacts .contactsBlocks {
   display: flex;
@@ -1652,17 +1653,17 @@ iframe {
   .contacts h2 {
     font-weight: 600;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
   .contacts p {
     font-weight: 400;
     font-size: 22px;
-    line-height: 29.7px;
+    line-height: 135%;
   }
   .contacts a {
     font-weight: 400;
     font-size: 22px;
-    line-height: 29.7px;
+    line-height: 135%;
   }
   .contacts .contactsBlock {
     gap: 30px;
@@ -1678,22 +1679,22 @@ iframe {
   .contacts h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
   .contacts h2 {
     font-weight: 600;
     font-size: 24px;
-    line-height: 32.4px;
+    line-height: 135%;
   }
   .contacts p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21.6px;
+    line-height: 135%;
   }
   .contacts a {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21.6px;
+    line-height: 135%;
   }
   .contacts .contactsBlocks {
     flex-direction: column;
@@ -1715,22 +1716,22 @@ iframe {
   .contacts h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
   .contacts h2 {
     font-weight: 500;
     font-size: 18px;
-    line-height: 24.3px;
+    line-height: 135%;
   }
   .contacts p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21.6px;
+    line-height: 135%;
   }
   .contacts a {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21.6px;
+    line-height: 135%;
   }
   .contacts .contactsBlocks {
     flex-direction: column;
@@ -2546,7 +2547,7 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: #FFFFFF;
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .bathhousesBanner p {
   margin: 0;
@@ -2554,7 +2555,7 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
@@ -2568,12 +2569,12 @@ footer .footerPolicy span a {
   .bathhousesBanner h1 {
     font-weight: 700;
     font-size: 46px;
-    line-height: 64.4px;
+    line-height: 140%;
   }
   .bathhousesBanner p {
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
   }
 }
 @media (max-width: 992px) and (min-width: 576px) {
@@ -2590,12 +2591,12 @@ footer .footerPolicy span a {
   .bathhousesBanner h1 {
     font-weight: 700;
     font-size: 32px;
-    line-height: 41.6px;
+    line-height: 130%;
   }
   .bathhousesBanner p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21.6px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -2611,12 +2612,12 @@ footer .footerPolicy span a {
   .bathhousesBanner h1 {
     font-weight: 700;
     font-size: 22px;
-    line-height: 28.6px;
+    line-height: 130%;
   }
   .bathhousesBanner p {
     font-weight: 400;
     font-size: 12px;
-    line-height: 16.2px;
+    line-height: 135%;
   }
 }
 .sliderBathhouse {

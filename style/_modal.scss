@@ -22,7 +22,7 @@
             size: 18px;
             weight: 400;
         }
-        line-height: 27px;
+        line-height: 150%;
     }
     .policyModal{
         display: flex;
@@ -42,7 +42,7 @@
                 weight: 400;
             }
             color: black;
-            line-height: 18.9px;
+            line-height: 135%;
         }
     }
     form{
@@ -63,7 +63,7 @@
                 size: 16px;
                 weight: 500;
             }
-            line-height: 21.6px;
+            line-height: 135%;
         }
         input{
             background-color: rgba(238, 238, 238, 1);
@@ -79,7 +79,7 @@
                 size: 16px;
                 weight: 500;
             }
-            line-height: 21.6px;
+            line-height: 135%;
         }
     }
 }

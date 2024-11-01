@@ -17,7 +17,7 @@ header {
     a{
         text-decoration: none;
         color: $black;
-        line-height: 21.86px;
+        line-height: 136.63%;
         font: {
             family: 'Manrope';
             size: 16px;
@@ -30,7 +30,7 @@ header {
     
     .btn-secondary{
         color: $black;
-        line-height: 21.86px;
+        line-height: 136.63%;
         font: {
             family: 'Manrope';
             size: 16px;
@@ -58,7 +58,7 @@ header {
     }
     .dropdown-menu{
         color: $black;
-        line-height: 19.12px;
+        line-height: 136.57%;
         font: {
             family: 'Manrope';
             size: 14px;
@@ -121,7 +121,7 @@ header {
                 align-items: flex-start;
             }
             a{
-                line-height: 35.1px;
+                line-height: 135%;
                 font: {
                     size: 26px;
                     weight: 700;
@@ -134,7 +134,7 @@ header {
                 li{
                     list-style: none;
                     a{
-                        line-height: 30px;
+                        line-height: 150%;
                         font: {
                             size: 20px;
                             weight: 500;
@@ -145,7 +145,7 @@ header {
             p{  
                 white-space: nowrap;
                 margin: 0;
-                line-height: 24.3px;
+                line-height: 135%;
                 font: {
                     size: 18px;
                     weight: 400;
@@ -183,7 +183,7 @@ header {
         }
 
         a, .dropdown-menu, .btn-secondary{
-            line-height: 19.12px;
+            line-height: 136.57%;
             font: {
                 size: 14px;
                 weight: 500;
@@ -216,7 +216,7 @@ header {
                 gap: 20px;
             }
             a{
-                line-height: 27px;
+                line-height: 135%;
                 font: {
                     size: 20px;
                     weight: 700;
@@ -228,7 +228,7 @@ header {
                 gap: 6px;
                 li{
                     a{
-                        line-height: 21px;
+                        line-height: 150%;
                         font: {
                             size: 14px;
                             weight: 500;
@@ -237,7 +237,7 @@ header {
                 }
             }
             p{
-                line-height: 18.9px;
+                line-height: 135%;
                 font: {
                     size: 14px;
                     weight: 400;
