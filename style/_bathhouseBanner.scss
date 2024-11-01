@@ -52,7 +52,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
     .bathhousesBanner{
         padding-bottom: 65px;
         .bathhousesBannerBlock{
@@ -75,7 +75,7 @@
         }
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
     .bathhousesBanner{
         padding-bottom: 45px;
         .bathhousesBannerBlock{

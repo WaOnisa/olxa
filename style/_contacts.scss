@@ -88,7 +88,7 @@ iframe {
     flex-grow: 2 !important;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
     .contacts{
         padding: 65px 0;
         h2{
@@ -120,7 +120,7 @@ iframe {
         }
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
     .contacts{
         padding: 65px 0;
         h1{

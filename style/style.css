@@ -220,7 +220,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   gap: 14px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   header .header {
     padding: 16px 20px;
   }
@@ -243,7 +243,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     align-items: center;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   header .nav1000 {
     display: none;
   }
@@ -385,7 +385,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   line-height: 27px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .mainSlider {
     padding-bottom: 35px;
   }
@@ -406,7 +406,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 80px 88px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .mainSlider {
     padding-bottom: 35px;
   }
@@ -494,7 +494,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   line-height: 55.2px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .order {
     padding: 65px 0;
   }
@@ -507,7 +507,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     line-height: 55.2px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .order {
     padding: 45px 0;
   }
@@ -558,7 +558,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 .houses .housesBlock .housesBtn {
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .houses .housesBlock .housesTitle h1 {
     font-weight: 700;
     font-size: 30px;
@@ -658,7 +658,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   align-items: stretch;
   gap: 12px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .houses .housesCardsBlock h2 {
     font-weight: 700;
     font-size: 24px;
@@ -682,7 +682,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 8px 16px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .houses .housesCardsBlock {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -743,12 +743,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .houses {
     padding: 65px 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .houses {
     padding: 45px 0;
   }
@@ -795,7 +795,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   align-items: center;
   gap: 8px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .events .eventsBlock .eventsTitle h1 {
     font-weight: 700;
     font-size: 30px;
@@ -817,7 +817,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 .events .eventsBlock .eventBtn {
   display: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .events .eventsBlock .eventsCards {
     display: grid;
     grid-template-columns: 1fr;
@@ -853,12 +853,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   border-radius: 20px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .events {
     padding: 65px 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .events {
     padding: 45px 0;
   }
@@ -961,7 +961,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   right: 10px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .services {
     padding: 65px 0;
   }
@@ -975,7 +975,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 12px 28px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .services {
     padding: 45px 0;
   }
@@ -1151,7 +1151,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   gap: 14px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .advantages {
     padding: 65px 0;
   }
@@ -1181,7 +1181,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 60px 40px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .advantages {
     padding: 45px 0;
   }
@@ -1353,12 +1353,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   height: 100%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .gallery {
     padding: 65px 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .gallery {
     padding: 65px 0;
   }
@@ -1535,7 +1535,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   content: none;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .reviews {
     padding: 65px 0;
   }
@@ -1546,7 +1546,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding-bottom: 100px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .reviews {
     padding: 45px 0;
   }
@@ -1669,7 +1669,7 @@ iframe {
   flex-grow: 2 !important;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .contacts {
     padding: 65px 0;
   }
@@ -1695,7 +1695,7 @@ iframe {
     gap: 30px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .contacts {
     padding: 65px 0;
   }
@@ -1888,7 +1888,7 @@ footer .footerPolicy span a {
   text-decoration: none;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   footer {
     padding-top: 65px;
     padding-bottom: 60px;
@@ -1928,7 +1928,7 @@ footer .footerPolicy span a {
     line-height: 21.7px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   footer {
     padding-top: 45px;
     padding-bottom: 60px;
@@ -2040,7 +2040,7 @@ footer .footerPolicy span a {
   font-size: 46px;
   color: rgb(64, 64, 64);
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .news h1 {
     font-family: "Manrope";
     font-weight: 700;
@@ -2111,7 +2111,7 @@ footer .footerPolicy span a {
   font-size: 16px;
   color: rgb(144, 142, 142);
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .news .allNewsCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2581,7 +2581,7 @@ footer .footerPolicy span a {
   line-height: 27px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .bathhousesBanner {
     padding-bottom: 65px;
   }
@@ -2600,7 +2600,7 @@ footer .footerPolicy span a {
     line-height: 27px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .bathhousesBanner {
     padding-bottom: 45px;
   }
@@ -2730,7 +2730,7 @@ footer .footerPolicy span a {
   height: 100%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
   .sliderBathhouse {
     padding: 65px 0;
   }
@@ -2754,7 +2754,7 @@ footer .footerPolicy span a {
     gap: 14px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .sliderBathhouse {
     padding: 45px 0;
   }

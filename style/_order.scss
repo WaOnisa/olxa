@@ -18,7 +18,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
     .order{
         padding: 65px 0;
         .orderBlock{
@@ -33,7 +33,7 @@
         }
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
     .order{
         padding: 45px 0;
         .orderBlock{

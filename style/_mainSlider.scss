@@ -103,7 +103,7 @@
 }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
     .mainSlider{
         padding-bottom: 35px;
         .swiper {
@@ -124,7 +124,7 @@
         }
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
     .mainSlider{
         padding-bottom: 35px;
         .swiper {

@@ -31,7 +31,7 @@
             }
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 992px) and (min-width: 576px) {
             .eventsTitle{
                 h1{
                     font: {
@@ -66,7 +66,7 @@
             display: none;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 992px) and (min-width: 576px) {
             .eventsCards{
                 display: grid;
                 grid-template-columns: 1fr;
@@ -114,12 +114,12 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 992px) {
     .events{
         padding: 65px 0;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) and (min-width: 576px) {
     .events{
         padding: 45px 0;
         .eventsBlock{
