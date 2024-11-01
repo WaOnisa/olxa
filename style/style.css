@@ -155,6 +155,7 @@ header .headerNav nav {
 header .headerNav .buttonsHeader {
   display: flex;
   gap: 14px;
+  align-items: center;
 }
 header .headerNav .buttonHeader {
   display: flex;
