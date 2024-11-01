@@ -91,17 +91,15 @@ header {
             align-items: flex-end;
             gap: 22px;
         }
+        .buttonsHeader{
+            display: flex;
+            gap:14px; 
+        }
         .buttonHeader{
             display: flex;
             gap:14px; 
         }
-        .btn1000{
-                display: none;
-                padding: 10px 20px;
-            }
-        .btnMenu1000{
-                display: none;
-            }
+        
     }
 
     .offcanvas.offcanvas-end{
@@ -178,6 +176,9 @@ header {
     header{
         .header{
             padding: 16px 20px;
+            .headerNav{
+                gap: 26px;
+            }
         }
 
         a, .dropdown-menu, .btn-secondary{
@@ -187,33 +188,14 @@ header {
                 weight: 500;
             }
         }
-        .nav1400{
-            display: none;
-        }
-        .headerNav{
-            
-            .btn1400{
-                display: none;
-            }
-            .btn1000{
-                display: block;
-            }
-            .btnMenu1000{
-                display: flex; 
-                align-items: center;
-            }
-        }
+        
+        
     }
 }
 @media (max-width: 992px) and (min-width: 576px) {
     header{
-        .nav1000{
-            display: none;
-        }
         .headerNav{
-            nav{
-                display: none;
-            }
+            gap: 26px;
         }
         
     }
@@ -221,14 +203,7 @@ header {
 @media (max-width: 576px) {
     header{
 
-        .headerNav{
-            .btnMenu576{
-                display: none;
-            }
-            .btn1000{
-                display: none;
-            }
-        }
+        
     
     .offcanvas{
         .offcanvas-body{
