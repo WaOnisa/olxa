@@ -77,6 +77,10 @@
         }
 
         @media (max-width: 576px) {
+            .eventsCards{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
             .eventsTitle{
                 button{
                     display: none;

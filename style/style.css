@@ -85,7 +85,7 @@ header .header {
 header a {
   text-decoration: none;
   color: rgb(64, 64, 64);
-  line-height: 21.86px;
+  line-height: 136.63%;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
@@ -95,7 +95,7 @@ header a:hover {
 }
 header .btn-secondary {
   color: rgb(64, 64, 64);
-  line-height: 21.86px;
+  line-height: 136.63%;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
@@ -121,7 +121,7 @@ header .btn-secondary:hover {
 }
 header .dropdown-menu {
   color: rgb(64, 64, 64);
-  line-height: 19.12px;
+  line-height: 136.57%;
   font-family: "Manrope";
   font-size: 14px;
   font-weight: 500;
@@ -179,7 +179,7 @@ header .offcanvas .offcanvas-body .ulList {
   align-items: flex-start;
 }
 header .offcanvas .offcanvas-body a {
-  line-height: 35.1px;
+  line-height: 135%;
   font-size: 26px;
   font-weight: 700;
 }
@@ -192,14 +192,14 @@ header .offcanvas .offcanvas-body ul li {
   list-style: none;
 }
 header .offcanvas .offcanvas-body ul li a {
-  line-height: 30px;
+  line-height: 150%;
   font-size: 20px;
   font-weight: 500;
 }
 header .offcanvas .offcanvas-body p {
   white-space: nowrap;
   margin: 0;
-  line-height: 24.3px;
+  line-height: 135%;
   font-size: 18px;
   font-weight: 400;
 }
@@ -228,18 +228,33 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   header .header .headerNav {
     gap: 26px;
   }
+  header .header .headerNav .orderCall {
+    padding: 10px 20px;
+  }
   header a, header .dropdown-menu, header .btn-secondary {
-    line-height: 19.12px;
+    line-height: 136.57%;
     font-size: 14px;
     font-weight: 500;
   }
 }
 @media (max-width: 992px) and (min-width: 576px) {
-  header .headerNav {
-    gap: 26px;
+  header .header {
+    padding: 16px 20px;
+  }
+  header .header .orderCall {
+    padding: 10px 20px;
   }
 }
 @media (max-width: 576px) {
+  header .header {
+    padding: 16px 20px;
+  }
+  header .header .orderCall {
+    padding: 10px 20px;
+  }
+  header .offcanvas.offcanvas-end {
+    width: 100%;
+  }
   header .offcanvas .offcanvas-body {
     gap: 20px;
     padding-left: 26px;
@@ -250,7 +265,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     gap: 20px;
   }
   header .offcanvas .offcanvas-body a {
-    line-height: 27px;
+    line-height: 135%;
     font-size: 20px;
     font-weight: 700;
   }
@@ -260,12 +275,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     gap: 6px;
   }
   header .offcanvas .offcanvas-body ul li a {
-    line-height: 21px;
+    line-height: 150%;
     font-size: 14px;
     font-weight: 500;
   }
   header .offcanvas .offcanvas-body p {
-    line-height: 18.9px;
+    line-height: 135%;
     font-size: 14px;
     font-weight: 400;
   }
@@ -357,7 +372,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   color: #FFFFFF;
   margin: 0;
-  line-height: 64.4px;
+  line-height: 140%;
 }
 .mainSlider .swiper-slide .mainSliderText p {
   font-family: "Manrope";
@@ -365,7 +380,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 400;
   color: #FFFFFF;
   margin: 0;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
@@ -419,12 +434,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .mainSlider .swiper-slide .mainSliderText h1 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 41.6px;
+    line-height: 130%;
   }
   .mainSlider .swiper-slide .mainSliderText p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 21.6px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -451,12 +466,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .mainSlider .swiper-slide .mainSliderText h1 {
     font-size: 22px;
     font-weight: 700;
-    line-height: 28.6px;
+    line-height: 130%;
   }
   .mainSlider .swiper-slide .mainSliderText p {
     font-size: 12px;
     font-weight: 400;
-    line-height: 16.2px;
+    line-height: 135%;
   }
 }
 .order {
@@ -474,7 +489,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 150%;
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
@@ -487,7 +502,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .order .orderBlock h1 {
     font-weight: 800;
     font-size: 46px;
-    line-height: 55.2px;
+    line-height: 150%;
   }
 }
 @media (max-width: 992px) and (min-width: 576px) {
@@ -500,7 +515,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .order .orderBlock h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -513,7 +528,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .order .orderBlock h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
 }
 .houses {
@@ -525,7 +540,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .houses .housesBlock {
   display: flex;
@@ -545,7 +560,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesBlock .housesTitle h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -560,7 +575,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesBlock .housesTitle h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
 }
 .houses .housesCardsBlock {
@@ -575,7 +590,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   font-size: 26px;
   color: rgb(64, 64, 64);
-  line-height: 35.1px;
+  line-height: 135%;
 }
 .houses .housesCardsBlock span {
   margin: 0;
@@ -583,7 +598,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   font-size: 30px;
   color: rgb(64, 64, 64);
-  line-height: 40.98px;
+  line-height: 136.6%;
 }
 .houses .housesCardsBlock p {
   margin: 0;
@@ -591,7 +606,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 700;
   font-size: 16px;
   color: #3D5E38;
-  line-height: 21.86px;
+  line-height: 136.63%;
 }
 .houses .housesCardsBlock .houseCard {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04);
@@ -645,17 +660,17 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesCardsBlock h2 {
     font-weight: 700;
     font-size: 24px;
-    line-height: 35.1px;
+    line-height: 146.25%;
   }
   .houses .housesCardsBlock p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 19.12px;
+    line-height: 136.57%;
   }
   .houses .housesCardsBlock span {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.52px;
+    line-height: 136.62%;
   }
   .houses .housesCardsBlock .houseCard .houseCardInfo {
     padding: 20px 24px 30px 24px;
@@ -672,17 +687,17 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesCardsBlock h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 135%;
   }
   .houses .housesCardsBlock p {
     font-weight: 700;
     font-size: 12px;
-    line-height: 16.39px;
+    line-height: 136.58%;
   }
   .houses .housesCardsBlock span {
     font-weight: 700;
     font-size: 22px;
-    line-height: 30.05px;
+    line-height: 136.59%;
   }
   .houses .housesCardsBlock .housesStats svg {
     width: 36px;
@@ -709,17 +724,17 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesCardsBlock h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 135%;
   }
   .houses .housesCardsBlock p {
     font-weight: 700;
     font-size: 12px;
-    line-height: 16.39px;
+    line-height: 136.58%;
   }
   .houses .housesCardsBlock span {
     font-weight: 700;
     font-size: 22px;
-    line-height: 30.05px;
+    line-height: 136.59%;
   }
   .houses .housesCardsBlock .houseCardPeople {
     padding: 6px 10px;
@@ -810,6 +825,10 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   }
 }
 @media (max-width: 576px) {
+  .events .eventsBlock .eventsCards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .events .eventsBlock .eventsTitle button {
     display: none;
   }
@@ -822,7 +841,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 10px 0;
     font-weight: 700;
     font-size: 12px;
-    line-height: 16.39px;
+    line-height: 136.58%;
   }
 }
 .events .eventsBlock .eventCard {
@@ -871,7 +890,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .services .servicesBlock h1 span {
   color: #748A5B;
@@ -928,7 +947,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 }
 .services .servicesBlock .servicesCards .serviceCard div p {
   margin: 0;
-  line-height: 24.59px;
+  line-height: 136.61%;
   font-family: "Manrope";
   font-weight: 700;
   font-size: 18px;
@@ -951,10 +970,16 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock {
     gap: 40px;
   }
+  .services .servicesBlock .servicesCards {
+    grid-template-rows: repeat(2, 236px);
+  }
+  .services .servicesBlock .servicesCards .serviceCard div {
+    padding: 16px;
+  }
   .services .servicesBlock .servicesCards .serviceCard div p {
     font-weight: 700;
     font-size: 16px;
-    line-height: 21.86px;
+    line-height: 136.63%;
     padding: 12px 28px;
   }
 }
@@ -968,7 +993,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
   .services .servicesBlock .servicesCards {
     grid-template-columns: repeat(2, 1fr);
@@ -978,10 +1003,13 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     width: 42px;
     height: 42px;
   }
+  .services .servicesBlock .servicesCards .serviceCard div {
+    padding: 16px;
+  }
   .services .servicesBlock .servicesCards .serviceCard div p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 19.12px;
+    line-height: 136.57%;
     padding: 12px 20px;
   }
 }
@@ -995,16 +1023,19 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
   .services .servicesBlock .servicesCards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 236px);
   }
+  .services .servicesBlock .servicesCards .serviceCard div {
+    padding: 16px;
+  }
   .services .servicesBlock .servicesCards .serviceCard div p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 19.12px;
+    line-height: 136.57%;
     padding: 12px 20px;
   }
 }
@@ -1055,6 +1086,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 }
 .advantages .swiper-pagination .swiper-pagination-bullet {
   opacity: 1;
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1179,6 +1211,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     font-size: 30px;
     line-height: 135%;
   }
+  .advantages .swiper-pagination {
+    gap: 10px;
+  }
   .advantages .swiper-pagination .swiper-pagination-bullet p {
     font-weight: 700;
     font-size: 14px;
@@ -1198,11 +1233,18 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
+    max-width: 337px;
   }
   .advantages .blockSlide .advantagesSliderText {
     gap: 16.5px;
     padding: 40px 50px;
     order: -1;
+  }
+  .advantages .blockSlide .advantagesSliderText .advantagesSliderTitle {
+    gap: 14px;
+  }
+  .advantages .blockSlide .advantagesSliderText .advantagesSliderTitle img {
+    height: 33.54px;
   }
 }
 @media (max-width: 576px) {
@@ -1221,6 +1263,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     line-height: 135%;
   }
   .advantages .swiper-pagination {
+    gap: 10px;
     flex-wrap: nowrap;
     overflow-y: scroll;
   }
@@ -1237,6 +1280,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     grid-template-rows: repeat(2, 253px);
     gap: 20px;
   }
+  .advantages .blockSlide img {
+    max-height: 240px;
+  }
   .advantages .blockSlide h2 {
     font-weight: 700;
     font-size: 20px;
@@ -1251,6 +1297,12 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     gap: 16px;
     padding: 30px;
     order: -1;
+  }
+  .advantages .blockSlide .advantagesSliderText .advantagesSliderTitle {
+    gap: 6px;
+  }
+  .advantages .blockSlide .advantagesSliderText .advantagesSliderTitle img {
+    height: 26.46px;
   }
 }
 .gallery {
@@ -1273,7 +1325,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .gallery .galleryTitle h1 span {
   color: #748A5B;
@@ -1345,7 +1397,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .gallery .galleryTitle h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -1355,18 +1407,18 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .gallery .galleryTitle h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
-  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn {
+  .gallery .swiper .gallerySwiperBtnsSlide {
     display: flex;
   }
-  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn .swiper-button-prev {
-    right: 0;
+  .gallery .swiper .gallerySwiperBtnsSlide .swiper-button-prev {
+    left: 18.7px;
   }
-  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn .swiper-button-next {
-    left: 0;
+  .gallery .swiper .gallerySwiperBtnsSlide .swiper-button-next {
+    right: 18.7px;
   }
-  .gallery .swiper .gallerySwiperBtnsSlide .gallerySwiperBtn img {
+  .gallery .swiper .gallerySwiperBtnsSlide img {
     width: 40px;
     height: 40px;
   }
@@ -1400,7 +1452,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   background-color: #FFFFFF;
   border-radius: 20px;
 }
-.reviews .swiper-slide picture img {
+.reviews .swiper-slide .reviewImg picture img {
   width: 100%;
   height: 100%;
   max-height: 243px;
@@ -1408,7 +1460,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 .reviews .swiper-pagination {
   display: flex;
@@ -1447,12 +1499,15 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   align-items: center;
   gap: 14px;
 }
+.reviews .reviewTopUser img {
+  border-radius: 25px;
+}
 .reviews .reviewTopUser p {
   margin: 0;
   font-family: "Manrope";
   font-weight: 500;
   font-size: 16px;
-  line-height: 21.76px;
+  line-height: 136%;
   color: rgb(40, 40, 40);
 }
 .reviews .reviewStar {
@@ -1465,6 +1520,8 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   gap: 20px;
   padding: 30px;
   padding-bottom: 70px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.04);
 }
 .reviews .reviewBottomText p {
   margin: 0;
@@ -1472,7 +1529,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 400;
   font-size: 16px;
   color: rgb(64, 64, 64);
-  line-height: 24.8px;
+  line-height: 155%;
 }
 .reviews .reviewsTitle {
   display: flex;
@@ -1486,7 +1543,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-weight: 800;
   font-size: 46px;
   color: #FFFFFF;
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .reviews .reviewsTitle h1 span {
   color: #FFFFC0;
@@ -1533,7 +1590,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .reviews .reviewsTitle h1 {
     font-weight: 700;
     font-size: 30px;
-    line-height: 40.5px;
+    line-height: 135%;
   }
   .reviews .reviewText {
     padding: 30px 20px;
@@ -1541,7 +1598,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .reviews .reviewTopUser p {
     font-weight: 500;
     font-size: 14px;
-    line-height: 19.04px;
+    line-height: 136%;
   }
   .reviews .reviewTopUser img {
     width: 30px;
@@ -1554,7 +1611,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .reviews .reviewBottomText p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 21.7px;
+    line-height: 155%;
   }
 }
 @media (max-width: 576px) {
@@ -1596,6 +1653,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   font-size: 18px;
   color: rgb(64, 64, 64);
   line-height: 135%;
+  white-space: nowrap;
 }
 .contacts .contactsBlocks {
   display: flex;
@@ -1739,11 +1797,18 @@ iframe {
   .contacts .contactsBlock {
     gap: 20px;
   }
-  .contacts .contactsText {
+  .contacts .contactsBlock .contactsText {
     gap: 20px;
   }
-  .contacts .contactsText .contactsTextTop, .contacts .contactsText .contactsTextBottom {
+  .contacts .contactsBlock .contactsText .contactsTextTop, .contacts .contactsBlock .contactsText .contactsTextBottom {
     gap: 10px;
+  }
+  .contacts .contactsBlock .contactsText .contactsTextTop .contactsTextTopMaps {
+    gap: 20px;
+  }
+  iframe {
+    max-height: 270px;
+    max-width: 300;
   }
 }
 footer {
@@ -1788,7 +1853,7 @@ footer .footerTop .footerTopInf .footerTopContacts div p {
   font-weight: 400;
   color: rgb(64, 64, 64);
   margin: 0;
-  line-height: 21.6px;
+  line-height: 135%;
 }
 footer .footerTop .footerTopInf .footerTopContacts .footerContactsButton {
   display: flex;
@@ -1810,7 +1875,7 @@ footer .footerTop .footerTopInf h3 {
   font-weight: 700;
   color: rgb(64, 64, 64);
   margin: 0;
-  line-height: 24.59px;
+  line-height: 136.61%;
 }
 footer .footerTop .footerTopInf ul {
   display: flex;
@@ -1826,7 +1891,7 @@ footer .footerTop .footerTopInf ul li {
   font-weight: 500;
   color: rgb(64, 64, 64);
   margin: 0;
-  line-height: 21.86px;
+  line-height: 136.63%;
 }
 footer .footerTop .footerTopInf ul li a {
   text-decoration: none;
@@ -1843,7 +1908,7 @@ footer .footerPolicy p {
   font-weight: 600;
   color: rgb(64, 64, 64);
   margin: 0;
-  line-height: 21px;
+  line-height: 150%;
 }
 footer .footerPolicy a {
   font-family: "Manrope";
@@ -1851,13 +1916,14 @@ footer .footerPolicy a {
   font-weight: 600;
   color: rgb(64, 64, 64);
   margin: 0;
-  line-height: 24.8px;
+  line-height: 155%;
 }
 footer .footerPolicy span {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 600;
   color: rgb(64, 64, 64);
+  line-height: 155%;
   margin: 0;
   text-decoration: none;
 }
@@ -1876,7 +1942,12 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTop .footerTopContacts div p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 21.6px;
+    line-height: 135%;
+  }
+  footer .footerBlock .footerTop .footerTopContacts div .footerTopContactsNumber {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 135%;
   }
   footer .footerBlock .footerTopInf {
     gap: 40px;
@@ -1884,7 +1955,7 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf h3 {
     font-size: 18px;
     font-weight: 700;
-    line-height: 24.59px;
+    line-height: 136.61%;
   }
   footer .footerBlock .footerTopInf ul {
     gap: 10px;
@@ -1892,17 +1963,17 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf ul li {
     font-size: 16px;
     font-weight: 500;
-    line-height: 21.86px;
+    line-height: 136.63%;
   }
   footer .footerBlock .footerPolicy p {
     font-size: 14px;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 150%;
   }
   footer .footerBlock .footerPolicy a {
     font-size: 16px;
     font-weight: 600;
-    line-height: 21.7px;
+    line-height: 155%;
   }
 }
 @media (max-width: 992px) and (min-width: 576px) {
@@ -1920,10 +1991,15 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTop .footerTopInfBlock {
     gap: 12px;
   }
-  footer .footerBlock .footerTop .footerTopContacts p {
+  footer .footerBlock .footerTop .footerTopContacts div p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  footer .footerBlock .footerTop .footerTopContacts div .footerTopContactsNumber {
     font-size: 14px;
     font-weight: 500;
-    line-height: 19.12px;
+    line-height: 140%;
   }
   footer .footerBlock .footerTopInf {
     grid-template-columns: repeat(3, 1fr);
@@ -1933,7 +2009,7 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf h3 {
     font-size: 16px;
     font-weight: 700;
-    line-height: 21.86px;
+    line-height: 136.63%;
   }
   footer .footerBlock .footerTopInf ul {
     gap: 10px;
@@ -1941,17 +2017,21 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf ul li {
     font-size: 14px;
     font-weight: 500;
-    line-height: 21.86px;
+    line-height: 156.14%;
   }
-  footer .footerBlock .footerPolicy div p {
+  footer .footerBlock .footerPolicy {
+    flex-direction: column;
+    gap: 8px;
+  }
+  footer .footerBlock .footerPolicy p {
     font-size: 14px;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 150%;
   }
-  footer .footerBlock .footerPolicy div a {
+  footer .footerBlock .footerPolicy a {
     font-size: 14px;
     font-weight: 600;
-    line-height: 21.7px;
+    line-height: 155%;
   }
 }
 @media (max-width: 576px) {
@@ -1967,10 +2047,15 @@ footer .footerPolicy span a {
     gap: 30px;
     flex-direction: column;
   }
-  footer .footerBlock .footerTop .footerTopContacts p {
+  footer .footerBlock .footerTop .footerTopContacts div p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 19.6px;
+    line-height: 140%;
+  }
+  footer .footerBlock .footerTop .footerTopContacts div .footerTopContactsNumber {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
   }
   footer .footerBlock .footerTopInf {
     grid-template-columns: 1fr;
@@ -1982,11 +2067,12 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf .footerContactsButtons {
     display: flex;
     max-width: 196px;
+    padding-top: 10px;
   }
   footer .footerBlock .footerTopInf h3 {
     font-size: 14px;
     font-weight: 700;
-    line-height: 21.86px;
+    line-height: 156.14%;
   }
   footer .footerBlock .footerTopInf ul {
     gap: 10px;
@@ -1994,20 +2080,21 @@ footer .footerPolicy span a {
   footer .footerBlock .footerTopInf ul li {
     font-size: 14px;
     font-weight: 500;
-    line-height: 19.12px;
+    line-height: 136.57%;
   }
   footer .footerBlock .footerPolicy {
     flex-direction: column;
+    gap: 8px;
   }
-  footer .footerBlock .footerPolicy div p {
+  footer .footerBlock .footerPolicy p {
     font-size: 14px;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 150%;
   }
-  footer .footerBlock .footerPolicy div a {
+  footer .footerBlock .footerPolicy a {
     font-size: 14px;
     font-weight: 600;
-    line-height: 21.7px;
+    line-height: 155%;
   }
 }
 .news h1 {
@@ -2016,12 +2103,14 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
+  line-height: 120%;
 }
 @media (max-width: 992px) and (min-width: 576px) {
   .news h1 {
     font-family: "Manrope";
     font-weight: 700;
     font-size: 30px;
+    line-height: 135%;
   }
 }
 @media (max-width: 576px) {
@@ -2029,11 +2118,13 @@ footer .footerPolicy span a {
     font-family: "Manrope";
     font-weight: 700;
     font-size: 26px;
+    line-height: 135%;
   }
 }
 .news .newsPathLink a, .news .newsPathLink span {
   margin: 0;
   text-decoration: none;
+  line-height: 135%;
   font-family: "Manrope";
   font-weight: 400;
   font-size: 16px;
@@ -2075,6 +2166,7 @@ footer .footerPolicy span a {
 }
 .news .allNewsCards .newsCard .newsCardText h3 {
   margin: 0;
+  line-height: 135%;
   font-family: "Manrope";
   font-weight: 600;
   font-size: 18px;
@@ -2083,6 +2175,7 @@ footer .footerPolicy span a {
 .news .allNewsCards .newsCard .newsCardText p {
   margin: 0;
   text-decoration: none;
+  line-height: 135%;
   font-family: "Manrope";
   font-weight: 500;
   font-size: 16px;
@@ -2321,6 +2414,7 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: #FFFFFF;
+  line-height: 140%;
 }
 .housesBanner p {
   margin: 0;
@@ -2328,6 +2422,7 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
+  line-height: 135%;
 }
 
 .pageHouse {
@@ -2380,6 +2475,7 @@ footer .footerPolicy span a {
 }
 .pageHouse .pageHouseBlockSlideText .houseText h1 {
   margin: 0;
+  line-height: 120%;
   font-family: "Manrope";
   font-weight: 800;
   font-size: 46px;
@@ -2387,6 +2483,7 @@ footer .footerPolicy span a {
 }
 .pageHouse .pageHouseBlockSlideText .houseText p {
   margin: 0;
+  line-height: 150%;
   font-family: "Manrope";
   font-weight: 400;
   font-size: 16px;
@@ -2413,6 +2510,7 @@ footer .footerPolicy span a {
 }
 .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText p {
   margin: 0;
+  line-height: 150%;
   font-family: "Manrope";
   font-weight: 600;
   font-size: 18px;
@@ -2420,6 +2518,7 @@ footer .footerPolicy span a {
 }
 .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText span {
   margin: 0;
+  line-height: 150%;
   font-family: "Manrope";
   font-weight: 700;
   font-size: 22px;
@@ -2449,7 +2548,7 @@ footer .footerPolicy span a {
   font-family: "Manrope";
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 150%;
 }
 .modal-body .policyModal {
   display: flex;
@@ -2466,7 +2565,7 @@ footer .footerPolicy span a {
   font-size: 14px;
   font-weight: 400;
   color: black;
-  line-height: 18.9px;
+  line-height: 135%;
 }
 .modal-body form {
   display: flex;
@@ -2484,7 +2583,7 @@ footer .footerPolicy span a {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
-  line-height: 21.6px;
+  line-height: 135%;
 }
 .modal-body form input {
   background-color: rgb(238, 238, 238);
@@ -2498,7 +2597,7 @@ footer .footerPolicy span a {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
-  line-height: 21.6px;
+  line-height: 135%;
 }
 .modal-body form input::placeholder {
   color: rgb(129, 126, 126);
@@ -2506,7 +2605,7 @@ footer .footerPolicy span a {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
-  line-height: 21.6px;
+  line-height: 135%;
 }
 
 .bathhousesBanner {
@@ -2672,7 +2771,7 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: #FFFFFF;
-  line-height: 55.2px;
+  line-height: 120%;
 }
 .sliderBathhouse p {
   margin: 0;
@@ -2680,7 +2779,7 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
-  line-height: 24px;
+  line-height: 150%;
   max-width: 323px;
 }
 .sliderBathhouse .bathhouseSwiperBtnsSlide {
@@ -2714,12 +2813,12 @@ footer .footerPolicy span a {
   .sliderBathhouse h1 {
     font-weight: 800;
     font-size: 42px;
-    line-height: 50.4px;
+    line-height: 120%;
   }
   .sliderBathhouse p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 150%;
     max-width: 323px;
   }
   .sliderBathhouse .sliderbathhouseText {
@@ -2743,12 +2842,12 @@ footer .footerPolicy span a {
   .sliderBathhouse h1 {
     font-weight: 800;
     font-size: 42px;
-    line-height: 50.4px;
+    line-height: 120%;
   }
   .sliderBathhouse p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 150%;
     max-width: 323px;
   }
   .sliderBathhouse .sliderbathhouseText {
@@ -2773,12 +2872,12 @@ footer .footerPolicy span a {
   .sliderBathhouse h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 35.1px;
+    line-height: 135%;
   }
   .sliderBathhouse p {
     font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 150%;
     max-width: 323px;
   }
   .sliderBathhouse .sliderbathhouseText {

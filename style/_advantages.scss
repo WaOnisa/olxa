@@ -44,6 +44,7 @@
         top: 0;
         .swiper-pagination-bullet{
             opacity: 1;
+            margin: 0;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -130,6 +131,7 @@
             display: flex;
             flex-direction: row;
             gap: 14px;
+            
         }
     }  
 }
@@ -165,6 +167,7 @@
             .advantagesSliderText{
                 gap: 20px;
                 padding: 60px 40px;
+                
             }
         }
     }
@@ -186,6 +189,7 @@
             }
         }
         .swiper-pagination{
+            gap: 10px;
             .swiper-pagination-bullet{
                 p{
                     font: {
@@ -193,6 +197,7 @@
                         size: 14px;
                     }
                     line-height: 135%;
+                    
                 }
             }
         }
@@ -213,11 +218,18 @@
                     size: 14px;
                 }
                 line-height: 150%;
+                max-width: 337px;
             }
             .advantagesSliderText{
                 gap: 16.5px;
                 padding: 40px 50px;
                 order: -1;
+                .advantagesSliderTitle{
+                    gap: 14px;
+                    img{
+                        height: 33.54px;
+                    }
+                }
             }
         }
     }
@@ -239,6 +251,7 @@
             }
         }
         .swiper-pagination{
+            gap: 10px;
             flex-wrap: nowrap;
             overflow-y: scroll;
             .swiper-pagination-bullet{
@@ -259,6 +272,9 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 253px);
             gap: 20px;
+            img{
+                max-height: 240px;
+            }
             h2{
                 font: {
                     weight:700;
@@ -277,6 +293,12 @@
                 gap: 16px;
                 padding: 30px;
                 order: -1;
+                .advantagesSliderTitle{
+                    gap: 6px;
+                    img{
+                        height: 26.46px;
+                    }
+                }
             }
         }
     }

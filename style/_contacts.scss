@@ -39,6 +39,7 @@
             }
         color: $black;
         line-height: 135%;
+        white-space: nowrap;
     }
     .contactsBlocks{
         display: flex;
@@ -201,12 +202,23 @@ iframe {
         }
         .contactsBlock{
             gap: 20px;
+
+            .contactsText{
+            gap: 20px; 
+            .contactsTextTop, .contactsTextBottom{
+                    gap: 10px;
+            }
+            .contactsTextTop{
+                .contactsTextTopMaps{
+                    gap: 20px;
+                }
+            }
+            }
         }
-        .contactsText{
-           gap: 20px; 
-           .contactsTextTop, .contactsTextBottom{
-                gap: 10px;
-           }
-        }
+        
     }
+iframe {
+    max-height: 270px;
+    max-width: 300;
+}
 }

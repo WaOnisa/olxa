@@ -179,6 +179,9 @@ header {
             padding: 16px 20px;
             .headerNav{
                 gap: 26px;
+                .orderCall{
+                    padding: 10px 20px;
+                }
             }
         }
 
@@ -195,17 +198,30 @@ header {
 }
 @media (max-width: 992px) and (min-width: 576px) {
     header{
-        .headerNav{
-            gap: 26px;
+        .header{
+            padding: 16px 20px;
+            
+            .orderCall{
+                padding: 10px 20px;
+            }
         }
+        
         
     }
 }
 @media (max-width: 576px) {
     header{
-
+        .header{
+            padding: 16px 20px;
+            .orderCall{
+                padding: 10px 20px;
+            }
+        }
         
-    
+    .offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
     .offcanvas{
         .offcanvas-body{
             gap: 20px;

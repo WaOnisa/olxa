@@ -49,7 +49,7 @@
                     <div class="buttonsHeader">
                         <div class="buttonHeader d-none d-sm-flex">
                         <button class="mainButtonDark">Забронировать</button>
-                        <button type="button" class="mainButtonLight" data-bs-toggle="modal" data-bs-target="#modal">
+                        <button type="button" class="mainButtonLight orderCall" data-bs-toggle="modal" data-bs-target="#modal">
                             <p class="d-none d-sm-none d-lg-none d-xxl-flex">Заказать звонок</p>
                             <img class="d-none d-sm-flex d-xxl-none" src="/img/header/phone.svg">
                         </button>
@@ -183,10 +183,10 @@
                         <span class="swiper-pagination-bullet"></span>
                         <span class="swiper-pagination-bullet"></span>
                     </div>
-                    <div class="swiper-button-prev swiper-button-prev1">
+                    <div class="swiper-button-prev swiper-button-prev1 d-none d-sm-none d-lg-flex">
                         <img src="/img/mainPage/mainSlider/arrow-left.svg">
                     </div>
-                    <div class="swiper-button-next swiper-button-next1">
+                    <div class="swiper-button-next swiper-button-next1 d-none d-sm-none d-lg-flex">
                         <img src="/img/mainPage/mainSlider/arrow-right.svg">
                     </div>
                 </div>
@@ -415,21 +415,19 @@
                         <div class="blockAdvantageSlide">
                             <div class="swiper swiper2">
                                 <div class="swiper-wrapper">   
-                                    <div class="swiper-slide">
-                                            
-                                                <div class="blockSlide">
-                                                    <picture>
-                                                        <img src="img/mainPage/advantages/advantagesSlider.webp">
-                                                    </picture>
-                                                    <div class="advantagesSliderText">
-                                                        <div class="advantagesSliderTitle">
-                                                            <img src="/img/mainPage/advantages/dubList.svg">
-                                                            <h2>Большая территория</h2>
-                                                        </div>
-                                                        <p>Одним из главных достоинств нашей базы отдыха является обширная территория, которая создает уникальные условия для комфортного и разнообразного времяпрепровождения</p>
-                                                    </div>
+                                    <div class="swiper-slide">  
+                                        <div class="blockSlide">
+                                            <picture>
+                                                <img src="img/mainPage/advantages/advantagesSlider.webp">
+                                            </picture>
+                                            <div class="advantagesSliderText">
+                                                <div class="advantagesSliderTitle">
+                                                    <img src="/img/mainPage/advantages/dubList.svg">
+                                                    <h2>Большая территория</h2>
                                                 </div>
-                                           
+                                                <p>Одним из главных достоинств нашей базы отдыха является обширная территория, которая создает уникальные условия для комфортного и разнообразного времяпрепровождения</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="swiper-slide">
                                             
@@ -500,37 +498,37 @@
                     </div>
                 </div>
                 <div>
-                    <div class="swiper swiper3">
-                        <div class="swiper-wrapper">   
-                            <div class="swiper-slide container">
+                    <div class="swiper swiper3 container-fluid">
+                        <div class="swiper-wrapper overflow-visible">   
+                            <div class="swiper-slide">
                                 <picture>
                                     <img src="/img/mainPage/gallery/gallery1.webp">
                                 </picture>
                             </div>
-                            <div class="swiper-slide container">
+                            <div class="swiper-slide">
                                 <picture>
                                     <img src="/img/mainPage/gallery/gallery2.webp">
                                 </picture>
                             </div>
-                            <div class="swiper-slide container">
+                            <div class="swiper-slide">
                                 <picture>
                                     <img src="/img/mainPage/gallery/gallery3.webp">
                                 </picture>
                             </div>
-                            <div class="swiper-slide container">
+                            <div class="swiper-slide">
                                 <picture>
                                     <img src="/img/mainPage/gallery/gallery2.webp">
                                 </picture>
                             </div>
-                            <div class="swiper-slide container">
+                            <div class="swiper-slide">
                                 <picture>
                                     <img src="/img/mainPage/gallery/gallery3.webp">
                                 </picture>
                             </div>
                         </div>
-                        <div class="gallerySwiperBtnsSlide d-flex d-sm-none">
-                            <div class="swiper-button-prev swiper-button-prev31 gallerySwiperBtn"><img src="/img/btndark.svg"></div>
-                            <div class="swiper-button-next swiper-button-next31 gallerySwiperBtn"><img src="/img/btndark1.svg"></div>
+                        <div class="gallerySwiperBtnsSlide container d-flex d-sm-none">
+                            <div class="swiper-button-prev swiper-button-prev31 gallerySwiperBtn"><img src="/img/galleryBtn.svg"></div>
+                            <div class="swiper-button-next swiper-button-next31 gallerySwiperBtn"><img src="/img/galleryBtn1.svg"></div>
                         </div>
                     </div>
                     </div>
@@ -557,7 +555,7 @@
                 <div class="container">
                         <div class="reviewsTitle">
                             <h1><span>Отзывы</span> наших гостей</h1>
-                            <div class="reviewsSwiperBtns">
+                            <div class="reviewsSwiperBtns d-none d-sm-flex">
                                 <div class="swiper-button-prev swiper-button-prev4 reviewsSwiperBtn"><img src="/img/btnlight.png"></div>
                                 <div class="swiper-button-next swiper-button-next4 reviewsSwiperBtn"><img src="/img/btnlight1.png"></div>
                             </div>
@@ -565,9 +563,11 @@
                     <div class="swiper swiper4">
                             <div class="swiper-wrapper">   
                                 <div class="swiper-slide">
-                                    <picture>
-                                        <img src="/img/mainPage/reviews/reviews.webp">
-                                    </picture>
+                                    <div class="reviewImg">
+                                        <picture>
+                                            <img src="/img/mainPage/reviews/reviews.webp">
+                                        </picture>
+                                    </div>
                                     <div class="reviewText">
                                         <div class="reviewTopText">
                                             <div class="reviewTopUser">
@@ -596,9 +596,12 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <picture>
-                                        <img src="/img/mainPage/reviews/reviews.webp">
-                                    </picture>
+                                    <div class="reviewImg">
+                                        
+                                        <picture>
+                                            <img src="/img/mainPage/reviews/reviews.webp">
+                                        </picture>
+                                    </div>
                                     <div class="reviewText">
                                         <div class="reviewTopText">
                                             <div class="reviewTopUser">
@@ -627,9 +630,12 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <picture>
-                                        <img src="/img/mainPage/reviews/reviews.webp">
-                                    </picture>
+                                    <div class="reviewImg">
+                                        
+                                        <picture>
+                                            <img src="/img/mainPage/reviews/reviews.webp">
+                                        </picture>
+                                    </div>
                                     <div class="reviewText">
                                         <div class="reviewTopText">
                                             <div class="reviewTopUser">
@@ -658,9 +664,12 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <picture>
-                                        <img src="/img/mainPage/reviews/reviews.webp">
-                                    </picture>
+                                    <div class="reviewImg">
+                                        
+                                        <picture>
+                                            <img src="/img/mainPage/reviews/reviews.webp">
+                                        </picture>
+                                    </div>
                                     <div class="reviewText">
                                         <div class="reviewTopText">
                                             <div class="reviewTopUser">
@@ -689,9 +698,12 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <picture>
-                                        <img src="/img/mainPage/reviews/reviews.webp">
-                                    </picture>
+                                    <div class="reviewImg">
+                                        
+                                        <picture>
+                                            <img src="/img/mainPage/reviews/reviews.webp">
+                                        </picture>
+                                    </div>
                                     <div class="reviewText">
                                         <div class="reviewTopText">
                                             <div class="reviewTopUser">
@@ -809,7 +821,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                             </div>
                             <div>
                                 <img src="/img/footer/phone.svg">
-                                <p>+7 (987) 250-03-10</p>
+                                <p class="footerTopContactsNumber">+7 (987) 250-03-10</p>
                             </div>
                             <div class="footerContactsButton">
                                 <a href="#">

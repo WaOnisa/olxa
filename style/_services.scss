@@ -96,8 +96,10 @@
         .servicesBlock{
             gap: 40px;
             .servicesCards{
+                grid-template-rows: repeat(2, 236px);
                 .serviceCard{
                     div{
+                        padding: 16px;
                         p{
                             font: { 
                                 weight:700;
@@ -134,6 +136,7 @@
                         height: 42px;
                     }
                     div{
+                        padding: 16px;
                         p{
                             font: { 
                                 weight:700;
@@ -165,6 +168,7 @@
                 grid-template-rows: repeat(6, 236px);
                 .serviceCard{
                     div{
+                        padding: 16px;
                         p{
                             font: { 
                                 weight:700;

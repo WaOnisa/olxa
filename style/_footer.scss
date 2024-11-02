@@ -151,6 +151,13 @@ footer{
                             }
                             line-height: 135%;
                         }
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 16px;
+                                weight: 500;
+                            }
+                            line-height: 135%;
+                        }
                     }
                 }
             }
@@ -206,12 +213,21 @@ footer{
                     gap: 12px;
                 }
                 .footerTopContacts{
-                    p{
-                        font: {
-                            size: 14px;
-                            weight: 500;
+                    div{
+                        p{
+                            font: {
+                                size: 14px;
+                                weight: 400;
+                            }
+                            line-height: 140%;
                         }
-                        line-height: 140%;
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 14px;
+                                weight: 500;
+                            }
+                            line-height: 140%;
+                        }
                     }
                 }
             }
@@ -238,7 +254,8 @@ footer{
                 }
             }
             .footerPolicy{
-                div{
+                flex-direction: column;
+                gap: 8px;
                     p{
                         font: {
                             size: 14px;
@@ -253,7 +270,7 @@ footer{
                             }
                         line-height: 155%;
                     } 
-                }
+                
             }
         }
     }
@@ -270,12 +287,21 @@ footer{
                 gap: 30px;
                 flex-direction: column;
                 .footerTopContacts{
-                    p{
-                        font: {
-                            size: 14px;
-                            weight: 400;
+                    div{
+                        p{
+                            font: {
+                                size: 14px;
+                                weight: 400;
+                            }
+                            line-height: 140%;
                         }
-                        line-height: 140%;
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 14px;
+                                weight: 500;
+                            }
+                            line-height: 140%;
+                        }
                     }
                 }
             }
@@ -288,6 +314,7 @@ footer{
                 .footerContactsButtons{
                     display: flex;    
                     max-width: 196px;
+                    padding-top: 10px;
                 }
                 h3{
                     font: {
@@ -309,7 +336,7 @@ footer{
             }
             .footerPolicy{
                 flex-direction: column;
-                div{
+                gap: 8px;
                     p{
                         font: {
                             size: 14px;
@@ -324,7 +351,7 @@ footer{
                             }
                         line-height: 155%;
                     }
-                } 
+                 
             }
         }
     }
