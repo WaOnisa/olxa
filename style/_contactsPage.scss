@@ -1,0 +1,228 @@
+.contactsPage{
+    padding-bottom: 75px;
+    padding-top: 30px;
+    h1{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 46px;
+            }
+            color: $black;
+            line-height: 120%;
+    }
+    h2{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:600;
+                size: 30px;
+            }
+            color: $black;
+            line-height: 135%;
+    }
+    p{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:400;
+                size: 18px;
+            }
+            color: $black;
+            line-height: 135%;
+    }
+    a{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:400;
+                size: 18px;
+            }
+        color: $black;
+        line-height: 135%;
+        white-space: nowrap;
+    }
+    .contactsBlocks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .contactsBlock{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1 !important;
+        gap: 44px;
+        .contactsText{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .contactsTextTop{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .contactsTextTopMaps{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 26px;
+                }
+            }
+            .contactsTextBottom{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .contactsTextBottomBtn{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}
+iframe {
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 1000px;
+}
+.contactsMap{
+    flex-grow: 2 !important;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .contactsPage{
+        padding-bottom: 65px;
+        padding-top: 25px;
+        h2{
+            font: {
+                weight:600;
+                size: 30px;
+            }
+            line-height: 135%;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 22px;
+            }
+            line-height: 135%;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 22px;
+            }
+            line-height: 135%;
+        }
+        .contactsBlock{
+            gap: 30px;
+        }
+        .contactsText{
+           gap: 30px; 
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .contactsPage{
+        padding-bottom: 65px;
+        padding-top: 15px;
+        h1{
+            font: {
+                weight:700;
+                size: 30px;
+            }
+            line-height: 135%;
+        }
+        h2{
+            font: {
+                weight:600;
+                size: 24px;
+            }
+            line-height: 135%;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 135%;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 135%;
+        }
+        .contactsBlocks{
+            flex-direction: column;
+        }
+        .contactsBlock{
+            gap: 20px;
+        }
+        .contactsText{
+           gap: 20px; 
+           .contactsTextTop, .contactsTextBottom{
+                gap: 14px;
+           }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contactsPage{
+        padding-bottom: 65px;
+        padding-top: 15px;
+        h1{
+            font: {
+                weight:700;
+                size: 26px;
+            }
+            line-height: 135%;
+        }
+        h2{
+            font: {
+                weight:500;
+                size: 18px;
+            }
+            line-height: 135%;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 135%;
+        }
+        a{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 135%;
+        }
+        .contactsBlocks{
+            flex-direction: column;
+        }
+        .contactsBlock{
+            gap: 20px;
+
+            .contactsText{
+            gap: 20px; 
+            .contactsTextTop, .contactsTextBottom{
+                    gap: 10px;
+            }
+            .contactsTextTop{
+                .contactsTextTopMaps{
+                    gap: 20px;
+                }
+            }
+            }
+        }
+        
+    }
+iframe {
+    max-height: 270px;
+    max-width: 300;
+}
+}

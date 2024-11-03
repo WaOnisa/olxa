@@ -3743,12 +3743,16 @@ footer .footerPolicy span a {
     max-width: 210px;
   }
 }
-.aboutLinks .aboutPathLink {
+.links {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.links .pathLink {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
-.aboutLinks .aboutPathLink a, .aboutLinks .aboutPathLink span {
+.links .pathLink a, .links .pathLink span {
   margin: 0;
   text-decoration: none;
   font-family: "Manrope";
@@ -3757,7 +3761,7 @@ footer .footerPolicy span a {
   color: rgb(129, 126, 126);
   line-height: 135%;
 }
-.aboutLinks .aboutPathLink h1 {
+.links .pathLink h1 {
   margin: 0;
   font-family: "Manrope";
   font-weight: 800;
@@ -3766,6 +3770,63 @@ footer .footerPolicy span a {
   line-height: 120%;
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .links {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .links .pathLink {
+    gap: 20px;
+  }
+  .links .pathLink a, .links .pathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .links .pathLink h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .links {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .links .pathLink {
+    gap: 22px;
+  }
+  .links .pathLink a, .links .pathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .links .pathLink h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+}
+@media (max-width: 576px) {
+  .links {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .links .pathLink {
+    gap: 22px;
+  }
+  .links .pathLink a, .links .pathLink span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .links .pathLink h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+  }
+}
 .advantagesAbout {
   padding-bottom: 75px;
   padding-top: 25px;
@@ -4034,6 +4095,202 @@ footer .footerPolicy span a {
   }
   .advantagesAbout .blockSlide .advantagesSliderText .advantagesSliderTitle img {
     height: 26.46px;
+  }
+}
+.contactsPage {
+  padding-bottom: 75px;
+  padding-top: 30px;
+}
+.contactsPage h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(64, 64, 64);
+  line-height: 120%;
+}
+.contactsPage h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+}
+.contactsPage p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+}
+.contactsPage a {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+  white-space: nowrap;
+}
+.contactsPage .contactsBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contactsPage .contactsBlock {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1 !important;
+  gap: 44px;
+}
+.contactsPage .contactsBlock .contactsText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contactsPage .contactsBlock .contactsText .contactsTextTop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contactsPage .contactsBlock .contactsText .contactsTextTop .contactsTextTopMaps {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+.contactsPage .contactsBlock .contactsText .contactsTextBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contactsPage .contactsBlock .contactsText .contactsTextBottom .contactsTextBottomBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+iframe {
+  border-radius: 24px;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.contactsMap {
+  flex-grow: 2 !important;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .contactsPage {
+    padding-bottom: 65px;
+    padding-top: 25px;
+  }
+  .contactsPage h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .contactsPage p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 135%;
+  }
+  .contactsPage a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 135%;
+  }
+  .contactsPage .contactsBlock {
+    gap: 30px;
+  }
+  .contactsPage .contactsText {
+    gap: 30px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .contactsPage {
+    padding-bottom: 65px;
+    padding-top: 15px;
+  }
+  .contactsPage h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .contactsPage h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+  }
+  .contactsPage p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .contactsPage a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .contactsPage .contactsBlocks {
+    flex-direction: column;
+  }
+  .contactsPage .contactsBlock {
+    gap: 20px;
+  }
+  .contactsPage .contactsText {
+    gap: 20px;
+  }
+  .contactsPage .contactsText .contactsTextTop, .contactsPage .contactsText .contactsTextBottom {
+    gap: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contactsPage {
+    padding-bottom: 65px;
+    padding-top: 15px;
+  }
+  .contactsPage h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .contactsPage h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+  }
+  .contactsPage p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .contactsPage a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .contactsPage .contactsBlocks {
+    flex-direction: column;
+  }
+  .contactsPage .contactsBlock {
+    gap: 20px;
+  }
+  .contactsPage .contactsBlock .contactsText {
+    gap: 20px;
+  }
+  .contactsPage .contactsBlock .contactsText .contactsTextTop, .contactsPage .contactsBlock .contactsText .contactsTextBottom {
+    gap: 10px;
+  }
+  .contactsPage .contactsBlock .contactsText .contactsTextTop .contactsTextTopMaps {
+    gap: 20px;
+  }
+  iframe {
+    max-height: 270px;
+    max-width: 300;
   }
 }
 * {
