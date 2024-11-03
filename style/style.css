@@ -2391,12 +2391,14 @@ footer .footerPolicy span a {
     line-height: 150%;
   }
 }
+.rules {
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
 .rules .rulesBlocks {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top: 40px;
-  padding-bottom: 75px;
+  gap: 22px;
 }
 .rules .rulesBlocks h1 {
   margin: 0;
@@ -2404,6 +2406,7 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
+  line-height: 120%;
 }
 .rules .rulesBlocks .rulesPathLink a, .rules .rulesBlocks .rulesPathLink span {
   margin: 0;
@@ -2412,8 +2415,10 @@ footer .footerPolicy span a {
   font-weight: 400;
   font-size: 16px;
   color: rgb(129, 126, 126);
+  line-height: 135%;
 }
 .rules .rulesBlocks .rulesLink {
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -2427,6 +2432,7 @@ footer .footerPolicy span a {
   font-weight: 600;
   font-size: 32px;
   color: rgb(64, 64, 64);
+  line-height: 135%;
 }
 .rules .rulesBlocks .rulesLink div {
   display: flex;
@@ -2441,17 +2447,18 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: #3D5E38;
+  line-height: 135%;
 }
 .rules .rulesBlocks .rulesLink div a:hover {
   text-decoration: underline;
 }
 .rules .rulesBlocks .allrules {
-  max-width: 840px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 .rules .rulesBlocks .allrules .rulesBlock {
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -2467,6 +2474,7 @@ footer .footerPolicy span a {
   font-weight: 600;
   font-size: 32px;
   color: rgb(64, 64, 64);
+  line-height: 135%;
 }
 .rules .rulesBlocks .allrules .rulesBlock p {
   margin: 0;
@@ -2474,8 +2482,180 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: rgb(64, 64, 64);
+  line-height: 150%;
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .rules {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+  .rules .rulesBlocks {
+    gap: 20px;
+  }
+  .rules .rulesBlocks h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+  .rules .rulesBlocks .rulesPathLink a, .rules .rulesBlocks .rulesPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink {
+    max-width: 670px;
+    gap: 16px;
+    padding: 30px 40px;
+  }
+  .rules .rulesBlocks .rulesLink h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink div {
+    gap: 12px;
+  }
+  .rules .rulesBlocks .rulesLink div a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules {
+    gap: 40px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock {
+    max-width: 670px;
+    gap: 32px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock .rulesBlockText {
+    gap: 18px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .rules {
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  .rules .rulesBlocks {
+    gap: 14px;
+  }
+  .rules .rulesBlocks h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesPathLink a, .rules .rulesBlocks .rulesPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink {
+    max-width: 670px;
+    gap: 16px;
+    padding: 30px 40px;
+  }
+  .rules .rulesBlocks .rulesLink h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink div {
+    gap: 8px;
+  }
+  .rules .rulesBlocks .rulesLink div a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules {
+    gap: 30px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock {
+    max-width: 670px;
+    gap: 32px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock .rulesBlockText {
+    gap: 18px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 576px) {
+  .rules {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .rules .rulesBlocks {
+    gap: 14px;
+  }
+  .rules .rulesBlocks h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesPathLink a, .rules .rulesBlocks .rulesPathLink span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink {
+    max-width: 670px;
+    gap: 16px;
+    padding: 22px 30px;
+  }
+  .rules .rulesBlocks .rulesLink h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .rulesLink div {
+    gap: 8px;
+  }
+  .rules .rulesBlocks .rulesLink div a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules {
+    gap: 20px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock {
+    max-width: 670px;
+    gap: 32px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock .rulesBlockText {
+    gap: 10px;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .rules .rulesBlocks .allrules .rulesBlock p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
 .policy .policyBlocks {
   display: flex;
   flex-direction: column;
