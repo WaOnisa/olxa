@@ -2824,7 +2824,13 @@ footer .footerPolicy span a {
 .pageHouse {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
+.pageHouse .pageHouseBlock {
   gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .pageHouse .pageHousePathLink a, .pageHouse .pageHousePathLink span {
   margin: 0;
@@ -2833,30 +2839,57 @@ footer .footerPolicy span a {
   font-weight: 400;
   font-size: 16px;
   color: rgb(129, 126, 126);
+  line-height: 135%;
 }
-.pageHouse .pageHouseBlockSlideText {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.pageHouse .swiper {
+  margin: 0;
   position: relative;
-  gap: 80px;
-  padding-top: 30px;
 }
-.pageHouse .pageHouseBlockSlideText .allHouseSlider .houseBlock {
-  position: absolute;
+.pageHouse .swiper-slide {
+  border-radius: 24px;
 }
-.pageHouse .pageHouseBlockSlideText .allHouseSlider .houseBlock picture {
+.pageHouse .swiper-slide picture {
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: -1;
+  border-radius: 24px;
 }
-.pageHouse .pageHouseBlockSlideText .allHouseSlider .houseBlock img {
+.pageHouse .swiper-slide picture img {
   -o-object-fit: cover;
      object-fit: cover;
-  overflow: hidden;
   width: 100%;
   height: 100%;
+  border-radius: 24px;
+}
+.pageHouse .houseSwiperBtnsSlide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  padding: 8px 15px;
+  gap: 20px;
+}
+.pageHouse .swiper-button-prev, .pageHouse .swiper-button-next {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pageHouse .pageHouseBlockSlideText {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 403px;
+  gap: 80px;
 }
 .pageHouse .pageHouseBlockSlideText .allHouseText {
   display: flex;
@@ -2921,6 +2954,176 @@ footer .footerPolicy span a {
   color: rgb(64, 64, 64);
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .pageHouse {
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+  .pageHouse .pageHouseBlock {
+    gap: 30px;
+  }
+  .pageHouse .pageHousePathLink a, .pageHouse .pageHousePathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .pageHouse .houseSwiperBtnsSlide {
+    padding: 16px;
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 403px;
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .allHouseText {
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText {
+    gap: 24px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText h1 {
+    line-height: 120%;
+    font-weight: 800;
+    font-size: 46px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices {
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice {
+    padding: 16px 22px;
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText p {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText span {
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .pageHouse {
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  .pageHouse .pageHouseBlock {
+    gap: 30px;
+  }
+  .pageHouse .pageHousePathLink a, .pageHouse .pageHousePathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .pageHouse .houseSwiperBtnsSlide {
+    padding: 14px;
+    gap: 10px;
+  }
+  .pageHouse .swiper {
+    max-height: 320px;
+  }
+  .pageHouse .pageHouseBlockSlideText {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .allHouseText {
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText {
+    gap: 24px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText h1 {
+    line-height: 135%;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices {
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice {
+    padding: 16px 22px;
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText p {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText span {
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .pageHouse {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .pageHouse .pageHouseBlock {
+    gap: 30px;
+  }
+  .pageHouse .pageHousePathLink a, .pageHouse .pageHousePathLink span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .pageHouse .swiper {
+    max-height: 265px;
+  }
+  .pageHouse .pageHouseBlockSlideText {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .allHouseText {
+    gap: 20px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText {
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText h1 {
+    line-height: 135%;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .pageHouse .pageHouseBlockSlideText .houseText p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices {
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice {
+    padding: 16px 22px;
+    gap: 10px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText p {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pageHouse .pageHouseBlockSlideText .housePrices .housePrice .housePriceText span {
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 .modal-body {
   display: flex;
   flex-direction: column;
