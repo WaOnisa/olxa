@@ -2241,7 +2241,7 @@ footer .footerPolicy span a {
 .singleNews .singleNewsBlock {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 40px;
 }
 .singleNews .singleNewsBlock h1 {
   margin: 0;
@@ -2249,6 +2249,16 @@ footer .footerPolicy span a {
   font-weight: 800;
   font-size: 46px;
   color: rgb(64, 64, 64);
+  line-height: 120%;
+}
+.singleNews .singleNewsBlock .singleNewsPathLinkTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.singleNews .singleNewsBlock .singleNewsPathLink {
+  display: flex;
+  flex-direction: row;
 }
 .singleNews .singleNewsBlock .singleNewsPathLink a, .singleNews .singleNewsBlock .singleNewsPathLink span {
   margin: 0;
@@ -2257,9 +2267,10 @@ footer .footerPolicy span a {
   font-weight: 400;
   font-size: 16px;
   color: rgb(129, 126, 126);
+  line-height: 135%;
 }
 .singleNews .singleNewsBlock .allSingleNews {
-  max-width: 840px;
+  max-width: 870px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2282,8 +2293,104 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: rgb(64, 64, 64);
+  line-height: 150%;
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .singleNews {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+  .singleNews .singleNewsBlock {
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+  .singleNews .singleNewsBlock .singleNewsPathLink a, .singleNews .singleNewsBlock .singleNewsPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .singleNews .singleNewsBlock .allSingleNews {
+    max-width: 710px;
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .singleNews {
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  .singleNews .singleNewsBlock {
+    gap: 30px;
+  }
+  .singleNews .singleNewsBlock h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .singleNews .singleNewsBlock .singleNewsPathLinkTitle {
+    gap: 30px;
+  }
+  .singleNews .singleNewsBlock .singleNewsPathLink a, .singleNews .singleNewsBlock .singleNewsPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 576px) {
+  .singleNews {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .singleNews .singleNewsBlock {
+    gap: 25px;
+  }
+  .singleNews .singleNewsBlock h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .singleNews .singleNewsBlock .singleNewsPathLinkTitle {
+    gap: 14px;
+  }
+  .singleNews .singleNewsBlock .singleNewsPathLink a, .singleNews .singleNewsBlock .singleNewsPathLink span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .singleNews .singleNewsBlock .allSingleNews {
+    max-width: 710px;
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+    gap: 40px;
+  }
+  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
 .rules .rulesBlocks {
   display: flex;
   flex-direction: column;
