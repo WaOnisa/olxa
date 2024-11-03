@@ -1,12 +1,12 @@
-.housesBanner{
+.eventBanner{
     padding-bottom: 75px;
-    .housesBannerBlock{
+    .eventBannerBlock{
         position: relative;
-        padding: 144px 60px;
+        padding: 156px 60px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        .housesBannerBlockText{
+        .eventBannerBlockText{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -52,9 +52,9 @@
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
-    .housesBanner{
+    .eventBanner{
         padding-bottom: 65px;
-        .housesBannerBlock{
+        .eventBannerBlock{
             padding: 80px 88px;
             padding-bottom: 130px;
             .housesBannerBlockText{
@@ -80,11 +80,11 @@
     }
 }
 @media (max-width: 992px) and (min-width: 576px) {
-    .housesBanner{
+    .eventBanner{
         padding-bottom: 45px;
-        .housesBannerBlock{
+        .eventBannerBlock{
             padding: 78px 30px;
-            .housesBannerBlockText{
+            .eventBannerBlockText{
                 max-width: 390px;
                 gap: 20px;
             }
@@ -107,11 +107,11 @@
     }
 }
 @media (max-width: 576px) {
-    .housesBanner{
+    .eventBanner{
         padding-bottom: 30px;
-        .housesBannerBlock{
+        .eventBannerBlock{
             padding: 64px 30px;
-            .housesBannerBlockText{
+            .eventBannerBlockText{
                 max-width: 100%;
                 gap: 14px;
             }

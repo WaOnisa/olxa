@@ -1,10 +1,10 @@
 .policy{
+    padding-top: 40px;
+    padding-bottom: 75px;
     .policyBlocks{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-top: 40px;
-        padding-bottom: 75px;
         .policyPathLink{
             a, span{
                 margin: 0;
@@ -15,6 +15,7 @@
                         size: 16px;
                     }
                 color: rgba(129, 126, 126, 1);
+                line-height: 135%;
             }
         }
         .allPolicy{
@@ -22,6 +23,16 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            h1{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:800;
+                        size: 46px;
+                    }
+                color: $black;
+                line-height: 120%;
+                }
             .policyBlock{
                 display: flex;
                 flex-direction: column;
@@ -34,6 +45,7 @@
                         size: 32px;
                     }
                 color: $black;
+                line-height: 135%;
                 }
                 .policyBlockText{
                     display: flex;
@@ -47,7 +59,155 @@
                                 size: 18px;
                             }
                         color: $black;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+    .policy{
+        padding-top: 30px;
+        padding-bottom: 65px;
+        .policyBlocks{
+            gap: 20px;
+            .policyPathLink{
+                a, span{
+                        font: {
+                            weight:400;
+                            size: 16px;
                         }
+                    line-height: 135%;
+                }
+            }
+            .allPolicy{
+                max-width: 780px;
+                gap: 40px;
+                h1{
+                        font: {
+                            weight:800;
+                            size: 46px;
+                        }
+                    line-height: 120%;
+                    }
+                .policyBlock{
+                    gap: 22px;
+                    h2{
+                        font: {
+                            weight:600;
+                            size: 32px;
+                        }
+                    line-height: 135%;
+                    }
+                    .policyBlockText{
+                        gap: 20px;
+                        p{
+                                font: {
+                                    weight:500;
+                                    size: 18px;
+                                }
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .policy{
+        padding-top: 20px;
+        padding-bottom: 45px;
+        .policyBlocks{
+            gap: 14px;
+            .policyPathLink{
+                a, span{
+                        font: {
+                            weight:400;
+                            size: 16px;
+                        }
+                    line-height: 135%;
+                }
+            }
+            .allPolicy{
+                max-width: 780px;
+                gap: 30px;
+                h1{
+                        font: {
+                            weight:700;
+                            size: 30px;
+                        }
+                    line-height: 135%;
+                    }
+                .policyBlock{
+                    gap: 14px;
+                    h2{
+                        font: {
+                            weight:600;
+                            size: 24px;
+                        }
+                    line-height: 135%;
+                    }
+                    .policyBlockText{
+                        gap: 14px;
+                        p{
+                                font: {
+                                    weight:500;
+                                    size: 16px;
+                                }
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .policy{
+        padding-top: 5px;
+        padding-bottom: 30px;
+        .policyBlocks{
+            gap: 14px;
+            .policyPathLink{
+                a, span{
+                        font: {
+                            weight:400;
+                            size: 14px;
+                        }
+                    line-height: 135%;
+                }
+            }
+            .allPolicy{
+                max-width: 780px;
+                gap: 20px;
+                h1{
+                        font: {
+                            weight:700;
+                            size: 26px;
+                        }
+                    line-height: 135%;
+                    }
+                .policyBlock{
+                    gap: 10px;
+                    h2{
+                        font: {
+                            weight:600;
+                            size: 20px;
+                        }
+                    line-height: 135%;
+                    }
+                    .policyBlockText{
+                        gap: 14px;
+                        p{
+                                font: {
+                                    weight:500;
+                                    size: 14px;
+                                }
+                            line-height: 150%;
+                        }
+                    }
                 }
             }
         }

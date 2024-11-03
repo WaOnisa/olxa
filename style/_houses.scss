@@ -9,6 +9,9 @@
         }
         color: $black;
         line-height: 120%;
+        span{
+            color: $main;
+        }
     }
     .housesBlock{
         display: flex;

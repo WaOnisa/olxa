@@ -553,6 +553,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   color: rgb(64, 64, 64);
   line-height: 120%;
 }
+.houses h1 span {
+  color: #748A5B;
+}
 .houses .housesBlock {
   display: flex;
   flex-direction: column;
@@ -2656,12 +2659,14 @@ footer .footerPolicy span a {
     line-height: 150%;
   }
 }
+.policy {
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
 .policy .policyBlocks {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 40px;
-  padding-bottom: 75px;
 }
 .policy .policyBlocks .policyPathLink a, .policy .policyBlocks .policyPathLink span {
   margin: 0;
@@ -2670,12 +2675,21 @@ footer .footerPolicy span a {
   font-weight: 400;
   font-size: 16px;
   color: rgb(129, 126, 126);
+  line-height: 135%;
 }
 .policy .policyBlocks .allPolicy {
   max-width: 840px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.policy .policyBlocks .allPolicy h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(64, 64, 64);
+  line-height: 120%;
 }
 .policy .policyBlocks .allPolicy .policyBlock {
   display: flex;
@@ -2688,6 +2702,7 @@ footer .footerPolicy span a {
   font-weight: 600;
   font-size: 32px;
   color: rgb(64, 64, 64);
+  line-height: 135%;
 }
 .policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
   display: flex;
@@ -2700,8 +2715,126 @@ footer .footerPolicy span a {
   font-weight: 500;
   font-size: 18px;
   color: rgb(64, 64, 64);
+  line-height: 150%;
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .policy {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+  .policy .policyBlocks {
+    gap: 20px;
+  }
+  .policy .policyBlocks .policyPathLink a, .policy .policyBlocks .policyPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy {
+    max-width: 780px;
+    gap: 40px;
+  }
+  .policy .policyBlocks .allPolicy h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock {
+    gap: 22px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
+    gap: 20px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .policy {
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  .policy .policyBlocks {
+    gap: 14px;
+  }
+  .policy .policyBlocks .policyPathLink a, .policy .policyBlocks .policyPathLink span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy {
+    max-width: 780px;
+    gap: 30px;
+  }
+  .policy .policyBlocks .allPolicy h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock {
+    gap: 14px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
+    gap: 14px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 576px) {
+  .policy {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .policy .policyBlocks {
+    gap: 14px;
+  }
+  .policy .policyBlocks .policyPathLink a, .policy .policyBlocks .policyPathLink span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy {
+    max-width: 780px;
+    gap: 20px;
+  }
+  .policy .policyBlocks .allPolicy h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock {
+    gap: 10px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
+    gap: 14px;
+  }
+  .policy .policyBlocks .allPolicy .policyBlock .policyBlockText p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
 .housesBanner {
   padding-bottom: 75px;
 }
@@ -2725,7 +2858,7 @@ footer .footerPolicy span a {
   left: 0;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
 }
 .housesBanner .housesBannerBlock img {
   -o-object-fit: cover;
@@ -2758,6 +2891,7 @@ footer .footerPolicy span a {
   }
   .housesBanner .housesBannerBlock {
     padding: 80px 88px;
+    padding-bottom: 130px;
   }
   .housesBanner .housesBannerBlock .housesBannerBlockText {
     width: 700px;
@@ -3487,6 +3621,126 @@ footer .footerPolicy span a {
   .sliderBathhouse .sliderbathhouseText div {
     max-width: 529px;
     gap: 14px;
+  }
+}
+.eventBanner {
+  padding-bottom: 75px;
+}
+.eventBanner .eventBannerBlock {
+  position: relative;
+  padding: 156px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.eventBanner .eventBannerBlock .eventBannerBlockText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 700px;
+  gap: 20px;
+}
+.eventBanner .eventBannerBlock picture {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+.eventBanner .eventBannerBlock img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.eventBanner h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: #FFFFFF;
+  line-height: 140%;
+}
+.eventBanner p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 135%;
+  max-width: 420px;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .eventBanner {
+    padding-bottom: 65px;
+  }
+  .eventBanner .eventBannerBlock {
+    padding: 80px 88px;
+    padding-bottom: 130px;
+  }
+  .eventBanner .eventBannerBlock .housesBannerBlockText {
+    width: 700px;
+    gap: 20px;
+  }
+  .eventBanner h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 140%;
+  }
+  .eventBanner p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    max-width: 420px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .eventBanner {
+    padding-bottom: 45px;
+  }
+  .eventBanner .eventBannerBlock {
+    padding: 78px 30px;
+  }
+  .eventBanner .eventBannerBlock .eventBannerBlockText {
+    max-width: 390px;
+    gap: 20px;
+  }
+  .eventBanner h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  .eventBanner p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    max-width: 265px;
+  }
+}
+@media (max-width: 576px) {
+  .eventBanner {
+    padding-bottom: 30px;
+  }
+  .eventBanner .eventBannerBlock {
+    padding: 64px 30px;
+  }
+  .eventBanner .eventBannerBlock .eventBannerBlockText {
+    max-width: 100%;
+    gap: 14px;
+  }
+  .eventBanner h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+  }
+  .eventBanner p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    max-width: 210px;
   }
 }
 * {
