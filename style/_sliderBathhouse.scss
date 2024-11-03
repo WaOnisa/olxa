@@ -66,7 +66,6 @@
     .bathhouseSwiperBtnsSlide{
         display: flex;
         flex-direction: row;
-        gap: 14px;
         justify-content: space-between;
         position: absolute;
         z-index: 10;
@@ -116,6 +115,10 @@
                 gap: 14px;
             }
         }
+        .bathhouseSwiperBtnsSlide{
+            padding: 20px 20px;
+            gap: 20px;
+        }
     }
 }
 @media (max-width: 992px) and (min-width: 576px) {
@@ -151,6 +154,10 @@
                 gap: 14px;
             }
         }
+        .bathhouseSwiperBtnsSlide{
+            padding: 20px 20px;
+            gap: 20px;
+        }
     }
 }
 @media (max-width: 576px) {
@@ -185,6 +192,10 @@
                 max-width: 529px;
                 gap: 14px;
             }
+        }
+        .bathhouseSwiperBtnsSlide{
+            padding: 12px;
+            gap: 14px;
         }
     }
 }
