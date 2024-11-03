@@ -1,0 +1,28 @@
+.aboutLinks{
+    .aboutPathLink{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+            a, span{
+                margin: 0;
+                text-decoration: none;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                color: rgba(129, 126, 126, 1);
+                line-height: 135%;
+            }
+            h1{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:800;
+                        size: 46px;
+                    }
+                color: $black;
+                line-height: 120%;
+            } 
+    } 
+}

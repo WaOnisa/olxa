@@ -3743,6 +3743,299 @@ footer .footerPolicy span a {
     max-width: 210px;
   }
 }
+.aboutLinks .aboutPathLink {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.aboutLinks .aboutPathLink a, .aboutLinks .aboutPathLink span {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(129, 126, 126);
+  line-height: 135%;
+}
+.aboutLinks .aboutPathLink h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(64, 64, 64);
+  line-height: 120%;
+}
+
+.advantagesAbout {
+  padding-bottom: 75px;
+  padding-top: 25px;
+}
+.advantagesAbout .advantagesBack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.advantagesAbout .advantagesBack img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.advantagesAbout .blockAdvantages {
+  padding: 90px 0;
+  position: relative;
+}
+.advantagesAbout .blockAdvantages .blockAdvantage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.advantagesAbout h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: #FFFFFF;
+  line-height: 120%;
+}
+.advantagesAbout h1 span {
+  color: #FFFFC0;
+}
+.advantagesAbout .swiper-pagination {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 16px;
+  top: 0;
+}
+.advantagesAbout .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 14px 26px;
+  gap: 8px;
+  width: auto;
+  height: 100%;
+  border-radius: 100px;
+  border: 2px solid rgb(255, 255, 255);
+}
+.advantagesAbout .swiper-pagination .swiper-pagination-bullet p {
+  margin: 0;
+  z-index: 1;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 18px;
+  color: #748A5B;
+  line-height: 135%;
+}
+.advantagesAbout .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #748A5B;
+}
+.advantagesAbout .swiper-pagination .swiper-pagination-bullet-active svg path {
+  stroke: #FFFFFF;
+}
+.advantagesAbout .swiper-pagination .swiper-pagination-bullet-active p {
+  color: rgb(255, 255, 255);
+}
+.advantagesAbout .swiper-slide {
+  min-height: 320px;
+}
+.advantagesAbout .blockSlide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 320px;
+  gap: 60px;
+}
+.advantagesAbout .blockSlide h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 36px;
+  color: #748A5B;
+  line-height: 135%;
+}
+.advantagesAbout .blockSlide p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  color: #748A5B;
+  line-height: 150%;
+}
+.advantagesAbout .blockSlide picture {
+  position: relative;
+}
+.advantagesAbout .blockSlide picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+}
+.advantagesAbout .blockSlide .advantagesSliderText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 58px 65px;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+}
+.advantagesAbout .blockSlide .advantagesSliderTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .advantagesAbout {
+    padding-bottom: 65px;
+    padding-top: 25px;
+  }
+  .advantagesAbout .blockAdvantages {
+    padding: 90px 0;
+  }
+  .advantagesAbout .blockAdvantages .blockAdvantage {
+    row-gap: 40px;
+  }
+  .advantagesAbout .blockSlide {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 320px;
+    gap: 30px;
+  }
+  .advantagesAbout .blockSlide h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 135%;
+  }
+  .advantagesAbout .blockSlide p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText {
+    gap: 20px;
+    padding: 60px 40px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .advantagesAbout {
+    padding-bottom: 45px;
+    padding-top: 15px;
+  }
+  .advantagesAbout .blockAdvantages {
+    padding: 60px 0;
+  }
+  .advantagesAbout .blockAdvantages .blockAdvantage {
+    row-gap: 30px;
+  }
+  .advantagesAbout .blockAdvantages .blockAdvantage h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .advantagesAbout .swiper-pagination {
+    gap: 10px;
+  }
+  .advantagesAbout .swiper-pagination .swiper-pagination-bullet p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .advantagesAbout .blockSlide {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 259px);
+    gap: 20px;
+  }
+  .advantagesAbout .blockSlide h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .advantagesAbout .blockSlide p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 337px;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText {
+    gap: 16.5px;
+    padding: 40px 50px;
+    order: -1;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText .advantagesSliderTitle {
+    gap: 14px;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText .advantagesSliderTitle img {
+    height: 33.54px;
+  }
+}
+@media (max-width: 576px) {
+  .advantagesAbout {
+    padding-bottom: 30px;
+    padding-top: 12px;
+  }
+  .advantagesAbout .blockAdvantages {
+    padding: 40px 0;
+  }
+  .advantagesAbout .blockAdvantages .blockAdvantage {
+    row-gap: 30px;
+  }
+  .advantagesAbout .blockAdvantages .blockAdvantage h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .advantagesAbout .swiper-pagination {
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+  }
+  .advantagesAbout .swiper-pagination .swiper-pagination-bullet p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .advantagesAbout .swiper-pagination::-webkit-scrollbar {
+    display: none;
+  }
+  .advantagesAbout .blockSlide {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 253px);
+    gap: 20px;
+  }
+  .advantagesAbout .blockSlide img {
+    max-height: 240px;
+  }
+  .advantagesAbout .blockSlide h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .advantagesAbout .blockSlide p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText {
+    gap: 16px;
+    padding: 30px;
+    order: -1;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText .advantagesSliderTitle {
+    gap: 6px;
+  }
+  .advantagesAbout .blockSlide .advantagesSliderText .advantagesSliderTitle img {
+    height: 26.46px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
