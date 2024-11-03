@@ -267,3 +267,14 @@ header {
     }
 }
 }
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    div{
+        width: 50px;
+        border: 2px solid $main;
+        background-color: $main;
+    }
+}

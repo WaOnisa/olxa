@@ -31,8 +31,8 @@ button:hover {
   background-color: #3D5E38;
   border: 1px solid #3D5E38;
 }
-button:hover svg path {
-  stroke: #FFFFFF;
+button:hover img {
+  filter: grayscale(100) brightness(200);
 }
 
 @media (max-width: 1400px) {
@@ -289,6 +289,17 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     gap: 8px;
   }
 }
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.burger div {
+  width: 50px;
+  border: 2px solid #748A5B;
+  background-color: #748A5B;
+}
+
 .mainSlider {
   padding-bottom: 45px;
 }
@@ -2223,12 +2234,14 @@ footer .footerPolicy span a {
     padding: 30px 0;
   }
 }
+.singleNews {
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
 .singleNews .singleNewsBlock {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top: 40px;
-  padding-bottom: 75px;
+  gap: 22px;
 }
 .singleNews .singleNewsBlock h1 {
   margin: 0;
@@ -2251,7 +2264,6 @@ footer .footerPolicy span a {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  padding-top: 22px;
 }
 .singleNews .singleNewsBlock .allSingleNews img {
   border-radius: 20px;
