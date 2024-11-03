@@ -9,7 +9,112 @@
     <title>База отдыха "Ольха"</title>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="header">
+                <picture>
+                    <source srcset="/img/logo/logo-320.svg" media="(max-width: 576px) and (min-width: 320px)">
+                    <source srcset="/img/logo/logo-576.svg" media="(max-width: 1000px) and (min-width: 576px)">
+                    <source srcset="/img/logo/logo-1000.svg" media="(max-width: 1400px) and (min-width: 1000px)">
+                    <source srcset="/img/logo/logo-1400.svg" media="(min-width: 1400px)">
+                    <img src="/img/logo/logo-1400.svg">
+                </picture>
+                <div class="headerNav">
+                    <nav class="d-none d-lg-flex">
+                        <div class="dropdown d-none d-sm-none d-lg-block">
+                            <a class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Наши дома
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">A-Frame 1</a></li>
+                                <li><a class="dropdown-item" href="#">A-Frame 2</a></li>
+                                <li><a class="dropdown-item" href="#">A-Frame 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown d-none d-sm-none d-lg-block">
+                            <a class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Бани и купели</a></li>
+                                <li><a class="dropdown-item" href="#">Бассейн</a></li>
+                                <li><a class="dropdown-item" href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="d-none d-sm-none d-lg-none d-xxl-flex" >Мероприятия</a>
+                        <a href="#" class="d-none d-sm-none d-lg-flex" >Информация</a>
+                        <a href="#" class="d-none d-sm-none d-lg-none d-xxl-flex" >О нас</a>
+                        <a href="#" class="d-none d-sm-none d-lg-flex" >Контакты</a>
+                    </nav>
+                    <div class="buttonsHeader">
+                        <div class="buttonHeader d-none d-sm-flex">
+                        <button class="mainButtonDark">Забронировать</button>
+                        <button type="button" class="mainButtonLight orderCall" data-bs-toggle="modal" data-bs-target="#modal">
+                            <p class="d-none d-sm-none d-lg-none d-xxl-flex">Заказать звонок</p>
+                            <img class="d-none d-sm-flex d-xxl-none" src="/img/header/phone.svg">
+                        </button>
+                    </div>
+                        <a class="navbar-toggler d-xl-flex d-xxl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <div class="burger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></a>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="ulList">
+                                    <a href="#">Наши дома</a>
+                                    <ul>
+                                        <li><a href="#">A-Frame 1</a></li>
+                                        <li><a href="#">A-Frame 2</a></li>
+                                        <li><a href="#">A-Frame 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ulList">
+                                    <a href="#">Услуги</a>
+                                    <ul>
+                                        <li><a href="#">Бани и купели</a></li>
+                                        <li><a href="#">Бассейн</a></li>
+                                        <li><a href="#">Массаж</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#">Мероприятия</a>
+                                <a href="#">Информация</a>
+                                <a href="#">О Нас</a>
+                                <a href="#">Контакты</a>
+                                <div class="headerContacts">
+                                    <div class="headerContact">
+                                        <img src="/img/footer/map-pin.svg">
+                                        <p>Лесной массив за с. Зубово, Лайф 3</p>
+                                    </div>
+                                    <div class="headerContact">
+                                        <img src="/img/footer/phone.svg">
+                                        <p>+7 (987) 250-03-10</p>
+                                    </div>
+                                    <div class="footerContactsButton">
+                                        <a href="#">
+                                            <img src="img/contacts/VK.svg">
+                                        </a>
+                                        <a href="#">
+                                            <img src="/img/contacts/WhatsApp.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="topContactsButtons">
+                                    <button class="mainButtonDark">Забронировать</button>
+                                    <button type="button" class="mainButtonLight" data-bs-toggle="modal" data-bs-target="#modal">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div> 
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="housesBanner">
             <div class="container">
@@ -19,13 +124,227 @@
                     </picture>
                     <div class="housesBannerBlockText">
                         <h1>Оставьте заявку и мы поможем Вам подобрать дом</h1>
-                        <p>Наши дома отлично подходят для любого вида<br> отдыха, готовы учесть все Ваши пожелания </p>
+                        <p>Наши дома отлично подходят для любого вида отдыха, готовы учесть все Ваши пожелания </p>
                         <button class="mainButtonDark">Забронировать дом</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="houses">
+            <div class="container">
+                <div class="housesBlock">
+                    <div class="housesTitle">
+                        <h1>Уютные домики</h1>
+                    </div>
+                    <div class="housesCardsBlock">
+                        
+                            <div class="houseCard">
+                                <div class="housesStats">
+                                    <img src="/img/mainPage/houses/stik.svg">
+                                    <img src="/img/mainPage/houses/stik1.svg">
+                                    <img src="/img/mainPage/houses/stik2.svg">
+                                    <img src="/img/mainPage/houses/stik3.svg">
+                                </div>
+                                <div class="houseCardBanner">
+                                    <img src="/img/mainPage/houses/houseCard.webp">
+                                </div>
+                                <div class="houseCardInfo">
+                                    <div class="houseCardInfoTop">
+                                        <h2>A-frame 1</h2>
+                                        <div class="houseCardPeople">
+                                            <img src="/img/mainPage/houses/users-round.svg">
+                                            <p>до 2-х человек</p>
+                                        </div>
+                                    </div>
+                                    <div class="houseCardInfoBottom">
+                                        <span>9 000 ₽/сутки</span>
+                                        <button class="mainButtonDark">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="houseCard">
+                                <div class="housesStats">
+                                    <img src="/img/mainPage/houses/stik.svg">
+                                    <img src="/img/mainPage/houses/stik1.svg">
+                                    <img src="/img/mainPage/houses/stik2.svg">
+                                    <img src="/img/mainPage/houses/stik3.svg">
+                                </div>
+                                <div class="houseCardBanner">
+                                    <img src="/img/mainPage/houses/houseCard.webp">
+                                </div>
+                                <div class="houseCardInfo">
+                                    <div class="houseCardInfoTop">
+                                        <h2>A-frame 2</h2>
+                                        <div class="houseCardPeople">
+                                            <img src="/img/mainPage/houses/users-round.svg">
+                                            <p>до 4-х человек</p>
+                                        </div>
+                                    </div>
+                                    <div class="houseCardInfoBottom">
+                                        <span>9 000 ₽/сутки</span>
+                                        <button class="mainButtonDark">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="houseCard">
+                                <div class="housesStats">
+                                    <img src="/img/mainPage/houses/stik.svg">
+                                    <img src="/img/mainPage/houses/stik1.svg">
+                                    <img src="/img/mainPage/houses/stik2.svg">
+                                    <img src="/img/mainPage/houses/stik3.svg">
+                                </div>
+                                <div class="houseCardBanner">
+                                    <img src="/img/mainPage/houses/houseCard.webp">
+                                </div>
+                                <div class="houseCardInfo">
+                                    <div class="houseCardInfoTop">
+                                        <h2>A-frame 3</h2>
+                                        <div class="houseCardPeople">
+                                            <img src="/img/mainPage/houses/users-round.svg">
+                                            <p>до 5-х человек</p>
+                                        </div>
+                                    </div>
+                                    <div class="houseCardInfoBottom">
+                                        <span>9 000 ₽/сутки</span>
+                                        <button class="mainButtonDark">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="housesBtn">
+                        <button class="mainButtonLight">
+                            Смотреть все
+                            <img src="/img/chevron-right.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="servicesBlock">
+                    <h1>У нас есть все для <span>релакса</span></h1>
+                    <div class="servicesCards">
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/pool.webp">
+                            </picture>
+                            <div><p>Теплый бассейн</p></div>
+                        </a>
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/coldFont.webp">
+                            </picture>
+                            <div><p>Купель с холодной водой</p></div>
+                        </a>
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/massage.webp">
+                            </picture>
+                            <div><p>Массаж</p></div>
+                        </a>
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/bathhouse.webp">
+                            </picture>
+                            <div><p>Баня на дровах</p></div>
+                        </a>
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/massageFont.webp">
+                            </picture>
+                            <div><p>Аэромассажная купель</p></div>
+                        </a>
+                        <a class="serviceCard">
+                            <img class="serviceCardArrow" src="/img/mainPage/services/arrow.svg">
+                            <div class="servicesGradient"></div>
+                            <picture>
+                                <img src="/img/mainPage/services/vapingPrograms.webp">
+                            </picture>
+                            <div><p>Программы парения</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footerBlock">
+                <div class="footerTop">
+                    <picture>
+                        <source srcset="/img/logo/logo-320.svg" media="(max-width: 576px)">
+                        <source srcset="/img/logo/logo-576.svg" media="(max-width: 1000px) and (min-width: 576px)">
+                        <source srcset="/img/logo/logo-1000.svg" media="(max-width: 1400px) and (min-width: 1000px)">
+                        <source srcset="/img/logo/logo-1400.svg" media="(min-width: 1400px)">
+                        <img src="/img/logo/logo-1400.svg">
+                    </picture>
+                    <div class="footerTopInf">
+                        <div class="footerTopInfBlock">
+                            <h3>Гостям</h3>
+                            <ul>
+                                <li><a href="#">Наши дома</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li><a href="#">Информация</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerTopInfBlock">
+                            <h3>Наши дома</h3>
+                            <ul>
+                                <li><a href="#">Домик 1</a></li>
+                                <li><a href="#">Домик 2</a></li>
+                                <li><a href="#">Домик 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerTopContacts">
+                            <h3>Контакты</h3>
+                            <div>
+                                <img src="/img/footer/map-pin.svg">
+                                <p>Лесной массив за с. Зубово, Лайф 3</p>
+                            </div>
+                            <div>
+                                <img src="/img/footer/phone.svg">
+                                <p class="footerTopContactsNumber">+7 (987) 250-03-10</p>
+                            </div>
+                            <div class="footerContactsButton">
+                                <a href="#">
+                                    <img src="img/contacts/VK.svg">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/contacts/WhatsApp.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footerContactsButtons">
+                            <button class="mainButtonDark">Забронировать</button>
+                            <button class="mainButtonLight" data-bs-toggle="modal" data-bs-target="#modal">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerPolicy">
+                    <p>©2024 “Ольха”</p>
+                    <a href="#">Политика конфиденциальности</a>
+                    <span><a href="#">Разработка сайта - Амбити</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="modal" tabindex="-1" id="modal">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content" style="border-radius: 20px;">

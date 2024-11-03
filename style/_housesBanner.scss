@@ -10,10 +10,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            width: 700px;
+            max-width: 700px;
             gap: 20px;
         }
-        
         picture{
             position: absolute;
             bottom: 0;
@@ -48,5 +47,88 @@
             }
         color: $white;
         line-height: 135%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .housesBanner{
+        padding-bottom: 65px;
+        .housesBannerBlock{
+            padding: 80px 88px;
+            .housesBannerBlockText{
+                width: 700px;
+                gap: 20px;
+            }
+        }
+        h1{
+            font: {
+                weight:800;
+                size: 46px;
+            }
+            line-height: 140%;
+        }
+        p{
+            font: {
+                weight:500;
+                size: 18px;
+            }
+            line-height: 135%;
+            max-width: 420px;
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .housesBanner{
+        padding-bottom: 45px;
+        .housesBannerBlock{
+            padding: 78px 30px;
+            .housesBannerBlockText{
+                max-width: 390px;
+                gap: 20px;
+            }
+        }
+        h1{
+            font: {
+                weight:700;
+                size: 32px;
+            }
+            line-height: 130%;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 16px;
+            }
+            line-height: 135%;
+            max-width: 265px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .housesBanner{
+        padding-bottom: 30px;
+        .housesBannerBlock{
+            padding: 64px 30px;
+            .housesBannerBlockText{
+                max-width: 100%;
+                gap: 14px;
+            }
+        }
+        h1{
+            font: {
+                weight:700;
+                size: 22px;
+            }
+            line-height: 130%;
+        }
+        p{
+            font: {
+                weight:400;
+                size: 12px;
+            }
+            line-height: 135%;
+            max-width: 210px;
+        }
     }
 }
