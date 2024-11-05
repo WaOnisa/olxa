@@ -4843,6 +4843,8 @@ iframe {
 .comfort .comfortBlock .info {
   display: flex;
   flex-direction: row;
+  width: -moz-max-content;
+  width: max-content;
   background-color: #FAFAFA;
   border-radius: 20px;
   padding: 20px 24px;
@@ -4866,19 +4868,20 @@ iframe {
   line-height: 138%;
   max-width: 670px;
 }
-.comfort .comfortBlock .swiper-slide {
+.comfort .comfortBlock .swiper .swiper-slide {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 44px;
   padding: 24px;
+  border-radius: 20px;
+  background-color: rgb(242, 242, 242);
 }
-.comfort .comfortBlock .swiper-slide .slideText {
+.comfort .comfortBlock .swiper .swiper-slide .slideText {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.comfort .comfortBlock .swiper-slide .slideText h2 {
+.comfort .comfortBlock .swiper .swiper-slide .slideText h2 {
   margin: 0;
   font-family: "Manrope";
   font-weight: 700;
@@ -4886,28 +4889,185 @@ iframe {
   color: rgb(64, 64, 64);
   line-height: 135%;
 }
-.comfort .comfortBlock .swiper-slide .slideText p {
+.comfort .comfortBlock .swiper .swiper-slide .slideText p {
   margin: 0;
   font-family: "Manrope";
   font-weight: 400;
-  font-size: 21px;
+  font-size: 16px;
   color: rgb(64, 64, 64);
   line-height: 135%;
   max-width: 335px;
 }
-.comfort .comfortBlock .swiper-slide .slideImg {
-  max-height: 243px;
-  max-width: 200px;
-}
-.comfort .comfortBlock .swiper-slide .slideImg picture img {
+.comfort .comfortBlock .swiper .swiper-slide .slideImg picture img {
   width: 100%;
   height: 100%;
-  max-height: 243px;
-  max-width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 14px;
+}
+.comfort .comfortBlock .swiper .swiper-slide2 {
+  background-color: #748A5B;
+}
+.comfort .comfortBlock .swiper .swiper-slide2 .slideText h2 {
+  color: #FFFFFF;
+}
+.comfort .comfortBlock .swiper .swiper-slide2 .slideText p {
+  color: #FFFFFF;
 }
 
+@media (max-width: 1400px) and (min-width: 992px) {
+  .comfort {
+    padding: 65px 0;
+  }
+  .comfort .comfortBlock {
+    gap: 40px;
+  }
+  .comfort .comfortBlock .comfortTitle h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+  .comfort .comfortBlock .comfortTitle .comfortSwiperBtns {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .info {
+    border-radius: 20px;
+    padding: 16px 24px;
+    gap: 16px;
+  }
+  .comfort .comfortBlock .info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 122%;
+  }
+  .comfort .comfortBlock p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136%;
+    max-width: 610px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide {
+    gap: 24px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    max-width: 335px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .comfort {
+    padding: 45px 0;
+  }
+  .comfort .comfortBlock {
+    gap: 30px;
+  }
+  .comfort .comfortBlock .comfortTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .comfort .comfortBlock .comfortTitle .comfortSwiperBtns {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .info {
+    width: 100%;
+    border-radius: 20px;
+    padding: 16px 24px;
+    gap: 16px;
+  }
+  .comfort .comfortBlock .info p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 122%;
+  }
+  .comfort .comfortBlock p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 136%;
+    max-width: 450px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide {
+    gap: 24px;
+    padding: 20px 18px;
+    border-radius: 20px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+}
+@media (max-width: 576px) {
+  .comfort {
+    padding: 30px 0;
+  }
+  .comfort .comfortBlock {
+    gap: 25px;
+  }
+  .comfort .comfortBlock .comfortTitle h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .comfort .comfortBlock .comfortTitle .comfortSwiperBtns {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .info {
+    width: 100%;
+    border-radius: 20px;
+    padding: 19px 24px;
+    gap: 16px;
+  }
+  .comfort .comfortBlock .info p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 122%;
+  }
+  .comfort .comfortBlock p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+    max-width: 450px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide {
+    gap: 24px;
+    padding: 20px 18px;
+    border-radius: 20px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText {
+    gap: 14px;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .comfort .comfortBlock .swiper .swiper-slide .slideText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
