@@ -49,6 +49,8 @@
                 flex-direction: column;
                 gap: 20px;
                 .productsCardText{
+                    display: flex;
+                    flex-direction: column;
                     gap: 14px;
                 }
                 h2{
@@ -88,13 +90,13 @@
             grid-template-rows: 395px;
             column-gap: 20px;
         }
-        .productsCardsTwo{
+        .productsCards2{
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr ;
             grid-template-rows: 395px;
             column-gap: 20px;
         }
-        .productsCardsThree{
+        .productsCards3{
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr ;
             grid-template-rows: 395px;
@@ -130,6 +132,9 @@
                 gap: 40px;
             }
 
+            .reverseCard{
+                order: 2;
+            }
             .productsCard{
                     gap: 20px;
                     .productsCardText{
@@ -205,6 +210,9 @@
             }
             .allProductsCards{
                 gap: 30px;
+            }
+            .reverseCard{
+                order: 2;
             }
 
             .productsCard{
