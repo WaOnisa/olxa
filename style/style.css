@@ -2,6 +2,10 @@
   font-family: "Manrope";
   src: url(./fonts/Manrope/Manrope.ttf);
 }
+@font-face {
+  font-family: "Onest";
+  src: url(./fonts/Onest/Onest-VariableFont_wght.ttf);
+}
 button {
   font-family: "Manrope";
   font-size: 16px;
@@ -3634,6 +3638,370 @@ footer .footerPolicy span a {
     gap: 14px;
   }
 }
+.bathhousePrograms {
+  padding: 75px 0;
+}
+.bathhousePrograms .bathhouseProgramsBlock {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.bathhousePrograms .bathhouseProgramsBlock picture {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.bathhousePrograms .bathhouseProgramsBlock picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: #FFFFFF;
+  line-height: 120%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle h1 span {
+  color: #FFFFC0;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: space-between;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns .programSwiperBtn {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns .swiper-button-prev::after, .bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns .swiper-button-next::after {
+  content: none;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper {
+  padding-top: 40px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+  color: #3D5E38;
+  line-height: 135%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl h3 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(64, 64, 64);
+  line-height: 150%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul {
+  list-style-image: url(/img/servicesPages/bathhouse/Ellipse51.svg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul li {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(64, 64, 64);
+  line-height: 150%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription h3 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(64, 64, 64);
+  line-height: 150%;
+}
+.bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(64, 64, 64);
+  line-height: 150%;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .bathhousePrograms {
+    padding: 65px 0;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .programTitle h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns {
+    gap: 14px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper {
+    padding-top: 40px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide {
+    gap: 22px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div {
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 136%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .bathhousePrograms {
+    padding: 45px 0;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .programTitle h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .programTitle .programSwiperBtns {
+    gap: 14px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper {
+    padding-top: 40px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div {
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 136%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl {
+    gap: 8px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription {
+    gap: 8px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 576px) {
+  .bathhousePrograms {
+    padding: 45px 0;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock {
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .programTitle h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper {
+    padding-top: 30px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div {
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programBlocks div p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 136%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl {
+    gap: 8px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul {
+    gap: 10px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programUl ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription {
+    gap: 8px;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .bathhousePrograms .bathhouseProgramsBlock .swiper-slide .programDescription p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
 .eventBanner {
   padding-bottom: 75px;
 }
@@ -4304,6 +4672,242 @@ iframe {
     max-width: 300;
   }
 }
+.servicesAboutPic {
+  padding: 75px 0;
+}
+.servicesAboutPic .servicesAboutPicBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  border-radius: 14px;
+  padding: 90px 40px;
+}
+.servicesAboutPic .servicesAboutPicBlock picture {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.servicesAboutPic .servicesAboutPicBlock picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+.servicesAboutPic .servicesAboutPicBlock div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 500px;
+}
+.servicesAboutPic .servicesAboutPicBlock div h1 {
+  margin: 0;
+  font-family: "Onest";
+  font-weight: 700;
+  font-size: 42px;
+  color: #FFFFFF;
+  line-height: 130%;
+}
+.servicesAboutPic .servicesAboutPicBlock div p {
+  margin: 0;
+  max-width: 379px;
+  font-family: "Onest";
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 140%;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .servicesAboutPic {
+    padding: 65px 0;
+  }
+  .servicesAboutPic .servicesAboutPicBlock {
+    padding: 90px 40px;
+    gap: 30px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div {
+    gap: 14px;
+    max-width: 500px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .servicesAboutPic {
+    padding: 45px 0;
+  }
+  .servicesAboutPic .servicesAboutPicBlock {
+    padding: 70px 40px;
+    padding-bottom: 215px;
+    gap: 30px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div {
+    gap: 14px;
+    max-width: 500px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 576px) {
+  .servicesAboutPic {
+    padding: 30px 0;
+  }
+  .servicesAboutPic .servicesAboutPicBlock {
+    padding: 40px 20px;
+    padding-bottom: 145px;
+    gap: 20px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div {
+    gap: 14px;
+    max-width: 500px;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+  }
+  .servicesAboutPic .servicesAboutPicBlock div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.comfort {
+  padding: 75px 0;
+}
+.comfort .comfortBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.comfort .comfortBlock .comfortTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.comfort .comfortBlock .comfortTitle h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(64, 64, 64);
+  line-height: 120%;
+}
+.comfort .comfortBlock .comfortTitle h1 span {
+  color: #748A5B;
+}
+.comfort .comfortBlock .comfortTitle .comfortSwiperBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: space-between;
+}
+.comfort .comfortBlock .comfortTitle .comfortSwiperBtns .comfortSwiperBtn {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.comfort .comfortBlock .comfortTitle .comfortSwiperBtns .swiper-button-prev::after, .comfort .comfortBlock .comfortTitle .comfortSwiperBtns .swiper-button-next::after {
+  content: none;
+}
+.comfort .comfortBlock .info {
+  display: flex;
+  flex-direction: row;
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  padding: 20px 24px;
+  gap: 16px;
+  box-shadow: 0 4px 16.1px 0 rgba(0, 0, 0, 0.06);
+}
+.comfort .comfortBlock .info p {
+  margin: 0;
+  font-family: "Onest";
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(64, 64, 64);
+  line-height: 122%;
+}
+.comfort .comfortBlock p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 22px;
+  color: rgb(64, 64, 64);
+  line-height: 138%;
+  max-width: 670px;
+}
+.comfort .comfortBlock .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  padding: 24px;
+}
+.comfort .comfortBlock .swiper-slide .slideText {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.comfort .comfortBlock .swiper-slide .slideText h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+}
+.comfort .comfortBlock .swiper-slide .slideText p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 21px;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+  max-width: 335px;
+}
+.comfort .comfortBlock .swiper-slide .slideImg {
+  max-height: 243px;
+  max-width: 200px;
+}
+.comfort .comfortBlock .swiper-slide .slideImg picture img {
+  width: 100%;
+  height: 100%;
+  max-height: 243px;
+  max-width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   margin: 0;
   padding: 0;

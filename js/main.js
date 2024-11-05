@@ -93,9 +93,9 @@ function updateNavigation() {
 		swiper3.params.navigation.prevEl = '.swiper-button-prev3'
 	}
 
-	swiper3.navigation.destroy() // Удаляем предыдущие навигационные элементы
-	swiper3.navigation.init() // Переинициализируем навигацию
-	swiper3.navigation.update() // Обновляем навигационные элементы
+	swiper3.navigation.destroy()
+	swiper3.navigation.init()
+	swiper3.navigation.update()
 }
 
 window.addEventListener('resize', updateNavigation)
@@ -157,10 +157,55 @@ const swiper6 = new Swiper('.swiper6', {
 const swiper7 = new Swiper('.swiper7', {
 	direction: 'horizontal',
 	loop: true,
+	spaceBetween: 10,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		576: {
+			slidesPerView: 2,
+		},
+
+		992: {
+			slidesPerView: 2,
+		},
+		1400: {
+			slidesPerView: 3,
+		},
+	},
 
 	navigation: {
 		nextEl: '.swiper-button-next7',
 		prevEl: '.swiper-button-prev7',
+	},
+})
+
+const swiper8 = new Swiper('.swiper8', {
+	direction: 'horizontal',
+	loop: true,
+	spaceBetween: 20,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		576: {
+			slidesPerView: 2,
+		},
+
+		992: {
+			slidesPerView: 3,
+		},
+		1400: {
+			slidesPerView: 3,
+		},
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next8',
+		prevEl: '.swiper-button-prev8',
 	},
 })
 

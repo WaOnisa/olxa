@@ -1,7 +1,428 @@
 .bathhousePrograms{
+    padding: 75px 0;
     .bathhouseProgramsBlock{
-        h1{
-            
+        position: relative;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        picture{ 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .programTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:800;
+                    size: 46px;
+                }
+                color: $white;
+                line-height: 120%;
+                span{
+                    color: $yellow;
+                }
+            }
+            .programSwiperBtns{
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+                justify-content: space-between;
+                .programSwiperBtn{
+                    position: relative;
+                    z-index: 0;
+                    margin: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+                .swiper-button-prev::after, .swiper-button-next::after{
+                    content: none;
+                }
+            }
+        }
+        .swiper{
+            padding-top: 40px;
+        }
+        .swiper-slide{
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: $white;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08),
+                0 0 4px 0 rgba(0, 0, 0, 0.04);
+            h2{
+                margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:700;
+                    size: 30px;
+                }
+                color: $black;
+                line-height: 135%;
+            }
+            .programBlocks{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 22px;
+                    background-color: $darkGrey;
+                    border-radius: 10px;
+                    p{
+                        margin: 0;
+                        font: {
+                            family:'Manrope';
+                            weight:700;
+                            size: 16px;
+                        }
+                        color: $secondary;
+                        line-height: 135%;
+                    }
+                }
+            }
+            .programUl{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h3{
+                    margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:600;
+                        size: 22px;
+                    }
+                    color: $black;
+                    line-height: 150%;
+                }
+                ul{
+                    list-style-image: url(/img/servicesPages/bathhouse/Ellipse51.svg);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    li{
+                        margin: 0;
+                        font: {
+                            family:'Manrope';
+                            weight:400;
+                            size: 16px;
+                        }
+                        color: $black;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .programDescription{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h3{
+                    margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:600;
+                        size: 22px;
+                    }
+                    color: $black;
+                    line-height: 150%;
+                }
+                p{
+                    margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                    color: $black;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .bathhousePrograms{
+        padding: 65px 0;
+        .bathhouseProgramsBlock{
+            padding-top: 90px;
+            padding-bottom: 100px;
+            .programTitle{
+                h1{
+                    font: {
+                        weight:800;
+                        size: 46px;
+                    }
+                    line-height: 120%;
+                }
+                .programSwiperBtns{
+                    gap: 14px;
+                }
+            }
+            .swiper{
+                padding-top: 40px;
+            }
+            .swiper-slide{
+                gap: 22px;
+                padding: 40px;
+                border-radius: 20px;
+                h2{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 135%;
+                }
+                .programBlocks{
+                    gap: 10px;
+                    div{
+                        gap: 10px;
+                        padding: 10px 22px;
+                        border-radius: 10px;
+                        p{
+                            font: {
+                                weight:700;
+                                size: 16px;
+                            }
+                            line-height: 136%;
+                        }
+                    }
+                }
+                .programUl{
+                    gap: 10px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 22px;
+                        }
+                        line-height: 150%;
+                    }
+                    ul{
+                        gap: 10px;
+                        li{
+                            font: {
+                                weight:400;
+                                size: 16px;
+                            }
+                            line-height: 150%;
+                        }
+                    }
+                }
+                .programDescription{
+                    gap: 10px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 22px;
+                        }
+                        line-height: 150%;
+                    }
+                    p{
+                        font: {
+                            weight:400;
+                            size: 16px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .bathhousePrograms{
+        padding: 45px 0;
+        .bathhouseProgramsBlock{
+            padding-top: 60px;
+            padding-bottom: 80px;
+            .programTitle{
+                h1{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 135%;
+                }
+                .programSwiperBtns{
+                    gap: 14px;
+                }
+            }
+            .swiper{
+                padding-top: 40px;
+            }
+            .swiper-slide{
+                gap: 20px;
+                padding: 20px;
+                border-radius: 16px;
+                h2{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 135%;
+                }
+                .programBlocks{
+                    gap: 10px;
+                    div{
+                        gap: 10px;
+                        padding: 10px 22px;
+                        border-radius: 10px;
+                        p{
+                            font: {
+                                weight:700;
+                                size: 12px;
+                            }
+                            line-height: 136%;
+                        }
+                    }
+                }
+                .programUl{
+                    gap: 8px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                    ul{
+                        gap: 10px;
+                        li{
+                            font: {
+                                weight:400;
+                                size: 14px;
+                            }
+                            line-height: 150%;
+                        }
+                    }
+                }
+                .programDescription{
+                    gap: 8px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                    p{
+                        font: {
+                            weight:400;
+                            size: 14px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .bathhousePrograms{
+        padding: 45px 0;
+        .bathhouseProgramsBlock{
+            padding-top: 40px;
+            padding-bottom: 57px;
+            .programTitle{
+                h1{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .swiper{
+                padding-top: 30px;
+            }
+            .swiper-slide{
+                gap: 20px;
+                padding: 20px;
+                border-radius: 14px;
+                h2{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 135%;
+                }
+                .programBlocks{
+                    gap: 10px;
+                    div{
+                        gap: 10px;
+                        padding: 10px 22px;
+                        border-radius: 10px;
+                        p{
+                            font: {
+                                weight:700;
+                                size: 12px;
+                            }
+                            line-height: 136%;
+                        }
+                    }
+                }
+                .programUl{
+                    gap: 8px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                    ul{
+                        gap: 10px;
+                        li{
+                            font: {
+                                weight:400;
+                                size: 14px;
+                            }
+                            line-height: 150%;
+                        }
+                    }
+                }
+                .programDescription{
+                    gap: 8px;
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                    p{
+                        font: {
+                            weight:400;
+                            size: 14px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
         }
     }
 }
