@@ -1,6 +1,6 @@
-.bathhousePrograms{
+.programs{
     padding: 75px 0;
-    .bathhouseProgramsBlock{
+    .programsBlock{
         position: relative;
         padding-top: 90px;
         padding-bottom: 100px;
@@ -166,9 +166,9 @@
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
-    .bathhousePrograms{
+    .programs{
         padding: 65px 0;
-        .bathhouseProgramsBlock{
+        .programsBlock{
             padding-top: 90px;
             padding-bottom: 100px;
             .programTitle{
@@ -254,9 +254,9 @@
     }
 }
 @media (max-width: 992px) and (min-width: 576px) {
-    .bathhousePrograms{
+    .programs{
         padding: 45px 0;
-        .bathhouseProgramsBlock{
+        .programsBlock{
             padding-top: 60px;
             padding-bottom: 80px;
             .programTitle{
@@ -342,9 +342,9 @@
     }
 }
 @media (max-width: 576px) {
-    .bathhousePrograms{
-        padding: 45px 0;
-        .bathhouseProgramsBlock{
+    .programs{
+        padding: 30px 0;
+        .programsBlock{
             padding-top: 40px;
             padding-bottom: 57px;
             .programTitle{

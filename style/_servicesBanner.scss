@@ -1,13 +1,13 @@
-.bathhousesBanner{
+.servicesBanner{
     padding-bottom: 75px;
-    .bathhousesBannerBlock{
+    .servicesBannerBlock{
         position: relative;
         padding: 150px 105px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         
-        .bathhousesBannerBlockText{
+        .servicesBannerBlockText{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -53,9 +53,9 @@
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
-    .bathhousesBanner{
+    .servicesBanner{
         padding-bottom: 65px;
-        .bathhousesBannerBlock{
+        .servicesBannerBlock{
             padding: 80px 88px;
             padding-bottom: 160px;
         }
@@ -76,12 +76,12 @@
     }
 }
 @media (max-width: 992px) and (min-width: 576px) {
-    .bathhousesBanner{
+    .servicesBanner{
         padding-bottom: 45px;
-        .bathhousesBannerBlock{
+        .servicesBannerBlock{
             padding: 78px 30px;
             padding-bottom: 150px;
-            .bathhousesBannerBlockText{
+            .servicesBannerBlockText{
                 width: 400px;
             }
         }
@@ -103,12 +103,12 @@
     }
 }
 @media (max-width: 576px) {
-    .bathhousesBanner{
+    .servicesBanner{
         padding-bottom: 30px;
-        .bathhousesBannerBlock{
+        .servicesBannerBlock{
             padding: 64px 30px;
             
-            .bathhousesBannerBlockText{
+            .servicesBannerBlockText{
                 width: 250px;
             }
         }
