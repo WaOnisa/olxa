@@ -6,17 +6,21 @@
   font-family: "Onest";
   src: url(./fonts/Onest/Onest-VariableFont_wght.ttf);
 }
-button {
+.mainButton {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 800;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #748A5B;
   border-radius: 10px;
   padding: 12px 32px;
   line-height: 21.86px;
   white-space: nowrap;
 }
-button p {
+.mainButton p {
   margin: 0;
 }
 
@@ -30,22 +34,22 @@ button p {
   background-color: #FFFFFF;
 }
 
-button:hover {
+.mainButton:hover {
   color: #FFFFFF;
   background-color: #3D5E38;
   border: 1px solid #3D5E38;
 }
-button:hover img {
+.mainButton:hover img {
   filter: grayscale(100) brightness(200);
 }
 
 @media (max-width: 1400px) {
-  button {
+  .mainButton {
     font-weight: 700;
   }
 }
 @media (max-width: 576px) {
-  button {
+  .mainButton {
     font-weight: 700;
     font-size: 14px;
     line-height: 19.12px;
@@ -570,9 +574,6 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.houses .housesBlock .housesBtn {
-  display: none;
 }
 @media (max-width: 992px) and (min-width: 576px) {
   .houses .housesBlock .housesTitle h1 {
@@ -5385,6 +5386,168 @@ iframe {
     -moz-column-gap: 20px;
          column-gap: 20px;
     row-gap: 20px;
+  }
+}
+.offer {
+  padding: 75px 0;
+}
+.offer h1 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(64, 64, 64);
+  line-height: 120%;
+}
+.offer .offerBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px;
+  gap: 30px;
+  padding-top: 40px;
+}
+.offer .offerBlock .offerImg picture {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+.offer .offerBlock .offerImg picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.offer .offerBlock .offerText {
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  padding: 50px 60px;
+  gap: 30px;
+}
+.offer .offerBlock .offerText .offerTextTop {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.offer .offerBlock .offerText .offerTextTop h2 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 36px;
+  color: #748A5B;
+  line-height: 135%;
+}
+.offer .offerBlock .offerText .offerTextTop p {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(64, 64, 64);
+  line-height: 150%;
+  max-width: 450px;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .offer {
+    padding: 65px 0;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .offer {
+    padding: 45px 0;
+  }
+  .offer h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 135%;
+  }
+  .offer .offerBlock {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 340px;
+    gap: 22px;
+    padding-top: 30px;
+  }
+  .offer .offerBlock .offerText {
+    border-radius: 20px;
+    padding: 35px 40px;
+    gap: 30px;
+    justify-content: space-between;
+    max-height: 300px;
+    order: -1;
+  }
+  .offer .offerBlock .offerText .offerTextTop {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .offer .offerBlock .offerText .offerTextTop h2 {
+    margin: 0;
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 32px;
+    color: #748A5B;
+    line-height: 120%;
+  }
+  .offer .offerBlock .offerText .offerTextTop p {
+    margin: 0;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(64, 64, 64);
+    line-height: 150%;
+    max-width: 450px;
+  }
+}
+@media (max-width: 576px) {
+  .offer {
+    padding: 30px 0;
+  }
+  .offer h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .offer .offerBlock {
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 290px;
+    gap: 25px;
+    padding-top: 25px;
+  }
+  .offer .offerBlock .offerText {
+    border-radius: 20px;
+    padding: 55px 30px;
+    gap: 30px;
+    justify-content: space-between;
+    max-height: 300px;
+    order: -1;
+  }
+  .offer .offerBlock .offerText .offerTextTop {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .offer .offerBlock .offerText .offerTextTop h2 {
+    margin: 0;
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 26px;
+    color: #748A5B;
+    line-height: 135%;
+  }
+  .offer .offerBlock .offerText .offerTextTop p {
+    margin: 0;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(64, 64, 64);
+    line-height: 150%;
+    max-width: 450px;
   }
 }
 * {
