@@ -204,9 +204,28 @@ const swiper8 = new Swiper('.swiper8', {
 	},
 
 	navigation: {
-		nextEl: '.swiper-button-next8',
-		prevEl: '.swiper-button-prev8',
+		nextEl: '.swiper-button-next8, .swiper-button-next81',
+		prevEl: '.swiper-button-prev8, .swiper-button-prev81',
 	},
 })
+
+function updateNavigation2() {
+	const windowWidth = window.innerWidth
+
+	if (windowWidth <= 576) {
+		swiper8.params.navigation.nextEl = '.swiper-button-next81'
+		swiper8.params.navigation.prevEl = '.swiper-button-prev81'
+	} else {
+		swiper8.params.navigation.nextEl = '.swiper-button-next8'
+		swiper8.params.navigation.prevEl = '.swiper-button-prev8'
+	}
+
+	swiper8.navigation.destroy()
+	swiper8.navigation.init()
+	swiper8.navigation.update()
+}
+
+window.addEventListener('resize', updateNavigation2)
+updateNavigation2()
 
 // anchor

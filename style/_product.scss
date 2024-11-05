@@ -44,12 +44,7 @@
             gap: 40px;
         }
 
-        .productsCards{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1.5fr;
-            grid-template-rows: 395px;
-            column-gap: 20px;
-            .productsCard{
+        .productsCard{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -86,8 +81,20 @@
                     }
                 }
             }
+
+        .productsCards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 395px;
+            column-gap: 20px;
         }
-        .productsCards2{
+        .productsCardsTwo{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr ;
+            grid-template-rows: 395px;
+            column-gap: 20px;
+        }
+        .productsCardsThree{
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr ;
             grid-template-rows: 395px;
@@ -123,13 +130,7 @@
                 gap: 40px;
             }
 
-            .productsCards{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(2, 395px);
-                column-gap: 20px;
-                row-gap: 40px;
-                .productsCard{
+            .productsCard{
                     gap: 20px;
                     .productsCardText{
                         gap: 14px;
@@ -152,8 +153,22 @@
                         height: 285px;
                     }
                 }
+
+            .productsCards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(2, 395px);
+                column-gap: 20px;
+                row-gap: 40px;
             }
             .productsCards2{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 395px;
+                column-gap: 20px;
+                row-gap: 40px;
+            }
+            .productsCards3{
                 display: grid;
                 grid-template-columns: 1fr 1fr ;
                 grid-template-rows: 395px;
@@ -192,13 +207,7 @@
                 gap: 30px;
             }
 
-            .productsCards{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(2, 340px);
-                column-gap: 20px;
-                row-gap: 30px;
-                .productsCard{
+            .productsCard{
                     gap: 20px;
                     .productsCardText{
                         gap: 10px;
@@ -221,8 +230,22 @@
                         height: 222px;
                     }
                 }
+
+            .productsCards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(2, 340px);
+                column-gap: 20px;
+                row-gap: 30px;
             }
             .productsCards2{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 340px;
+                column-gap: 20px;
+                row-gap: 30px;
+            }
+            .productsCards3{
                 display: grid;
                 grid-template-columns: 1fr 1fr ;
                 grid-template-rows: 340px;
@@ -261,13 +284,7 @@
                 gap: 20px;
             }
 
-            .productsCards{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 340px);
-                column-gap: 20px;
-                row-gap: 20px;
-                .productsCard{
+            .productsCard{
                     gap: 20px;
                     .productsCardText{
                         gap: 10px;
@@ -290,11 +307,26 @@
                         height: 222px;
                     }
                 }
+
+            .productsCards{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 340px);
+                column-gap: 20px;
+                row-gap: 20px;
+                
             }
             .productsCards2{
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(3, 340px);
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+            .productsCards3{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 340px;
                 column-gap: 20px;
                 row-gap: 20px;
             }
