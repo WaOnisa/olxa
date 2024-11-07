@@ -229,14 +229,57 @@ updateNavigation2()
 
 // anchor
 
+// document.querySelectorAll('a[href*="#"').forEach(link => {
+// 	link.addEventListener('click', function (e) {
+// 		e.preventDefault()
+
+// 		let href = this.getAttribute('href').split('#')
+
+// 		const scrollTarget = document.getElementById(href[1])
+// 		console.log(href[1])
+// 		const topOffset = document.querySelector('header').offsetHeight
+// 		const elementPosition = scrollTarget.getBoundingClientRect().top
+// 		const offsetPosition = elementPosition - topOffset
+
+// 		window.scrollBy({
+// 			top: offsetPosition,
+// 			behavior: 'smooth',
+// 		})
+// 	})
+// })
+
+if (window.localStorage && window.location.hash) {
+	if (!localStorage.getItem('firstLoad')) {
+		localStorage['firstLoad'] = true
+		window.location.reload()
+	} else {
+		localStorage.removeItem('firstLoad')
+	}
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+	const hash = window.location.hash
+
+	const scrollTarget = document.querySelector(hash)
+	const topOffset = document.querySelector('header').offsetHeight
+	const elementPosition = scrollTarget.getBoundingClientRect().top
+	const offsetPosition = elementPosition - topOffset
+
+	window.scrollBy({
+		top: offsetPosition,
+		behavior: 'smooth',
+	})
+})
+
 document.querySelectorAll('a[href*="#"').forEach(link => {
 	link.addEventListener('click', function (e) {
-		e.preventDefault()
-
+		const currentUrl = window.document.href
 		let href = this.getAttribute('href').split('#')
 
+		if (currentUrl !== href) window.location.replace(href.join('#'))
+		e.preventDefault()
+
 		const scrollTarget = document.getElementById(href[1])
-		console.log(href[1])
 		const topOffset = document.querySelector('header').offsetHeight
 		const elementPosition = scrollTarget.getBoundingClientRect().top
 		const offsetPosition = elementPosition - topOffset
