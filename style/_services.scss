@@ -30,6 +30,7 @@
                 text-decoration: none;
                 display: flex;
                 border-radius: 20px;
+                height: 290px;
 
                 .servicesGradient{
                     z-index: -1;
@@ -47,9 +48,9 @@
 
                 picture{
                     border-radius: 20px;
-                    object-fit: cover;
                     img{
                         position: absolute;
+                        object-fit: cover;
                         top: 0;
                         left: 0;
                         bottom: 0;
@@ -98,6 +99,7 @@
             .servicesCards{
                 grid-template-rows: repeat(2, 236px);
                 .serviceCard{
+                    height: 236px;
                     div{
                         padding: 16px;
                         p{
@@ -131,6 +133,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 236px);
                 .serviceCard{
+                    height: 236px;
                     svg{
                         width: 42px;
                         height: 42px;
@@ -167,6 +170,7 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(6, 236px);
                 .serviceCard{
+                    height: 236px;
                     div{
                         padding: 16px;
                         p{

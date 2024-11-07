@@ -253,7 +253,7 @@
         .swiper-pagination{
             gap: 10px;
             flex-wrap: nowrap;
-            overflow-y: scroll;
+            overflow: visible;
             .swiper-pagination-bullet{
                 p{
                     font: {
@@ -264,7 +264,7 @@
                 }
             }
         }
-        .swiper-pagination::-webkit-scrollbar {
+        .pag-block::-webkit-scrollbar {
             display: none;
         }
 

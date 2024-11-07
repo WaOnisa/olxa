@@ -922,7 +922,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
     padding: 30px 0;
   }
   .events .eventsBlock {
-    gap: 25px;
+    gap: 30px;
   }
 }
 .services {
@@ -957,6 +957,7 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   text-decoration: none;
   display: flex;
   border-radius: 20px;
+  height: 290px;
 }
 .services .servicesBlock .servicesCards .serviceCard .servicesGradient {
   z-index: -1;
@@ -974,11 +975,11 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 }
 .services .servicesBlock .servicesCards .serviceCard picture {
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .services .servicesBlock .servicesCards .serviceCard picture img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1022,6 +1023,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock .servicesCards {
     grid-template-rows: repeat(2, 236px);
   }
+  .services .servicesBlock .servicesCards .serviceCard {
+    height: 236px;
+  }
   .services .servicesBlock .servicesCards .serviceCard div {
     padding: 16px;
   }
@@ -1047,6 +1051,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock .servicesCards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 236px);
+  }
+  .services .servicesBlock .servicesCards .serviceCard {
+    height: 236px;
   }
   .services .servicesBlock .servicesCards .serviceCard svg {
     width: 42px;
@@ -1077,6 +1084,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .services .servicesBlock .servicesCards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 236px);
+  }
+  .services .servicesBlock .servicesCards .serviceCard {
+    height: 236px;
   }
   .services .servicesBlock .servicesCards .serviceCard div {
     padding: 16px;
@@ -1314,14 +1324,14 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .advantages .swiper-pagination {
     gap: 10px;
     flex-wrap: nowrap;
-    overflow-y: scroll;
+    overflow: visible;
   }
   .advantages .swiper-pagination .swiper-pagination-bullet p {
     font-weight: 700;
     font-size: 14px;
     line-height: 135%;
   }
-  .advantages .swiper-pagination::-webkit-scrollbar {
+  .advantages .pag-block::-webkit-scrollbar {
     display: none;
   }
   .advantages .blockSlide {
