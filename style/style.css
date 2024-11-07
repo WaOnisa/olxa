@@ -691,17 +691,17 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .houses .housesCardsBlock h3 {
     font-weight: 700;
     font-size: 24px;
-    line-height: 146.25%;
+    line-height: 135%;
   }
   .houses .housesCardsBlock p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 136.57%;
+    line-height: 136%;
   }
   .houses .housesCardsBlock span {
     font-weight: 700;
     font-size: 26px;
-    line-height: 136.62%;
+    line-height: 136%;
   }
   .houses .housesCardsBlock .houseCard .houseCardInfo {
     padding: 20px 24px 30px 24px;
@@ -1871,7 +1871,7 @@ iframe {
   }
   .contacts h2 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 30px;
     line-height: 135%;
   }
   .contacts h3 {
@@ -2171,9 +2171,9 @@ footer .footerPolicy span a {
     padding: 12px 30px;
   }
   footer .footerBlock .footerTopInf h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 156.14%;
+    line-height: 136%;
   }
   footer .footerBlock .footerTopInf ul {
     gap: 10px;
@@ -2288,6 +2288,31 @@ footer .footerPolicy span a {
   font-size: 16px;
   color: rgb(144, 142, 142);
 }
+@media (max-width: 1400px) and (min-width: 992px) {
+  .news .allNews {
+    gap: 30px;
+  }
+  .news .allNewsCards {
+    row-gap: 20px;
+  }
+  .news .allNewsCards .newsCard .newsCardText h4 {
+    margin: 0;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+  }
+  .news .allNewsCards .newsCard .newsCardText p {
+    margin: 0;
+    text-decoration: none;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(144, 142, 142);
+  }
+}
 @media (max-width: 992px) and (min-width: 576px) {
   .news .allNews {
     gap: 30px;
@@ -2296,6 +2321,23 @@ footer .footerPolicy span a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
+  }
+  .news .allNewsCards .newsCard .newsCardText h4 {
+    margin: 0;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+  }
+  .news .allNewsCards .newsCard .newsCardText p {
+    margin: 0;
+    text-decoration: none;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(144, 142, 142);
   }
 }
 @media (max-width: 576px) {
@@ -2306,6 +2348,23 @@ footer .footerPolicy span a {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
+  }
+  .news .allNewsCards .newsCard .newsCardText h4 {
+    margin: 0;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+  }
+  .news .allNewsCards .newsCard .newsCardText p {
+    margin: 0;
+    text-decoration: none;
+    line-height: 135%;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(144, 142, 142);
   }
 }
 
@@ -2372,12 +2431,12 @@ footer .footerPolicy span a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+.singleNews .singleNewsBlock .allSingleNews .singleNewsText {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+.singleNews .singleNewsBlock .allSingleNews .singleNewsText p {
   margin: 0;
   font-family: "Manrope";
   font-weight: 500;
@@ -2408,10 +2467,10 @@ footer .footerPolicy span a {
     max-width: 710px;
     gap: 40px;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText {
     gap: 40px;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText p {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -2438,10 +2497,10 @@ footer .footerPolicy span a {
     font-size: 16px;
     line-height: 135%;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText {
     gap: 40px;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText p {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -2472,12 +2531,12 @@ footer .footerPolicy span a {
     max-width: 710px;
     gap: 40px;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText {
     gap: 40px;
   }
-  .singleNews .singleNewsBlock .allSingleNews .allSingleNewsText p {
+  .singleNews .singleNewsBlock .allSingleNews .singleNewsText p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
   }
 }
@@ -2520,7 +2579,7 @@ footer .footerPolicy span a {
   margin: 0;
   font-family: "Manrope";
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   color: rgb(64, 64, 64);
   line-height: 135%;
 }
@@ -2600,7 +2659,7 @@ footer .footerPolicy span a {
   }
   .rules .rulesBlocks .rulesLink h4 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 135%;
   }
   .rules .rulesBlocks .rulesLink div {
@@ -2680,7 +2739,7 @@ footer .footerPolicy span a {
   }
   .rules .rulesBlocks .allrules .rulesBlock h3 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 135%;
   }
   .rules .rulesBlocks .allrules .rulesBlock p {
@@ -2871,7 +2930,7 @@ footer .footerPolicy span a {
   }
   .policy .policyBlocks .allPolicy .policyBlock h3 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 135%;
   }
   .policy .policyBlocks .allPolicy .policyBlock .policyBlockText {
@@ -2879,7 +2938,7 @@ footer .footerPolicy span a {
   }
   .policy .policyBlocks .allPolicy .policyBlock .policyBlockText p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
@@ -3591,6 +3650,14 @@ footer .footerPolicy span a {
   color: #FFFFFF;
   line-height: 120%;
 }
+.sliderBathhouse h3 {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 46px;
+  color: #FFFFFF;
+  line-height: 120%;
+}
 .sliderBathhouse p {
   margin: 0;
   font-family: "Manrope";
@@ -3632,6 +3699,11 @@ footer .footerPolicy span a {
     font-size: 42px;
     line-height: 120%;
   }
+  .sliderBathhouse h3 {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 120%;
+  }
   .sliderBathhouse p {
     font-weight: 500;
     font-size: 16px;
@@ -3663,6 +3735,11 @@ footer .footerPolicy span a {
   .sliderBathhouse h2 {
     font-weight: 800;
     font-size: 42px;
+    line-height: 120%;
+  }
+  .sliderBathhouse h3 {
+    font-weight: 800;
+    font-size: 32px;
     line-height: 120%;
   }
   .sliderBathhouse p {
@@ -4956,6 +5033,15 @@ iframe {
   line-height: 138%;
   max-width: 670px;
 }
+.comfort .comfortBlock span {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(64, 64, 64);
+  line-height: 138%;
+  max-width: 670px;
+}
 .comfort .comfortBlock .swiper .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -5034,6 +5120,12 @@ iframe {
     line-height: 136%;
     max-width: 610px;
   }
+  .comfort .comfortBlock span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136%;
+    max-width: 610px;
+  }
   .comfort .comfortBlock .swiper .swiper-slide {
     gap: 24px;
     padding: 20px;
@@ -5086,6 +5178,12 @@ iframe {
     line-height: 136%;
     max-width: 450px;
   }
+  .comfort .comfortBlock span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 136%;
+    max-width: 450px;
+  }
   .comfort .comfortBlock .swiper .swiper-slide {
     gap: 24px;
     padding: 20px 18px;
@@ -5132,6 +5230,12 @@ iframe {
     line-height: 122%;
   }
   .comfort .comfortBlock p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+    max-width: 450px;
+  }
+  .comfort .comfortBlock span {
     font-weight: 400;
     font-size: 14px;
     line-height: 136%;

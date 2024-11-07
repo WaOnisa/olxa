@@ -76,6 +76,17 @@
             line-height: 138%;
             max-width: 670px;
         }
+        span{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:400;
+                size: 20px;
+            }
+            color: $black;
+            line-height: 138%;
+            max-width: 670px;
+        }
         .swiper{
             .swiper-slide{
                 display: flex;
@@ -175,6 +186,14 @@
                 line-height: 136%;
                 max-width: 610px;
             }
+            span{
+                font: {
+                    weight:400;
+                    size: 20px;
+                }
+                line-height: 136%;
+                max-width: 610px;
+            }
             .swiper{
                 .swiper-slide{
                     gap: 24px;
@@ -241,6 +260,14 @@
                 line-height: 136%;
                 max-width: 450px;
             }
+            span{
+                font: {
+                    weight:400;
+                    size: 16px;
+                }
+                line-height: 136%;
+                max-width: 450px;
+            }
             .swiper{
                 .swiper-slide{
                     gap: 24px;
@@ -299,6 +326,14 @@
                 }
             }
             p{
+                font: {
+                    weight:400;
+                    size: 14px;
+                }
+                line-height: 136%;
+                max-width: 450px;
+            }
+            span{
                 font: {
                     weight:400;
                     size: 14px;
