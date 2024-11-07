@@ -288,10 +288,11 @@
                     line-height: 135%;
                 }
                 .programBlocks{
-                    gap: 10px;
+                    row-gap: 10px;
+                    column-gap: 5px;
                     div{
                         gap: 10px;
-                        padding: 10px 22px;
+                        padding: 6px 10px;
                         border-radius: 10px;
                         p{
                             font: {
@@ -373,10 +374,11 @@
                     line-height: 135%;
                 }
                 .programBlocks{
-                    gap: 10px;
+                    row-gap: 10px;
+                    column-gap: 5px;
                     div{
                         gap: 10px;
-                        padding: 10px 22px;
+                        padding: 6px 10px;
                         border-radius: 10px;
                         p{
                             font: {

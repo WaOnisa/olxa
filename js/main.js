@@ -53,7 +53,7 @@ const swiper3 = new Swiper('.swiper3', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			centeredSlides: true,
+			centeredSlides: false,
 		},
 
 		576: {
@@ -137,7 +137,6 @@ const swiper4 = new Swiper('.swiper4', {
 const swiper5 = new Swiper('.swiper5', {
 	direction: 'horizontal',
 	loop: true,
-
 
 	navigation: {
 		nextEl: '.swiper-button-next5',

@@ -223,5 +223,49 @@
 @media (max-width: 576px) {
     .blockReviews{
             padding: 40px 0;
+            .blockReviews{
+                padding: 40px 0;
+            }
+            .reviewsTitle{
+            h2{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 135%;
+            }
+        }
+        .reviewText{
+            padding: 30px 20px;
+        }
+            .reviewTopUser{
+            p{
+                font: {
+                    weight:500;
+                    size: 14px;
+                }
+                line-height: 136%;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            .reviewStar{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+        }
+        .reviewBottomText{
+            p{
+                font: {
+                    weight:400;
+                    size: 14px;
+                }
+                line-height: 155%;
+            }
+        }
         }
 }

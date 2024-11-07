@@ -1135,6 +1135,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
 .advantages h2 span {
   color: #FFFFC0;
 }
+.advantages .pag-block::-webkit-scrollbar {
+  display: none;
+}
 .advantages .swiper-pagination {
   display: flex;
   justify-content: flex-start;
@@ -1680,6 +1683,35 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .blockReviews {
     padding: 40px 0;
   }
+  .blockReviews .blockReviews {
+    padding: 40px 0;
+  }
+  .blockReviews .reviewsTitle h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 135%;
+  }
+  .blockReviews .reviewText {
+    padding: 30px 20px;
+  }
+  .blockReviews .reviewTopUser p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 136%;
+  }
+  .blockReviews .reviewTopUser img {
+    width: 30px;
+    height: 30px;
+  }
+  .blockReviews .reviewTopUser .reviewStar img {
+    width: 20px;
+    height: 20px;
+  }
+  .blockReviews .reviewBottomText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+  }
 }
 .contacts {
   padding: 75px 0;
@@ -2130,6 +2162,9 @@ footer .footerPolicy span a {
     display: flex;
     max-width: 196px;
     padding-top: 10px;
+  }
+  footer .footerBlock .footerTopInf .footerContactsButtons button {
+    padding: 12px 30px;
   }
   footer .footerBlock .footerTopInf h4 {
     font-size: 14px;
@@ -3004,8 +3039,6 @@ footer .footerPolicy span a {
   }
 }
 .pageHouse {
-  display: flex;
-  flex-direction: column;
   padding-top: 30px;
   padding-bottom: 75px;
 }
@@ -3023,29 +3056,38 @@ footer .footerPolicy span a {
   color: rgb(129, 126, 126);
   line-height: 135%;
 }
-.pageHouse .swiper {
+.pageHouse .pageHouseBlockSlideText {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 80px;
+}
+.pageHouse .pageHouseBlockSlideText .swiper {
   margin: 0;
   position: relative;
 }
-.pageHouse .swiper-slide {
+.pageHouse .pageHouseBlockSlideText .swiper-slide {
   border-radius: 24px;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
 }
-.pageHouse .swiper-slide picture {
+.pageHouse .pageHouseBlockSlideText .swiper-slide picture {
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: -1;
-  border-radius: 24px;
 }
-.pageHouse .swiper-slide picture img {
+.pageHouse .pageHouseBlockSlideText .swiper-slide picture img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 24px;
 }
-.pageHouse .houseSwiperBtnsSlide {
+.pageHouse .pageHouseBlockSlideText .houseSwiperBtnsSlide {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3056,7 +3098,7 @@ footer .footerPolicy span a {
   padding: 8px 15px;
   gap: 20px;
 }
-.pageHouse .swiper-button-prev, .pageHouse .swiper-button-next {
+.pageHouse .pageHouseBlockSlideText .swiper-button-prev, .pageHouse .pageHouseBlockSlideText .swiper-button-next {
   position: relative;
   z-index: 0;
   margin: 0;
@@ -3066,12 +3108,6 @@ footer .footerPolicy span a {
   left: 0;
   width: 100%;
   height: 100%;
-}
-.pageHouse .pageHouseBlockSlideText {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 403px;
-  gap: 80px;
 }
 .pageHouse .pageHouseBlockSlideText .allHouseText {
   display: flex;
@@ -3101,8 +3137,8 @@ footer .footerPolicy span a {
   color: rgb(64, 64, 64);
 }
 .pageHouse .pageHouseBlockSlideText .housePrices {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .pageHouse .pageHouseBlockSlideText .housePrices .housePrice {
@@ -3155,7 +3191,7 @@ footer .footerPolicy span a {
   }
   .pageHouse .pageHouseBlockSlideText {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 403px;
+    grid-template-rows: 1fr;
     gap: 20px;
   }
   .pageHouse .pageHouseBlockSlideText .allHouseText {
@@ -3209,12 +3245,9 @@ footer .footerPolicy span a {
     padding: 14px;
     gap: 10px;
   }
-  .pageHouse .swiper {
-    max-height: 320px;
-  }
   .pageHouse .pageHouseBlockSlideText {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 320px 1fr;
     gap: 20px;
   }
   .pageHouse .pageHouseBlockSlideText .allHouseText {
@@ -3264,12 +3297,9 @@ footer .footerPolicy span a {
     font-size: 14px;
     line-height: 135%;
   }
-  .pageHouse .swiper {
-    max-height: 265px;
-  }
   .pageHouse .pageHouseBlockSlideText {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 266px 1fr;
     gap: 20px;
   }
   .pageHouse .pageHouseBlockSlideText .allHouseText {
@@ -3289,6 +3319,8 @@ footer .footerPolicy span a {
     font-size: 14px;
   }
   .pageHouse .pageHouseBlockSlideText .housePrices {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
   }
   .pageHouse .pageHouseBlockSlideText .housePrices .housePrice {
@@ -3539,6 +3571,7 @@ footer .footerPolicy span a {
   gap: 30px;
   padding: 50px 60px;
   align-items: flex-start;
+  justify-content: center;
 }
 .sliderBathhouse .sliderbathhouseText div {
   max-width: 529px;
@@ -3620,7 +3653,7 @@ footer .footerPolicy span a {
   }
   .sliderBathhouse .sliderBathhouseBlock {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 343px);
+    grid-template-rows: 1fr 343px;
     gap: 22px;
   }
   .sliderBathhouse h2 {
@@ -3654,7 +3687,7 @@ footer .footerPolicy span a {
   }
   .sliderBathhouse .sliderBathhouseBlock {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 343px);
+    grid-template-rows: 1fr 290px;
     gap: 25px;
   }
   .sliderBathhouse h2 {
@@ -3937,11 +3970,13 @@ footer .footerPolicy span a {
     line-height: 135%;
   }
   .programs .programsBlock .swiper-slide .programBlocks {
-    gap: 10px;
+    row-gap: 10px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .programs .programsBlock .swiper-slide .programBlocks div {
     gap: 10px;
-    padding: 10px 22px;
+    padding: 6px 10px;
     border-radius: 10px;
   }
   .programs .programsBlock .swiper-slide .programBlocks div p {
@@ -4006,11 +4041,13 @@ footer .footerPolicy span a {
     line-height: 135%;
   }
   .programs .programsBlock .swiper-slide .programBlocks {
-    gap: 10px;
+    row-gap: 10px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .programs .programsBlock .swiper-slide .programBlocks div {
     gap: 10px;
-    padding: 10px 22px;
+    padding: 6px 10px;
     border-radius: 10px;
   }
   .programs .programsBlock .swiper-slide .programBlocks div p {
@@ -4756,7 +4793,7 @@ iframe {
   margin: 0;
   font-family: "Onest";
   font-weight: 700;
-  font-size: 42px;
+  font-size: 46px;
   color: #FFFFFF;
   line-height: 130%;
 }
@@ -4784,7 +4821,7 @@ iframe {
   }
   .servicesAboutPic .servicesAboutPicBlock div h2 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 42px;
     line-height: 130%;
   }
   .servicesAboutPic .servicesAboutPicBlock div p {
@@ -4895,6 +4932,7 @@ iframe {
   border-radius: 20px;
   padding: 20px 24px;
   gap: 16px;
+  align-items: center;
   box-shadow: 0 4px 16.1px 0 rgba(0, 0, 0, 0.06);
 }
 .comfort .comfortBlock .info p {
@@ -5113,6 +5151,9 @@ iframe {
     font-size: 14px;
     line-height: 135%;
   }
+  .comfort .comfortBlock .swiper .swiper-button-prev, .comfort .comfortBlock .swiper .swiper-button-next {
+    top: 47%;
+  }
 }
 .product {
   padding: 75px 0;
@@ -5142,6 +5183,7 @@ iframe {
   border-radius: 20px;
   padding: 20px 24px;
   gap: 16px;
+  align-items: center;
   box-shadow: 0 4px 16.1px 0 rgba(0, 0, 0, 0.06);
 }
 .product .productBlock .info p {

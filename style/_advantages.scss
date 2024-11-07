@@ -35,6 +35,9 @@
             color: $yellow;
         }
     }
+    .pag-block::-webkit-scrollbar {
+            display: none;
+        }
     .swiper-pagination{
         display: flex;
         justify-content: flex-start;
