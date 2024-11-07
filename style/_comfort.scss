@@ -9,7 +9,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            h1{
+            h2{
                 margin: 0;
                 font: {
                     family:'Manrope';
@@ -87,7 +87,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 14px;
-                    h2{
+                    h3{
                         margin: 0;
                         font: {
                             family:'Manrope';
@@ -125,7 +125,7 @@
             .swiper-slide2{
                 background-color: $main;
                 .slideText{
-                    h2{
+                    h3{
                         color: $white;
                     }
                     p{
@@ -143,7 +143,7 @@
         .comfortBlock{
             gap: 40px;
             .comfortTitle{
-                h1{
+                h2{
                     font: {
                         weight:800;
                         size: 46px;
@@ -181,7 +181,7 @@
                     border-radius: 20px;
                     .slideText{
                         gap: 14px;
-                        h2{
+                        h3{
                             font: {
                                 weight:700;
                                 size: 30px;
@@ -208,7 +208,7 @@
         .comfortBlock{
             gap: 30px;
             .comfortTitle{
-                h1{
+                h2{
                     font: {
                         weight:700;
                         size: 30px;
@@ -247,7 +247,7 @@
                     border-radius: 20px;
                     .slideText{
                         gap: 14px;
-                        h2{
+                        h3{
                             font: {
                                 weight:700;
                                 size: 30px;
@@ -273,7 +273,7 @@
         .comfortBlock{
             gap: 25px;
             .comfortTitle{
-                h1{
+                h2{
                     font: {
                         weight:700;
                         size: 26px;
@@ -312,7 +312,7 @@
                     border-radius: 20px;
                     .slideText{
                         gap: 14px;
-                        h2{
+                        h3{
                             font: {
                                 weight:700;
                                 size: 20px;

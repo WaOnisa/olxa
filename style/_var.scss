@@ -14,6 +14,10 @@
     padding: 12px 32px;
     line-height: 21.86px;
     white-space: nowrap;
+    transition: background-color 0.3s;
+    img{
+        transition: grayscale 0.3s, brightness 0.3s;
+    }
     p{
         margin: 0;
     }
@@ -46,6 +50,7 @@
 }
 @media (max-width: 576px) {
     .mainButton{
+        padding: 10px 14px;
         font: {
             weight: 700;
             size: 14px;

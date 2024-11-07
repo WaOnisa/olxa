@@ -1,6 +1,6 @@
 .houses{
     padding: 75px 0;
-    h1{
+    h2{
         margin: 0;
         font: {
             family:'Manrope';
@@ -29,7 +29,7 @@
 
         @media (max-width: 992px) and (min-width: 576px) {
             .housesTitle{
-                h1{
+                h2{
                     font: {
                         weight:700;
                         size: 30px;
@@ -49,7 +49,7 @@
                 button{
                     display: none;
                 }
-                h1{
+                h2{
                     font: {
                         weight:700;
                         size: 26px;
@@ -64,7 +64,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         position: relative;
-        h2{
+        h3{
             margin: 0;
             font: {
                 family:'Manrope';
@@ -116,12 +116,14 @@
             }
             .houseCardBanner{
                 border-radius: 20px;
+                height: 260px;
                 img{
                     left: 0;
                     top: 0;
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
             .houseCardInfo{
@@ -148,7 +150,7 @@
     }
     @media (max-width: 1400px) and (min-width: 992px) {
         .housesCardsBlock{
-            h2{
+            h3{
                 font: {
                     weight:700;
                     size: 24px;
@@ -180,13 +182,12 @@
                 .houseCardPeople{
                     padding: 8px 16px;
                 }
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 208px;
+                }
             }
-            
-
-            
-
         }
-        
     }
 
     
@@ -195,7 +196,7 @@
         .housesCardsBlock{
             grid-template-columns: repeat(2, 1fr);
             
-            h2{
+            h3{
                 font: {
                     weight:700;
                     size: 20px;
@@ -239,7 +240,10 @@
                         gap: 10px;
                     }
                 }
-
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 170px;
+                }
                 .houseCardPeople{
                     padding: 6px 10px;
                 }
@@ -252,7 +256,7 @@
         .housesCardsBlock{
             grid-template-columns: 1fr;
             
-            h2{
+            h3{
                 font: {
                     weight:700;
                     size: 20px;
@@ -275,14 +279,30 @@
                 }
                 line-height: 136.59%;
             }
-            
-            .houseCardPeople{
-                padding: 6px 10px;
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 18px;
+                    gap: 14px;
+                
+                    .houseCardInfoTop{
+                        gap: 10px;
+                    }
+                    .houseCardInfoBottom{
+                        gap: 10px;
+                    }
+                }
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 170px;
+                }
+                .houseCardPeople{
+                    padding: 6px 10px;
+                }
             }
-
         }
     }
 }
+
 
 @media (max-width: 1400px) and (min-width: 992px) {
     .houses{

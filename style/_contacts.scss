@@ -1,6 +1,6 @@
 .contacts{
     padding: 75px 0;
-    h1{
+    h2{
         margin: 0;
             font: {
                 family:'Manrope';
@@ -10,7 +10,7 @@
             color: $black;
             line-height: 120%;
     }
-    h2{
+    h3{
         margin: 0;
             font: {
                 family:'Manrope';
@@ -92,7 +92,7 @@ iframe {
 @media (max-width: 1400px) and (min-width: 992px) {
     .contacts{
         padding: 65px 0;
-        h2{
+        h3{
             font: {
                 weight:600;
                 size: 30px;
@@ -124,14 +124,14 @@ iframe {
 @media (max-width: 992px) and (min-width: 576px) {
     .contacts{
         padding: 65px 0;
-        h1{
+        h2{
             font: {
                 weight:700;
                 size: 30px;
             }
             line-height: 135%;
         }
-        h2{
+        h3{
             font: {
                 weight:600;
                 size: 24px;
@@ -169,14 +169,14 @@ iframe {
 @media (max-width: 576px) {
     .contacts{
         padding: 65px 0;
-        h1{
+        h2{
             font: {
                 weight:700;
                 size: 26px;
             }
             line-height: 135%;
         }
-        h2{
+        h3{
             font: {
                 weight:500;
                 size: 18px;

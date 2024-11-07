@@ -63,7 +63,7 @@ const swiper3 = new Swiper('.swiper3', {
 
 		992: {
 			slidesPerView: 1.5,
-			centeredSlides: false,
+			centeredSlides: true,
 		},
 		1400: {
 			slidesPerView: 2,
