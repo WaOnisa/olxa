@@ -1453,6 +1453,9 @@ header .offcanvas .offcanvas-body .topContactsButtons {
   .gallery {
     padding: 65px 0;
   }
+  .gallery .galleryTitle {
+    gap: 10px;
+  }
   .gallery .galleryTitle h2 {
     font-weight: 700;
     font-size: 30px;
