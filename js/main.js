@@ -58,7 +58,7 @@ const swiper3 = new Swiper('.swiper3', {
 
 		576: {
 			slidesPerView: 1.2,
-			centeredSlides: false,
+			centeredSlides: true,
 		},
 
 		992: {
@@ -229,16 +229,21 @@ updateNavigation2()
 
 // anchor
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+document.querySelectorAll('a[href*="#"').forEach(link => {
 	link.addEventListener('click', function (e) {
 		e.preventDefault()
-		const targetId = this.getAttribute('href').substring(1)
-		const targetElement = document.getElementById(targetId)
 
-		if (targetElement) {
-			targetElement.scrollIntoView({
-				behavior: 'smooth',
-			})
-		}
+		let href = this.getAttribute('href').split('#')
+
+		const scrollTarget = document.getElementById(href[1])
+		console.log(href[1])
+		const topOffset = document.querySelector('header').offsetHeight
+		const elementPosition = scrollTarget.getBoundingClientRect().top
+		const offsetPosition = elementPosition - topOffset
+
+		window.scrollBy({
+			top: offsetPosition,
+			behavior: 'smooth',
+		})
 	})
 })
