@@ -77,4 +77,6 @@
                 content: none;
 }
 
-    
+.hide-me[aria-expanded="true"] {
+    display: none;
+}    

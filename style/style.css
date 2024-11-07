@@ -79,6 +79,10 @@
   content: none;
 }
 
+.hide-me[aria-expanded=true] {
+  display: none;
+}
+
 header {
   padding: 20px 0px;
   position: sticky;
