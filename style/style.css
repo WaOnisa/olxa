@@ -3133,15 +3133,11 @@ footer .footerPolicy span a {
   border-radius: 24px;
   max-height: 100%;
   max-width: 100%;
-  position: relative;
-}
-.pageHouse .pageHouseBlockSlideText .swiper-slide picture {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  z-index: -1;
 }
 .pageHouse .pageHouseBlockSlideText .swiper-slide picture img {
   -o-object-fit: cover;
@@ -4408,6 +4404,9 @@ footer .footerPolicy span a {
 .advantagesAbout h2 span {
   color: #FFFFC0;
 }
+.advantagesAbout .pag-block::-webkit-scrollbar {
+  display: none;
+}
 .advantagesAbout .swiper-pagination {
   display: flex;
   justify-content: flex-start;
@@ -4600,7 +4599,7 @@ footer .footerPolicy span a {
   .advantagesAbout .swiper-pagination {
     gap: 10px;
     flex-wrap: nowrap;
-    overflow-y: scroll;
+    overflow: visible;
   }
   .advantagesAbout .swiper-pagination .swiper-pagination-bullet p {
     font-weight: 700;

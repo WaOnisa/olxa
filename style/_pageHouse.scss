@@ -34,14 +34,12 @@
             border-radius: 24px;
             max-height: 100%;
             max-width: 100%;
-            position: relative;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
             picture{ 
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    z-index: -1;
                     img{
                         object-fit: cover;
                         width: 100%;

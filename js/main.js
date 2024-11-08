@@ -241,7 +241,7 @@ if (window.localStorage && window.location.hash) {
 
 document.addEventListener('DOMContentLoaded', function () {
 	const hash = window.location.hash
-
+	if (!hash) return
 	const scrollTarget = document.querySelector(hash)
 	const topOffset = document.querySelector('header').offsetHeight
 	const elementPosition = scrollTarget.getBoundingClientRect().top
