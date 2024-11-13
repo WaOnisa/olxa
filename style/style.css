@@ -3461,16 +3461,16 @@ footer .footerPolicy span a {
   font-weight: 500;
   line-height: 135%;
 }
-.modal-body form label {
+.modal-body form .sectionInput label {
   margin: 0;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
   line-height: 135%;
 }
-.modal-body form input {
+.modal-body form .sectionInput input {
   background-color: rgb(238, 238, 238);
-  border: 0;
+  border: 1px rgb(238, 238, 238) solid;
   padding: 14px;
   border-radius: 8px;
   color: #404040;
@@ -3479,11 +3479,11 @@ footer .footerPolicy span a {
   font-weight: 500;
   line-height: 135%;
 }
-.modal-body form input:focus {
+.modal-body form .sectionInput input:focus {
   outline: 0;
   outline-offset: 0;
 }
-.modal-body form input::-moz-placeholder {
+.modal-body form .sectionInput input::-moz-placeholder {
   color: rgb(129, 126, 126);
   margin: 0;
   font-family: "Manrope";
@@ -3491,13 +3491,19 @@ footer .footerPolicy span a {
   font-weight: 500;
   line-height: 135%;
 }
-.modal-body form input::placeholder {
+.modal-body form .sectionInput input::placeholder {
   color: rgb(129, 126, 126);
   margin: 0;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 500;
   line-height: 135%;
+}
+.modal-body form .error .check {
+  visibility: visible;
+}
+.modal-body form .error input {
+  border: 1px #DB524E solid;
 }
 
 .servicesBanner {
