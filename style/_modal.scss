@@ -50,11 +50,26 @@
         flex-direction: column;
         align-items: stretch;
         gap: 20px;
-        div{
+        .sectionInput{
             display: flex;
             flex-direction: column;
-            
             gap: 12px;
+            position: relative;
+            .check{
+                bottom: -15px;
+                position: absolute;
+                visibility: hidden;
+                p{
+                    color: #DB524E;
+                    margin: 0;
+                    font: {
+                        family: 'Manrope';
+                        size: 12px;
+                        weight: 500;
+                    }
+                    line-height: 135%;
+                }
+            }
         }
         label{
             margin: 0;
@@ -70,6 +85,17 @@
             border: 0;
             padding: 14px;
             border-radius: 8px;
+            color: #404040;
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 500;
+            }
+            line-height: 135%;
+        }
+        input:focus{
+            outline: 0;
+            outline-offset: 0;
         }
         input::placeholder{
             color: rgba(129, 126, 126, 1);

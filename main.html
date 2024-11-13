@@ -907,7 +907,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content" style="border-radius: 20px;">
                                 <div class="modal-header" style="border: 0;">
-                                    <a type="button" class="btn-close" data-bs-dismiss="modal fade" aria-label="Закрыть"></a>
+                                    <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
                                 </div>
                                 <div class="modal-body">
                                         <div class="titleModal">
@@ -922,17 +922,80 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                                                 <p>Оставьте свои данные и мы поможем</p> <p>Вам подобрать дом</p>
                                             </div>
                                         </div>
-                                        <form>
-                                            <div>
+                                        <form class="formModal" id="contactForm" method="post">
+                                            <div class="sectionInput">
                                                 <label>Ваше имя*</label>
-                                                <input type="text" placeholder="Имя">
+                                                <input type="text" id="name" name="name" required placeholder="Имя">
+                                                <div class="check"><p>Заполните обязательное поле</p></div>
                                             </div>
-                                            <div>
+                                            <div class="sectionInput">
                                                 <label>Телефон*</label>
-                                                <input type="tel" placeholder="Номер телефона">
+                                                <input name="phone" class="masked" placeholder="Телефон" type="text" required autocomplete="off" inputmode="text">
+                                                <div class="check"><p>Заполните обязательное поле</p></div>
                                             </div>
-                                            <button class="mainButton mainButtonDark">Отправить</button>
+                                            <button class="mainButton mainButtonDark" type="submit">Отправить</button>
                                         </form>
+                                        <script> 
+                                
+                    document.addEventListener('DOMContentLoaded', ()=>{
+                        let masked = document.querySelectorAll('.masked');
+                        // Функция для применения маски к полю ввода
+                        function applyPhoneMask(input) {
+                            Inputmask({
+                                mask: "+7 (999) 999 99 99",
+                                clearIncomplete: false,
+                                showMaskOnHover: false,
+                                onBeforeMask: function (value, opts) {
+                                    // Проверяем, начинается ли номер с "8"
+                                    if (value.startsWith("8") || value.startsWith("7")) {
+                                        // Убираем "8" и добавляем "+7"
+                                        return "+7" + value.slice(1);
+                                    }
+                                    if (value.startsWith("+8")) {
+                                        return "+7" + value.slice(2);
+                                    }
+                                    if (value.startsWith("+7")) {
+                                        return "+7" + value.slice(2);
+                                    }
+                                    return value;
+                                }
+                            }).mask(input);
+                        }
+
+                        masked.forEach(item=>{
+                            item.addEventListener("input", (e) => {
+                                if(e.target.value.length === 1){
+                                    if(e.target.value === "8" || e.target.value === "7"){
+                                        e.target.value = '';
+                                        if (!e.target.inputmask){
+                                            applyPhoneMask(item);
+                                        }
+                                    }
+                                }else if(e.target.value.length === 2){
+                                    if(e.target.value === "+7"){
+                                        e.target.value = '';
+                                        if (!e.target.inputmask){
+                                            applyPhoneMask(item);
+                                        }
+                                    }else{
+                                        if (!e.target.inputmask){
+                                            applyPhoneMask(item);
+                                        }
+                                    }
+                                }else if(e.target.value.length === 0){
+                                    if (e.target.inputmask){
+                                        e.target.inputmask.remove()
+                                    }
+                                }else{
+                                    if (!e.target.inputmask){
+                                        applyPhoneMask(item);
+                                    }
+                                }
+                            })
+                        });
+                    });
+
+                            </script>
                                         <p class="policyModal">Нажимая на кнопку, вы соглашаетесь с <a href="/policy.html">политикой конфиденциальности</a></p>
                                 </div>
                                 </div>
