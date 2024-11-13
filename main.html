@@ -942,7 +942,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
     </div>
     <div class="modal fade sucerr" tabindex="-1" id="modalSuccess">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="border-radius: 20px;">
             <div class="modal-header" style="border: 0;">
                 <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
             </div>
@@ -956,7 +956,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
     </div>
     <div class="modal fade sucerr" tabindex="-1" id="modalError">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="border-radius: 20px;">
             <div class="modal-header" style="border: 0;">
                 <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
             </div>
@@ -1041,7 +1041,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
         const name = document.getElementById('name');
         const phone = document.getElementById('phone');
 
-        const modals = new bootstrap.Modal(document.querySelector('#modal'));
+        const modals = document.querySelector('#modal');
         const modalSuccess = new bootstrap.Modal(document.querySelector('#modalSuccess'));
         const modalError = new bootstrap.Modal(document.querySelector('#modalError'));
 
@@ -1068,26 +1068,34 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
         }
 
         if (isValid) {
-            
-            
+            modal.querySelector('button').setAttribute('disabled', 'disabled');
             if (modal.classList.contains('formModal')) {
             data.append('target', 'Заказать звонок');
             }
             
             fetch('/api/askCall', {
-            method: 'post',
-            body: data,
+                method: 'post',
+                body: data,
             })
             .then(resp => ({ status: 'ok' }))
             .then(result => {
+                name.value = ''
+                phone.value = ''
+
+                document.querySelector('.btn-close[data-bs-dismiss="modal"]').click()
+                
                 if (result.status) {
-                modalSuccess.show();
+                    modalSuccess.show();
+                    modal.querySelector('button').removeAttribute('disabled');
                 } else {
-                modalError.show();
+                    modalError.show();
+                    modal.querySelector('button').removeAttribute('disabled');
                 }
             });
         }
-        });
+        }
+        
+        );
     })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
