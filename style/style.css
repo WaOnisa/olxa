@@ -3506,6 +3506,59 @@ footer .footerPolicy span a {
   border: 1px #DB524E solid;
 }
 
+.sucerr .modal-dialog {
+  position: absolute;
+  bottom: 35%;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+.sucerr .modal-body-sml {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 40px;
+}
+.sucerr .modal-body-sml h3 {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 26px;
+  font-weight: 700;
+  color: #748A5B;
+  line-height: 135%;
+}
+.sucerr .modal-body-sml p {
+  margin: 0;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(64, 64, 64);
+  line-height: 135%;
+}
+@media (max-width: 576px) {
+  .sucerr .modal-body-sml {
+    gap: 12px;
+    padding-bottom: 30px;
+  }
+  .sucerr .modal-body-sml h3 {
+    margin: 0;
+    font-family: "Manrope";
+    font-size: 20px;
+    font-weight: 700;
+    color: #748A5B;
+    line-height: 130%;
+  }
+  .sucerr .modal-body-sml p {
+    margin: 0;
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(64, 64, 64);
+    line-height: 135%;
+  }
+}
+
 .servicesBanner {
   padding-bottom: 75px;
 }

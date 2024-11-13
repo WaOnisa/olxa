@@ -118,3 +118,65 @@
     }
 }
 
+.sucerr{
+    .modal-dialog{
+        position: absolute;
+        bottom: 35%;
+        top: 35%;
+        left: 0;
+        right: 0;
+    }
+    .modal-body-sml{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 40px;
+        h3{
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 26px;
+                weight: 700;
+            }
+            color: $main;
+            line-height: 135%;
+        }
+        p{
+            margin: 0;
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 400;
+            }
+            color: $black;
+            line-height: 135%;
+        }
+    }
+    @media (max-width: 576px) {
+        .modal-body-sml{
+            gap: 12px;
+            padding-bottom: 30px;
+            h3{
+                margin: 0;
+                font: {
+                    family: 'Manrope';
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $main;
+                line-height: 130%;
+            }
+            p{
+                margin: 0;
+                font: {
+                    family: 'Manrope';
+                    size: 14px;
+                    weight: 400;
+                }
+                color: $black;
+                line-height: 135%;
+            }
+        }
+    }
+}

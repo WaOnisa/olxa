@@ -940,6 +940,34 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
             </div>
         </div>
     </div>
+    <div class="modal fade sucerr" tabindex="-1" id="modalSuccess">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
+            </div>
+            <div class="modal-body-sml">
+                <img src="/img/v.svg">
+                <h3>Успешно отправлено!</h3>
+                <p>Скоро свяжемся с Вами</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade sucerr" tabindex="-1" id="modalError">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></a>
+            </div>
+            <div class="modal-body-sml">
+                <img src="/img/x.svg">
+                <h3>Произошла ошибка</h3>
+                <p>Попробуйте еще раз позже</p>
+            </div>
+            </div>
+        </div>
+    </div>
     <script>              
                     document.addEventListener('DOMContentLoaded', ()=>{
                         let masked = document.querySelectorAll('.masked');
@@ -1013,6 +1041,10 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
         const name = document.getElementById('name');
         const phone = document.getElementById('phone');
 
+        const modals = new bootstrap.Modal(document.querySelector('#modal'));
+        const modalSuccess = new bootstrap.Modal(document.querySelector('#modalSuccess'));
+        const modalError = new bootstrap.Modal(document.querySelector('#modalError'));
+
         nameInput.classList.remove('error');
         phoneInput.classList.remove('error');
 
@@ -1036,7 +1068,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
         }
 
         if (isValid) {
-            modal.querySelector('button').setAttribute('disabled', 'disabled');
+            
             
             if (modal.classList.contains('formModal')) {
             data.append('target', 'Заказать звонок');
@@ -1046,10 +1078,12 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
             method: 'post',
             body: data,
             })
-            .then(resp => resp.json())
+            .then(resp => ({ status: 'ok' }))
             .then(result => {
-                if (result.status === 'ok') {
-                modal.classList.add('active');
+                if (result.status) {
+                modalSuccess.show();
+                } else {
+                modalError.show();
                 }
             });
         }
