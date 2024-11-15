@@ -1,0 +1,191 @@
+.singleNews{
+    padding-top: 40px;
+    padding-bottom: 75px;
+    .singleNewsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h2{
+            margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:800;
+                    size: 46px;
+                }
+            color: $black;
+            line-height: 120%;
+        }
+        .singleNewsPathLinkTitle{
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+        .singleNewsPathLink{
+            display: flex;
+            flex-direction: row;
+            a, span{
+                margin: 0;
+                text-decoration: none;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                color: rgba(129, 126, 126, 1);
+                line-height: 135%;
+            }
+        }
+        .allSingleNews{
+            max-width: 870px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            
+            img{      
+                border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .singleNewsText{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                p{
+                    margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:500;
+                        size: 18px;
+                    }
+                    color: $black;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+    .singleNews{
+        padding-top: 30px;
+        padding-bottom: 65px;
+        .singleNewsBlock{
+            gap: 40px;
+            h2{
+                font: {
+                    weight:800;
+                    size: 46px;
+                }
+                line-height: 120%;
+            }
+            .singleNewsPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 16px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .allSingleNews{
+                max-width: 710px;
+                gap: 40px;
+                
+                .singleNewsText{
+                    gap: 40px;
+                    p{
+                        font: {
+                            weight:500;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .singleNews{
+        padding-top: 20px;
+        padding-bottom: 45px;
+        .singleNewsBlock{
+            gap: 30px;
+            h2{
+                font: {
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 135%;
+            }
+            .singleNewsPathLinkTitle{
+                gap: 30px;
+            }
+            .singleNewsPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 16px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .allSingleNews{
+                
+                .singleNewsText{
+                    gap: 40px;
+                    p{
+                        font: {
+                            weight:500;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .singleNews{
+        padding-top: 5px;
+        padding-bottom: 30px;
+        .singleNewsBlock{
+            gap: 25px;
+            h2{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 135%;
+            }
+            .singleNewsPathLinkTitle{
+                gap: 14px;
+            }
+            .singleNewsPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 14px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .allSingleNews{
+                max-width: 710px;
+                gap: 40px;
+                
+                .singleNewsText{
+                    gap: 40px;
+                    p{
+                        font: {
+                            weight:500;
+                            size: 16px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}

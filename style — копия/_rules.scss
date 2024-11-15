@@ -1,0 +1,323 @@
+.rules{
+    padding-top: 40px;
+    padding-bottom: 75px;
+    .rulesBlocks{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        h2{
+            margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:800;
+                    size: 46px;
+                }
+            color: $black;
+            line-height: 120%;
+        }
+        .rulesPathLink{
+            a, span{
+                margin: 0;
+                text-decoration: none;
+                    font: {
+                        family:'Manrope';
+                        weight:400;
+                        size: 16px;
+                    }
+                color: rgba(129, 126, 126, 1);
+                line-height: 135%;
+            }
+        }
+        .rulesLink{
+            max-width: 670px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 30px 40px;
+            background-color: $darkGrey;
+            border-radius: 16px;
+            h4{
+                margin: 0;
+                    font: {
+                        family:'Manrope';
+                        weight:600;
+                        size: 24px;
+                    }
+                color: $black;
+                line-height: 135%;
+                }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                a{
+                    margin: 0;
+                    text-decoration: none;
+                        font: {
+                            family:'Manrope';
+                            weight:500;
+                            size: 18px;
+                        }
+                    color: $secondary;
+                    line-height: 135%;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+        .allrules{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .rulesBlock{
+                max-width: 670px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .rulesBlockText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+
+                h3{
+                    margin: 0;
+                        font: {
+                            family:'Manrope';
+                            weight:600;
+                            size: 32px;
+                        }
+                    color: $black;
+                    line-height: 135%;
+                }
+                p{
+                    margin: 0;
+                        font: {
+                            family:'Manrope';
+                            weight:500;
+                            size: 18px;
+                        }
+                    color: $black;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .rules{
+        padding-top: 30px;
+        padding-bottom: 65px;
+        .rulesBlocks{
+            gap: 20px;
+            h2{
+                font: {
+                    weight:800;
+                    size: 46px;
+                }
+                line-height: 120%;
+            }
+            .rulesPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 16px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .rulesLink{
+                max-width: 670px;
+                gap: 16px;
+                padding: 30px 40px;
+                h4{
+                    font: {
+                        weight:600;
+                        size: 24px;
+                    }
+                    line-height: 135%;
+                    }
+                div{
+                    gap: 12px;
+                    a{
+                            font: {
+                                weight:500;
+                                size: 18px;
+                            }
+                        line-height: 135%;
+                    }
+                }
+            }
+            .allrules{
+                gap: 40px;
+                .rulesBlock{
+                    max-width: 670px;
+                    gap: 32px;
+                    .rulesBlockText{
+                        gap: 18px;
+                    }
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 32px;
+                        }
+                        line-height: 135%;
+                    }
+                    p{
+                        font: {
+                            weight:500;
+                            size: 18px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .rules{
+        padding-top: 20px;
+        padding-bottom: 45px;
+        .rulesBlocks{
+            gap: 14px;
+            h2{
+                font: {
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 135%;
+            }
+            .rulesPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 16px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .rulesLink{
+                max-width: 670px;
+                gap: 16px;
+                padding: 30px 40px;
+                h4{
+                    font: {
+                        weight:600;
+                        size: 20px;
+                    }
+                    line-height: 135%;
+                    }
+                div{
+                    gap: 8px;
+                    a{
+                            font: {
+                                weight:500;
+                                size: 16px;
+                            }
+                        line-height: 135%;
+                    }
+                }
+            }
+            .allrules{
+                gap: 30px;
+                .rulesBlock{
+                    max-width: 670px;
+                    gap: 32px;
+                    .rulesBlockText{
+                        gap: 18px;
+                    }
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 26px;
+                        }
+                        line-height: 135%;
+                    }
+                    p{
+                        font: {
+                            weight:500;
+                            size: 14px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .rules{
+        padding-top: 5px;
+        padding-bottom: 30px;
+        .rulesBlocks{
+            gap: 14px;
+            h2{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 135%;
+            }
+            .rulesPathLink{
+                a, span{
+                    font: {
+                        weight:400;
+                        size: 14px;
+                    }
+                    line-height: 135%;
+                }
+            }
+            .rulesLink{
+                max-width: 670px;
+                gap: 16px;
+                padding: 22px 30px;
+                h4{
+                    font: {
+                        weight:600;
+                        size: 20px;
+                    }
+                    line-height: 135%;
+                    }
+                div{
+                    gap: 8px;
+                    a{
+                            font: {
+                                weight:500;
+                                size: 16px;
+                            }
+                        line-height: 135%;
+                    }
+                }
+            }
+            .allrules{
+                gap: 20px;
+                .rulesBlock{
+                    max-width: 670px;
+                    gap: 32px;
+                    .rulesBlockText{
+                        gap: 10px;
+                    }
+                    h3{
+                        font: {
+                            weight:600;
+                            size: 20px;
+                        }
+                        line-height: 135%;
+                    }
+                    p{
+                        font: {
+                            weight:500;
+                            size: 14px;
+                        }
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}

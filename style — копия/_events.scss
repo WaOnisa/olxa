@@ -1,0 +1,141 @@
+.events{
+    padding: 75px 0;
+    .eventsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .eventsTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            h2{
+                margin: 0;
+                font: {
+                    family:'Manrope';
+                    weight:800;
+                    size: 46px;
+                }
+                color: $black;
+                line-height: 120%;
+                span{
+                    color: $main;
+                }
+            }
+            button{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 992px) and (min-width: 576px) {
+            .eventsTitle{
+                h2{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 135%;
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            .eventsTitle{
+                h2{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 135%;
+                }   
+            }
+            
+        }
+        
+        .eventsCards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .eventBtn{
+            display: none;
+        }
+
+        @media (max-width: 992px) and (min-width: 576px) {
+            .eventsCards{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .eventsTitle{
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .eventsCards{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .eventsTitle{
+                button{
+                    display: none;
+                }
+            }
+            .eventBtn{ 
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+
+                button{
+                    padding: 10px 0;
+                    font: {
+                        weight:700;
+                        size: 12px;
+                    }
+                    line-height: 136.58%;
+                }
+                
+            }
+            
+        }
+
+        .eventCard{
+            border-radius: 20px;
+        img{
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
+        }
+        
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .events{
+        padding: 65px 0;
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .events{
+        padding: 45px 0;
+        .eventsBlock{
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .events{
+        padding: 30px 0;
+        .eventsBlock{
+            gap: 30px;
+        }
+    }
+}

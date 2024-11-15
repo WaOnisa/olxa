@@ -51,7 +51,34 @@
                     </nav>
                     <div class="buttonsHeader">
                         <div class="buttonHeader d-none d-sm-flex">
-                        <button class="mainButton mainButtonDark">Забронировать</button>
+                        <div><div id="_bn_widget_btn_slider"></div>
+                        <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+                        <script type="text/javascript">
+                        (function(){
+                            Bnovo_Widget.init(function(){
+                            Bnovo_Widget.open('_bn_widget_btn_slider', {
+                                type: "button",
+                                uid: "4653c625-3fbe-4748-8efc-4d6d07b4abe7",
+                                lang: "ru",
+                                currency: "RUB",
+                                border_radius: "8",
+                                button_font_size: "16",
+                                button_height: "46",
+                                title: "Бронирование",
+                                btn_background: "#748A5B",
+                                btn_background_over: "#3D5E38",
+                                btn_textcolor: "#FFFFFF",
+                                btn_textover: "#FFFFFF",
+                                btn_bordcolor: "#748A5B",
+                                btn_bordhover: "#3D5E38",
+                                min_age: "0",
+                                max_age: "17",
+                                adults_default: "1",
+                                btn_text: "Забронировать",
+                            });
+                        });
+                        })();
+                        </script></div>
                         <button type="button" class="mainButton mainButtonLight orderCall" data-bs-toggle="modal" data-bs-target="#modal">
                             <p class="d-none d-sm-none d-lg-none d-xxl-flex">Заказать звонок</p>
                             <img class="d-none d-sm-flex d-xxl-none" src="/img/header/phone.svg">
@@ -200,6 +227,114 @@
             <div class="container">
                 <div class="orderBlock">
                     <h2>Бронирование</h2>
+                    <div class="orderwidget position-relative">
+                        <div class="position-absolute" id="_bn_widget_">
+                            <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
+                        </div>
+                    </div>
+                    <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+                    <script type="text/javascript">
+                    const resize = function(){
+                          if (document.body.clientWidth < 992) {
+                            Bnovo_Widget.init(function(){
+                                Bnovo_Widget.open('_bn_widget_', {
+                                type: "horizontal",
+                                uid: "4653c625-3fbe-4748-8efc-4d6d07b4abe7",
+                                lang: "ru",
+                                currency: "RUB",
+                                widp_mobile: "on",
+                                width: "100%",
+                                width_mobile: "100%",
+                                background: "#ffffff",
+                                background_mobile: "#ffffff",
+                                bg_alpha: "100",
+                                bg_alpha_mobile: "100",
+                                border_color_mobile: "#C6CAD3",
+                                padding: "10",
+                                padding_mobile: "10",
+                                button_font_size: "14",
+                                button_height: "42",
+                                font_type: "inter",
+                                without_title: "on",
+                                without_title_mobile: "on",
+                                title_color: "#242742",
+                                title_color_mobile: "#242742",
+                                title_size: "22",
+                                title_size_mobile: "22",
+                                inp_color: "#404040",
+                                inp_bordhover: "#3D5E38",
+                                inp_bordcolor: "#817E7E",
+                                inp_alpha: "100",
+                                btn_background: "#748A5B",
+                                btn_background_over: "#3D5E38",
+                                btn_textcolor: "#FFFFFF",
+                                btn_textover: "#FFFFFF",
+                                btn_bordcolor: "#748A5B",
+                                btn_bordhover: "#3D5E38",
+                                arrival: "Заезд",
+                                departure: "Выезд",
+                                min_age: "0",
+                                max_age: "17",
+                                adults_default: "1",
+                                btn_text: "Показать наличие",
+                                cancel_color: "#1875F0",
+                                switch_mobiles: "on",
+                                switch_mobiles_width: "992",
+                                });
+                            });
+                            } else {
+                            Bnovo_Widget.init(function(){
+                        Bnovo_Widget.open('_bn_widget_', {
+                            type: "horizontal",
+                            uid: "4653c625-3fbe-4748-8efc-4d6d07b4abe7",
+                            lang: "ru",
+                            currency: "RUB",
+                            widp_mobile: "on",
+                            width: "100%",
+                            width_mobile: "100%",
+                            background: "#ffffff",
+                            background_mobile: "#ffffff",
+                            bg_alpha: "100",
+                            bg_alpha_mobile: "100",
+                            border_color_mobile: "#C6CAD3",
+                            padding: "10",
+                            padding_mobile: "10",
+                            button_font_size: "14",
+                            button_height: "42",
+                            font_type: "inter",
+                            without_title: "on",
+                            without_title_mobile: "on",
+                            title_color: "#242742",
+                            title_color_mobile: "#242742",
+                            title_size: "22",
+                            title_size_mobile: "22",
+                            inp_color: "#404040",
+                            inp_bordhover: "#3D5E38",
+                            inp_bordcolor: "#817E7E",
+                            inp_alpha: "100",
+                            btn_background: "#748A5B",
+                            btn_background_over: "#3D5E38",
+                            btn_textcolor: "#FFFFFF",
+                            btn_textover: "#FFFFFF",
+                            btn_bordcolor: "#748A5B",
+                            btn_bordhover: "#3D5E38",
+                            arrival: "Заезд",
+                            departure: "Выезд",
+                            min_age: "0",
+                            max_age: "17",
+                            adults_default: "1",
+                            btn_text: "Показать наличие",
+                            cancel_color: "#1875F0",
+                            switch_mobiles: "on",
+                            switch_mobiles_width: "992",
+                                });
+                            });
+                        }
+                        
+                    };
+                    resize()
+                    window.onresize = resize
+                    </script>
                 </div>
             </div>
         </section>
@@ -926,7 +1061,6 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                         <div class="sectionInput" id="nameInput">
                             <label>Ваше имя*</label>
                             <input type="text" id="name" name="name" required placeholder="Имя">
-                            <div class="check"><p>Заполните обязательное поле</p></div>
                         </div>
                         <div class="sectionInput" id="phoneInput">
                             <label>Телефон*</label>
@@ -1035,7 +1169,7 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
     modal.addEventListener('submit', e => {
         e.preventDefault();
 
-        const nameInput = document.getElementById('nameInput');
+        
         const phoneInput = document.getElementById('phoneInput');
         
         const name = document.getElementById('name');
@@ -1045,19 +1179,10 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
         const modalSuccess = new bootstrap.Modal(document.querySelector('#modalSuccess'));
         const modalError = new bootstrap.Modal(document.querySelector('#modalError'));
 
-        nameInput.classList.remove('error');
         phoneInput.classList.remove('error');
 
         let data = new FormData(modal);
         let isValid = true;
-
-        if (!name.value.trim()) {
-            nameInput.classList.add('error');
-            isValid = false;
-        } else if (data.get('name').length < 2) {
-            nameInput.classList.add('error');
-            isValid = false
-        }
 
         if (!phone.value.trim()) {
             phoneInput.classList.add('error');
@@ -1069,6 +1194,8 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
 
         if (isValid) {
             modal.querySelector('button').setAttribute('disabled', 'disabled');
+            modal.querySelector('input').setAttribute('disabled', 'disabled');
+
             if (modal.classList.contains('formModal')) {
             data.append('target', 'Заказать звонок');
             }
@@ -1087,14 +1214,15 @@ Lorem ipsum dolor sit amet consectetur. In nibh erat sed leo nunc elementum port
                 if (result.status) {
                     modalSuccess.show();
                     modal.querySelector('button').removeAttribute('disabled');
+                    modal.querySelector('input').removeAttribute('disabled');
                 } else {
                     modalError.show();
                     modal.querySelector('button').removeAttribute('disabled');
+                    modal.querySelector('input').removeAttribute('disabled');
                 }
             });
         }
         }
-        
         );
     })
     </script>

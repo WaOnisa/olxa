@@ -1,0 +1,224 @@
+.news{
+    padding-top: 40px;
+    padding-bottom: 75px;
+    h2{
+        margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 46px;
+            }
+        color: $black;
+        line-height: 120%;
+    }
+
+    @media (max-width: 992px) and (min-width: 576px) {
+        h2{
+        font: {
+                family:'Manrope';
+                weight:700;
+                size: 30px;
+            }
+            line-height: 135%;
+        }
+    }
+    @media (max-width: 576px) {
+        h2{
+        font: {
+                family:'Manrope';
+                weight:700;
+                size: 26px;
+            }
+            line-height: 135%;
+        }
+    }
+
+    .newsPathLink{
+        a, span{
+            margin: 0;
+            text-decoration: none;
+            line-height: 135%;
+                font: {
+                    family:'Manrope';
+                    weight:400;
+                    size: 16px;
+                }
+            color: rgba(129, 126, 126, 1);
+        }
+    }
+    .newsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .allNews{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .allNewsCards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+        .newsCard{
+            text-decoration: none;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            .newsCardText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                gap: 20px;
+                h4{
+                    margin: 0;
+                    line-height: 135%;
+                        font: {
+                            family:'Manrope';
+                            weight:600;
+                            size: 18px;
+                        }
+                    color: $black;
+                }
+                p{
+                    margin: 0;
+                    text-decoration: none;
+                    line-height: 135%;
+                        font: {
+                            family:'Manrope';
+                            weight:500;
+                            size: 16px;
+                        }
+                    color: rgba(144, 142, 142, 1);
+                }
+            }
+        }
+    }
+    @media (max-width: 1400px) and (min-width: 992px) {
+        .allNews{
+            gap: 30px;
+        }
+        .allNewsCards{
+        row-gap: 20px;
+            .newsCard{
+                .newsCardText{
+                    h4{
+                    margin: 0;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:600;
+                                size: 16px;
+                            }
+                        color: $black;
+                    }
+                    p{
+                        margin: 0;
+                        text-decoration: none;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:500;
+                                size: 16px;
+                            }
+                        color: rgba(144, 142, 142, 1);
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) and (min-width: 576px) {
+        .allNews{
+            gap: 30px;
+        }
+        .allNewsCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+            .newsCard{
+                .newsCardText{
+                    h4{
+                    margin: 0;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:600;
+                                size: 16px;
+                            }
+                        color: $black;
+                    }
+                    p{
+                        margin: 0;
+                        text-decoration: none;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:500;
+                                size: 16px;
+                            }
+                        color: rgba(144, 142, 142, 1);
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .allNews{
+            gap: 25px;
+        }
+        .allNewsCards{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            .newsCard{
+                .newsCardText{
+                    h4{
+                    margin: 0;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:600;
+                                size: 16px;
+                            }
+                        color: $black;
+                    }
+                    p{
+                        margin: 0;
+                        text-decoration: none;
+                        line-height: 135%;
+                            font: {
+                                family:'Manrope';
+                                weight:500;
+                                size: 16px;
+                            }
+                        color: rgba(144, 142, 142, 1);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .news{
+        padding: 65px 0;
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .news{
+        padding: 45px 0;
+    }
+}
+@media (max-width: 576px) {
+    .news{
+        padding: 30px 0;
+    }
+}

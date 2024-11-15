@@ -1,0 +1,361 @@
+footer{
+    padding-top: 75px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    .footerBlock{
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 2px solid $main;
+        padding-top: 60px;
+    }
+    .footerTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        .footerTopInf{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 52px;
+            
+            .footerTopContacts{
+                display: flex;
+                flex-direction: column; 
+                gap: 14px;
+                
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    align-items: flex-start;
+                p{
+                    font: {
+                        family: 'Manrope';
+                        size: 16px;
+                        weight: 400;
+                    }
+                    color: $black;
+                    margin: 0;
+                    line-height: 135%;
+                }
+                
+               }
+               .footerContactsButton{
+                    display: flex;
+                    gap: 16px;
+               }
+            }
+            .footerContactsButtons{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+            .footerTopInfBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+            h4{
+                font: {
+                    family: 'Manrope';
+                    size: 18px;
+                    weight: 700;
+                }
+                color: $black;
+                margin: 0;
+                line-height: 136.61%;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                padding-left: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    font: {
+                        family: 'Manrope';
+                        size: 16px;
+                        weight: 500;
+                    }
+                    color: $black;
+                    margin: 0;
+                    line-height: 136.63%;
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                    }
+            }
+        }
+        }
+    }
+    .footerPolicy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            font: {
+                family: 'Manrope';
+                size: 14px;
+                weight: 600;
+                }
+            color: $black;
+            margin: 0;
+            line-height: 150%;
+        }
+        a{
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 600;
+                }
+            color: $black;
+            margin: 0;
+            line-height: 155%;
+        }
+        span{
+            font: {
+                family: 'Manrope';
+                size: 16px;
+                weight: 600;
+                }
+            color: $black;
+            line-height: 155%;
+            margin: 0;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+            }               
+        } 
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    footer{
+        padding-top: 65px;
+        padding-bottom: 60px;
+        .footerBlock{
+            .footerTop{
+                gap: 60px;
+                .footerTopContacts{
+                    div{
+                        p{
+                            font: {
+                                size: 16px;
+                                weight: 400;
+                            }
+                            line-height: 135%;
+                        }
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 16px;
+                                weight: 500;
+                            }
+                            line-height: 135%;
+                        }
+                    }
+                }
+            }
+            .footerTopInf{
+                gap: 40px;
+                h4{
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    }
+                    line-height: 136.61%;
+                }
+                ul{
+                    gap: 10px;
+                    li{
+                        font: {
+                            size: 16px;
+                            weight: 500;
+                        }
+                        line-height: 136.63%;
+                    }
+                }
+            }
+            .footerPolicy{
+                p{
+                    font: {
+                        size: 14px;
+                        weight: 600;
+                        }
+                    line-height: 150%;
+                }
+                a{
+                    font: {
+                        size: 16px;
+                        weight: 600;
+                        }
+                    line-height: 155%;
+                } 
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    footer{
+        padding-top: 45px;
+        padding-bottom: 60px;
+        .footerBlock{
+            padding-top: 30px;
+            .footerTop{
+                gap: 30px;
+                flex-direction: column;
+                .footerTopInfBlock{
+                    gap: 12px;
+                }
+                .footerTopContacts{
+                    div{
+                        p{
+                            font: {
+                                size: 14px;
+                                weight: 400;
+                            }
+                            line-height: 140%;
+                        }
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 14px;
+                                weight: 500;
+                            }
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+            .footerTopInf{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                row-gap: 30px;
+                h4{
+                    font: {
+                        size: 16px;
+                        weight: 700;
+                    }
+                    line-height: 136.63%;
+                }
+                ul{
+                    gap: 10px;
+                    li{ 
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 156.14%;
+                    }
+                }
+            }
+            .footerPolicy{
+                flex-direction: column;
+                gap: 8px;
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 150%;
+                    }
+                    a{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 155%;
+                    } 
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer{
+        padding-top: 30px;
+        padding-bottom: 60px;
+        .footerBlock{
+            padding-top: 30px;
+            gap: 30px;
+            .footerTop{
+                gap: 30px;
+                flex-direction: column;
+                .footerTopContacts{
+                    div{
+                        p{
+                            font: {
+                                size: 14px;
+                                weight: 400;
+                            }
+                            line-height: 140%;
+                        }
+                        .footerTopContactsNumber{
+                            font: {
+                                size: 14px;
+                                weight: 500;
+                            }
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+            .footerTopInf{
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+                .footerTopInfBlock{
+                    gap: 12px;
+                }
+                .footerContactsButtons{
+                    display: flex;    
+                    max-width: 196px;
+                    padding-top: 10px;
+                    button{
+                        padding: 12px 30px;
+                    }
+                }
+                h4{
+                    font: {
+                        size: 16px;
+                        weight: 700;
+                    }
+                    line-height: 136%;
+                }
+                ul{
+                    gap: 10px;
+                    li{ 
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 136.57%;
+                    }
+                }
+            }
+            .footerPolicy{
+                flex-direction: column;
+                gap: 8px;
+                    p{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 150%;
+                    }
+                    a{
+                        font: {
+                            size: 14px;
+                            weight: 600;
+                            }
+                        line-height: 155%;
+                    }
+                 
+            }
+        }
+    }
+}

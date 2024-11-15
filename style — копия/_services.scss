@@ -1,0 +1,189 @@
+.services{
+    padding: 75px 0;
+    .servicesBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        h2{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 46px;
+            }
+            color: $black;
+            line-height: 120%;
+            span{
+                color: $main;
+            }
+        }
+        .servicesCards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 290px);
+            grid-gap: 20px;
+            grid-auto-flow: row;
+            justify-content: center;
+            
+            .serviceCard{
+                position: relative;
+                text-decoration: none;
+                display: flex;
+                border-radius: 20px;
+                height: 290px;
+
+                .servicesGradient{
+                    z-index: -1;
+                    border-radius: 20px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    object-fit:cover;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top, #000000CC, #00000000);
+                }
+
+                picture{
+                    border-radius: 20px;
+                    img{
+                        position: absolute;
+                        object-fit: cover;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        z-index: -2;
+                    }
+                }
+                div{
+                    bottom: 0;
+                    padding: 22px;
+                    display: flex;
+                    align-items: flex-end;
+                    p{
+                        margin: 0;
+                        line-height: 136.61%;
+                        font: {
+                            family:'Manrope';
+                            weight:700;
+                            size: 18px;
+                        }
+                        color: $secondary;
+                        background-color: $white;
+                        border-radius: 10px;
+                        padding: 14px 28px;
+                    }
+                }
+                .serviceCardArrow{
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .services{
+        padding: 65px 0;
+        .servicesBlock{
+            gap: 40px;
+            .servicesCards{
+                grid-template-rows: repeat(2, 236px);
+                .serviceCard{
+                    height: 236px;
+                    div{
+                        padding: 16px;
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 16px;
+                            }
+                            line-height: 136.63%;
+                            padding: 12px 28px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .services{
+        padding: 45px 0;
+        .servicesBlock{
+            gap: 30px;
+            h2{
+                font: { 
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 135%;
+            }
+            .servicesCards{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 236px);
+                .serviceCard{
+                    height: 236px;
+                    svg{
+                        width: 42px;
+                        height: 42px;
+                    }
+                    div{
+                        padding: 16px;
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 14px;
+                            }
+                            line-height: 136.57%;
+                            padding: 12px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .services{
+        padding: 30px 0;
+        .servicesBlock{
+            gap: 25px;
+            h2{
+                font: { 
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 135%;
+            }
+            .servicesCards{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 236px);
+                .serviceCard{
+                    height: 236px;
+                    div{
+                        padding: 16px;
+                        p{
+                            font: { 
+                                weight:700;
+                                size: 14px;
+                            }
+                            line-height: 136.57%;
+                            padding: 12px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

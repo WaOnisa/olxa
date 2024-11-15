@@ -1,0 +1,327 @@
+.houses{
+    padding: 75px 0;
+    h2{
+        margin: 0;
+        font: {
+            family:'Manrope';
+            weight:800;
+            size: 46px;
+        }
+        color: $black;
+        line-height: 120%;
+        span{
+            color: $main;
+        }
+    }
+    .housesBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .housesTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+        @media (max-width: 992px) and (min-width: 576px) {
+            .housesTitle{
+                h2{
+                    font: {
+                        weight:700;
+                        size: 30px;
+                    }
+                    line-height: 135%;
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            .housesBtn{
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+            }
+            .housesTitle{
+                button{
+                    display: none;
+                }
+                h2{
+                    font: {
+                        weight:700;
+                        size: 26px;
+                    }
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+    .housesCardsBlock{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        position: relative;
+        h3{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 26px;
+            }
+        color: $black;
+        line-height: 135%;
+        }
+        span{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 30px;
+            }
+        color: $black;
+        line-height: 136.6%;
+        }
+        p{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:700;
+                size: 16px;
+            }
+        color: $secondary;
+        line-height: 136.63%;
+        }
+        .houseCard{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08),
+             0 0 4px 0 rgba(0, 0, 0, 0.04);
+            border-radius: 20px;
+            .housesStats{
+                position: absolute;
+                padding: 16px;
+                display: flex;
+                gap: 8px;
+
+            }
+            .houseCardPeople{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 10px 22px;
+                border-radius: 10px;
+                gap: 10px;
+                background-color: $darkGrey;
+            }
+            .houseCardBanner{
+                border-radius: 20px;
+                height: 260px;
+                img{
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+            }
+            .houseCardInfo{
+                padding: 20px 30px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: stretch;
+                .houseCardInfoTop{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: flex-start;
+                }
+                .houseCardInfoBottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 12px;
+                }
+            }
+        }
+    
+    }
+    @media (max-width: 1400px) and (min-width: 992px) {
+        .housesCardsBlock{
+            h3{
+                font: {
+                    weight:700;
+                    size: 24px;
+                }
+                line-height: 135%;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 14px;
+                }
+                line-height: 136%;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 136%;
+            }
+            
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 24px 30px 24px;
+                    gap: 20px;
+                }
+                .houseCardPeople{
+                    padding: 8px 16px;
+                }
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 208px;
+                }
+            }
+        }
+    }
+
+    
+
+    @media (max-width: 992px) and (min-width: 576px) {
+        .housesCardsBlock{
+            grid-template-columns: repeat(2, 1fr);
+            
+            h3{
+                font: {
+                    weight:700;
+                    size: 20px;
+                }
+                line-height: 135%;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 12px;
+                }
+                line-height: 136.58%;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 22px;
+                }
+                line-height: 136.59%;
+            }
+            
+            .housesStats{
+                svg{
+                    width: 36px;
+                    height: 36px;
+                }
+
+            }
+
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 18px 20px 18px;
+                    gap: 14px;
+                
+                    .houseCardInfoTop{
+                        gap: 10px;
+                    }
+                    .houseCardInfoBottom{
+                        gap: 10px;
+                    }
+                }
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 170px;
+                }
+                .houseCardPeople{
+                    padding: 6px 10px;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 576px) {
+        .housesCardsBlock{
+            grid-template-columns: 1fr;
+            
+            h3{
+                font: {
+                    weight:700;
+                    size: 20px;
+                }
+                line-height: 135%;
+            }
+
+            p{
+                font: {
+                    weight:700;
+                    size: 12px;
+                }
+                line-height: 136.58%;
+            }
+
+            span{
+                font: {
+                    weight:700;
+                    size: 22px;
+                }
+                line-height: 136.59%;
+            }
+            .houseCard {
+                .houseCardInfo{
+                    padding: 20px 18px;
+                    gap: 14px;
+                
+                    .houseCardInfoTop{
+                        gap: 10px;
+                    }
+                    .houseCardInfoBottom{
+                        gap: 10px;
+                    }
+                }
+                .houseCardBanner{
+                    border-radius: 20px;
+                    height: 170px;
+                }
+                .houseCardPeople{
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .houses{
+        padding: 65px 0;
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .houses{
+        padding: 45px 0;
+        .housesBlock{
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .houses{
+        padding: 30px 0;
+        .housesBlock{
+            gap: 25px;
+        }
+    }
+}

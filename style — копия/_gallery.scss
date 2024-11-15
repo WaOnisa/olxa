@@ -1,0 +1,150 @@
+.gallery{
+    padding: 75px 0;
+    .galleryBlock{
+        display: flex;
+        row-gap: 40px; 
+        flex-direction: column;
+    }
+    .galleryTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            margin: 0;
+            font: {
+                family:'Manrope';
+                weight:800;
+                size: 46px;
+            }
+            color: $black;
+            line-height: 120%;
+            span{
+                color: $main;
+            }
+        }
+        .gallerySwiperBtns{
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+            justify-content: space-between;
+            .gallerySwiperBtn{
+                position: relative;
+                z-index: 0;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                
+            }
+            .swiper-button-prev::after, .swiper-button-next::after{
+                content: none;
+            }
+            
+        }
+        
+    }
+    .swiper-pagination{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        z-index: 0;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-pagination-bullet{
+        width: 45px;
+        height: 3px;
+        border-radius: 0;
+        background-color:$main;
+        opacity: 1;
+        
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $secondary;
+        
+    }
+    
+    .swiper{
+        .gallerySwiperBtnsSlide{
+            
+            .swiper-button-prev::after, .swiper-button-next::after{
+                content: none;
+            }
+            
+        }
+    }
+
+    .swiper-slide{ 
+        img{
+            object-fit:cover;
+            border-radius: 24px;
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .gallery{
+        padding: 65px 0;
+        
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .gallery{
+        padding: 65px 0;
+        .galleryTitle{
+            gap: 10px;
+            h2{
+                font: {
+                    weight:700;
+                    size: 30px;
+                }
+                line-height: 135%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .gallery{
+        padding: 30px 0;
+        .galleryTitle{
+            h2{
+                font: {
+                    weight:700;
+                    size: 26px;
+                }
+                line-height: 135%;
+            }
+        }
+        
+
+        .swiper{
+            .gallerySwiperBtnsSlide{
+                    display: flex;
+                    .swiper-button-prev{
+                        left: 18.7px;
+                    }
+                    .swiper-button-next{
+                        right: 18.7px;
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }  
+            }
+        }
+    }
+}
